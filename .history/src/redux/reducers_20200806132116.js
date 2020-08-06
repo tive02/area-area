@@ -1,4 +1,4 @@
-/* import { GET_ALL_POSTS, GET_ALL_TAGS, GET_POST, GET_TAG, GET_ALL_COPYWRITERS, GET_COPYWRITER } from "./actions"
+import { GET_ALL_POSTS, GET_ALL_TAGS, GET_POST, GET_TAG, GET_ALL_COPYWRITERS, GET_COPYWRITER } from "./actions"
 
 export const postReducer = (state = {}, action) => {
   if (action.type === GET_ALL_POSTS) {
@@ -14,6 +14,7 @@ export const postReducer = (state = {}, action) => {
       post: action.post
     }
   }
+
 }
 
 export const tagReducer = (state = {}, action) => {
@@ -51,4 +52,3 @@ export const copywriterReducer = (state = {}, action) => {
 
 
 
- */

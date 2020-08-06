@@ -3,10 +3,9 @@ import ReactDOM from 'react-dom';
 import App from './components/App';
 import './styles.css';
 import { Provider } from 'react-redux';
-import store from './redux/store'
 
 ReactDOM.render(
-  <Provider store={store}>
+  <Provider state={state}>
     <App />
   </Provider>
   , document.getElementById('root')
