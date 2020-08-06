@@ -2,7 +2,7 @@ import React from 'react'
 
 const Contribution = () => (
   <div>
-    <h1> COntribuir</h1>
+    <h1>home</h1>
   </div>
 
 )
