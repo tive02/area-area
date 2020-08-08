@@ -4,7 +4,7 @@ import { NavLink } from 'react-router-dom';
 const Header = () => (
 
   <header>
-    <div className="flex items-center justify-between flex-wrap bg-green-400  p-6" >
+    <div className="flex items-center justify-between flex-wrap bg-purple-700  p-6" >
       <NavLink exact to="/" className="flex items-center flex-no-shrink text-white mr-6">
         <svg class="h-8 w-8 mr-2" width="54" height="54" viewBox="0 0 54 54"
           xmlns="http://www.w3.org/2000/svg">
@@ -32,13 +32,17 @@ const Header = () => (
           onclick="{'flex': open, 'hidden': !open}"
           className="
           flex-col flex-grow pb-4 md:pb-0 hidden md:flex md:justify-end md:flex-row">
-          <li> <NavLink className="px-4 py-2 mt-2 text-sm font-semibold text-gray-900 bg-purple-500 rounded-lg dark-mode:bg-gray-700 dark-mode:hover:bg-gray-600 dark-mode:focus:bg-gray-600 dark-mode:focus:text-white dark-mode:hover:text-white dark-mode:text-gray-200 md:mt-0 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline"
+          <li> <NavLink className="px-4 py-2 mt-2 text-sm font-semibold text-gray-900 bg-gray-200 rounded-lg dark-mode:bg-gray-700 dark-mode:hover:bg-gray-600 dark-mode:focus:bg-gray-600 dark-mode:focus:text-white dark-mode:hover:text-white dark-mode:text-gray-200 md:mt-0 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline"
+
             exat to="/"> Inicio</NavLink> </li>
-          <li> <NavLink className="px-4 py-2 mt-2 text-sm font-semibold text-gray-900 bg-purple-500 rounded-lg dark-mode:bg-gray-700 dark-mode:hover:bg-gray-600 dark-mode:focus:bg-gray-600 dark-mode:focus:text-white dark-mode:hover:text-white dark-mode:text-gray-200 md:mt-0 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline"
+          <li> <NavLink className="px-4 py-2 mt-2 text-sm font-semibold text-gray-900 bg-gray-200 rounded-lg dark-mode:bg-gray-700 dark-mode:hover:bg-gray-600 dark-mode:focus:bg-gray-600 dark-mode:focus:text-white dark-mode:hover:text-white dark-mode:text-gray-200 md:mt-0 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline"
+
             to="/Publications">Publicaciones</NavLink> </li>
-          <li> <NavLink className="px-4 py-2 mt-2 text-sm font-semibold text-gray-900 bg-purple-500 rounded-lg dark-mode:bg-gray-700 dark-mode:hover:bg-gray-600 dark-mode:focus:bg-gray-600 dark-mode:focus:text-white dark-mode:hover:text-white dark-mode:text-gray-200 md:mt-0 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline"
+          <li> <NavLink className="px-4 py-2 mt-2 text-sm font-semibold text-gray-900 bg-gray-200 rounded-lg dark-mode:bg-gray-700 dark-mode:hover:bg-gray-600 dark-mode:focus:bg-gray-600 dark-mode:focus:text-white dark-mode:hover:text-white dark-mode:text-gray-200 md:mt-0 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline"
+
             to="/Tags">Temas</NavLink> </li>
-          <li> <NavLink className="px-4 py-2 mt-2 text-sm font-semibold text-gray-900 bg-purple-500 rounded-lg dark-mode:bg-gray-700 dark-mode:hover:bg-gray-600 dark-mode:focus:bg-gray-600 dark-mode:focus:text-white dark-mode:hover:text-white dark-mode:text-gray-200 md:mt-0 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline"
+          <li> <NavLink className="px-4 py-2 mt-2 text-sm font-semibold text-gray-900 bg-gray-200 rounded-lg dark-mode:bg-gray-700 dark-mode:hover:bg-gray-600 dark-mode:focus:bg-gray-600 dark-mode:focus:text-white dark-mode:hover:text-white dark-mode:text-gray-200 md:mt-0 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline"
+
             to="/Contribution">¿Como contribuir?</NavLink> </li>
         </ul>
       </div>

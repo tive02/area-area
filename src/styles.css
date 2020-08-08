@@ -14442,6 +14442,8 @@ video {
   animation: bounce 1s infinite;
 }
 
+/* the Styles of the header, order, for responsive, mobile first */
+
 @media (min-width: 640px) {
   .sm\:container {
     width: 100%;
@@ -69733,3 +69735,4 @@ video {
     animation: bounce 1s infinite;
   }
 }
+
