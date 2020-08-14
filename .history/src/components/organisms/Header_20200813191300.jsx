@@ -1,7 +1,6 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
 import MenuPublic from '../molecules/MenuPublic';
-import ButtonHeader from '../molecules/ButtonHeader';
 
 
 
@@ -37,7 +36,18 @@ const Header = () => (
 
 
       <div className="flex-col flex-grow pb-4 lg:pb-0 hidden lg:flex lg:justify-end lg:flex-row" >
-        <ButtonHeader />
+        <button
+          class="mr-8 bg-green-400 hover:bg-green-400 text-black font-bold py-2 px-4 border-b-4 
+              border-green-400 hover:border-black rounded">
+          <label for="">Ingresa</label>
+        </button>
+
+
+        <button
+          class="mr-8 bg-green-400 hover:bg-green-400 text-black font-bold py-2 px-4 border-b-4 
+            border-green-400 hover:border-black rounded">
+          <label for="">Subscribete</label>
+        </button>
 
       </div>
     </div>

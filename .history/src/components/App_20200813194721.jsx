@@ -16,6 +16,7 @@ const App = () => (
     <Header />
     <Switch>
       <Route path="/" exact component={Publications} />
+
       <Route path="/publications/:id" component={Publication} />
       <Route path="/Tags" component={Tags} />
       <Route path="/Tags/:id" component={Tag} />
