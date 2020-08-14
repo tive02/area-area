@@ -1,6 +1,4 @@
 import React from 'react'
-import Banner from '../organisms/Banner'
-
 
 const Page404 = () => (
   <Banner

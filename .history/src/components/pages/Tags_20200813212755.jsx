@@ -1,12 +1,12 @@
 import React from 'react'
 import Banner from '../organisms/Banner'
 
-const Publications = () => (
+
+export const Tags = () => (
   <Banner
-    bgColor="green-400"
+    bgColor="orange-400"
     title="De Área a Área"
     subtitle="Proyecto social para incentivar el Fútbol femenino"
   />
-
 )
-export default Publications;
+export default Tags;
