@@ -18,9 +18,10 @@ export default function ButtonHamburguer() {
         110 2h-6a1 1 0 01-1-1z"></path>
         </svg>
       </button >
-      {!isNavVisible && (
+      {!isNavVisible & (
         <MenuMobile />
       )}
+
     </>
   );
 }

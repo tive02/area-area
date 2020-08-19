@@ -30,18 +30,18 @@ const MenuMobile = () => {
           hover:bg-green-400 focus:bg-green-400 
           focus:outline-none focus:shadow-outline">
             Temas</li></NavLink>
-        <NavLink className="text-2xl font-semibold text-black"
-          to="/Team"><li className="mt-2
+        <li className="mt-2
         hover:text-gray-900 focus:text-gray-900 
           hover:bg-green-400 focus:bg-green-400 
           focus:outline-none focus:shadow-outline">
-            Team</li></NavLink>
-        <NavLink className="text-2xl font-semibold text-black"
-          to="/Contribution"><li className="mt-2
+          <NavLink className="text-2xl font-semibold text-black"
+            to="/Team"> Team</NavLink> </li>
+        <li className="mt-2
         hover:text-gray-900 focus:text-gray-900 
           hover:bg-green-400 focus:bg-green-400 
           focus:outline-none focus:shadow-outline">
-            ¿Como contribuir?</li></NavLink>
+          <NavLink className="text-2xl font-semibold text-black"
+            to="/Contribution">¿Como contribuir?</NavLink> </li>
       </ul>
     </nav >
   )

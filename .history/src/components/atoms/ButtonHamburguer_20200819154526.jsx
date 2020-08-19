@@ -19,8 +19,9 @@ export default function ButtonHamburguer() {
         </svg>
       </button >
       {!isNavVisible && (
-        <MenuMobile />
+        <MenuMobile onClick={toggleNav} />
       )}
+
     </>
   );
 }
