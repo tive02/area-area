@@ -3,17 +3,17 @@ import MenuPublic from '../molecules/MenuPublic';
 import Logo from '../atoms/Logo';
 import Button from '../atoms/Button';
 import ButtonHamburguer from '../atoms/ButtonHamburguer';
-import MenuMobile from '../molecules/MenuMobile';
 
 const Header = () => (
 
   <header>
     <div className="flex items-center justify-between flex-wrap bg-purple-700  p-6 border-gray-800" >
       <Logo />
-      <ButtonHamburguer />
+      <div className="block lg:hidden">
+        <ButtonHamburguer />
+      </div>
       <nav>
         <MenuPublic />
-        <MenuMobile />
       </nav>
       <div className="flex-col flex-grow pb-4 lg:pb-0 hidden lg:flex lg:justify-end lg:flex-row" >
         <Button
