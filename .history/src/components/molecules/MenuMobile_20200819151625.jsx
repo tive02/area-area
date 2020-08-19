@@ -5,7 +5,7 @@ import Button from '../atoms/Button'
 const MenuMobile = () => {
   return (
     <nav className="mb-4 bg-purple-600 fixed inset-0 p-4">
-      <div className="mt-16 ml-8">
+      <div className="m-8">
         <Button
           bgColor="green-400"
           hoverColor="green-400"
@@ -18,25 +18,22 @@ const MenuMobile = () => {
           label="Suscribete" />
       </div>
       <ul className="m-8 ">
-        <li className="mt-6
+        <li className="mt-4
         hover:text-gray-900 focus:text-gray-900 hover:bg-green-400 
         focus:bg-green-400 focus:outline-none focus:shadow">
           <NavLink className="text-2xl font-semibold text-black"
             exat to="/"> Inicio</NavLink> </li>
-        <li className=" mt-2
-        hover:text-gray-900 focus:text-gray-900 
+        <li className="hover:text-gray-900 focus:text-gray-900 
           hover:bg-green-400 focus:bg-green-400 
           focus:outline-none focus:shadow-outline">
           <NavLink className="text-2xl font-semibold text-black"
             to="/Tags">Temas</NavLink> </li>
-        <li className="mt-2
-        hover:text-gray-900 focus:text-gray-900 
+        <li className="hover:text-gray-900 focus:text-gray-900 
           hover:bg-green-400 focus:bg-green-400 
           focus:outline-none focus:shadow-outline">
           <NavLink className="text-2xl font-semibold text-black"
             to="/Team"> Team</NavLink> </li>
-        <li className="mt-2
-        hover:text-gray-900 focus:text-gray-900 
+        <li className="hover:text-gray-900 focus:text-gray-900 
           hover:bg-green-400 focus:bg-green-400 
           focus:outline-none focus:shadow-outline">
           <NavLink className="text-2xl font-semibold text-black"

@@ -5,7 +5,7 @@ import Button from '../atoms/Button'
 const MenuMobile = () => {
   return (
     <nav className="mb-4 bg-purple-600 fixed inset-0 p-4">
-      <div className="mt-16 ml-8">
+      <div className="m-8">
         <Button
           bgColor="green-400"
           hoverColor="green-400"
