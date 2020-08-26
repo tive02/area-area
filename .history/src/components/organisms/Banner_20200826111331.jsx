@@ -2,18 +2,18 @@ import React from 'react';
 import classnames from 'classnames'
 
 
-const Banner = ({ title, subtitle }) => (
+const Banner = ({ bgColor, title, subtitle }) => (
 
-  <div className={classnames(`bg-green-400 flex md:p-4 border-gray-800 lg:bg-opacity-75`)}
+  <div className={classnames(`bg-${bgColor} pb-4 flex flex-grap md:pb-4  border-gray-800 container`)}
   >
-    <div className="hidden lg:flex lg:w-1/2">
+    <div className="hidden lg:w-1/2 lg:p-4  lg:flex">
       <img
         src="https://source.unsplash.com/7H77FWkK_x4/1600x900"
-        className="w-full "
+        className="w-full h-screen"
         alt="Imagen del Banner"
       />
     </div>
-    <div className="content-center w-full lg:w-1/2 ">
+    <div className="content-center bg-blue-500 w-full h-auto">
       <h1 className="text-center text-5xl font-serif font-back pt-6 pb-0  md:text-6xl ">
         {title}
       </h1>

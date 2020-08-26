@@ -1,6 +1,6 @@
 import React from 'react'
 import Logo from '../atoms/Logo'
-import IconYouTube from '../atoms/icons/IconYouTube'
+import IconYouTube from '../atoms/icons/iconYoutube'
 import Button from '../atoms/Button'
 
 

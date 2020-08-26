@@ -2,11 +2,11 @@ import React from 'react';
 import classnames from 'classnames'
 
 
-const Banner = ({ title, subtitle }) => (
+const Banner = ({ bgColor, title, subtitle }) => (
 
-  <div className={classnames(`bg-green-400 flex md:p-4 border-gray-800 lg:bg-opacity-75`)}
+  <div className={classnames(`bg-${bgColor} flex md:p-4 border-gray-800 opacity-50`)}
   >
-    <div className="hidden lg:flex lg:w-1/2">
+    <div className="lg:w-1/2">
       <img
         src="https://source.unsplash.com/7H77FWkK_x4/1600x900"
         className="w-full "

@@ -1,6 +1,6 @@
 import React from 'react'
 import Logo from '../atoms/Logo'
-import IconYouTube from '../atoms/icons/IconYouTube'
+import IconYouTube from '../atoms/icons/iconYoutube'
 import Button from '../atoms/Button'
 
 
@@ -16,7 +16,9 @@ const Footer = () => {
         </p>
         <div className="flex m-4 ">
           <IconYouTube />
-
+          <IconYouTube />
+          <IconYouTube />
+          <IconYouTube />
         </div>
         <div className="text-white text-sm">
           Iconos diseñados por <a href="https://www.flaticon.es/autores/freepik"
