@@ -11,14 +11,14 @@ const Footer = () => {
       grid grid-cols-1 lg:grid-cols-3 divide-white
       p-2 md:p-4 " >
       <div className=" border-b-2 border-white p-2 lg:border-r-4 lg:p-4 lg:border-b-0">
-        <p className="text-white text-xl text-justify">
+        <p className="text-white text-xl text-center">
           Siguenos en redes sociales.
         </p>
         <div className="flex justify-center ">
           <IconYouTube />
 
         </div>
-        <div className="text-white text-sm text-justify">
+        <div className="text-white text-sm text-center">
           Iconos diseñados por <a href="https://www.flaticon.es/autores/freepik"
             title="Freepik">Freepik</a> from <a href="https://www.flaticon.es/"
               title="Flaticon"> www.flaticon.es</a>
