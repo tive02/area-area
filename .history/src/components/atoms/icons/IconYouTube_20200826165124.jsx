@@ -2,7 +2,7 @@ import React from 'react'
 import classnames from 'classnames'
 
 
-const IconYouTube = ({ link, margin }) => {
+const IconYouTube = ({ link }) => {
   return (
     <a href={link}
       className={classnames(`m-${margin}`)}

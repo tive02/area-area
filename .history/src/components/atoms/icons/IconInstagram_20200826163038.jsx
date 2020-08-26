@@ -1,12 +1,9 @@
 import React from 'react'
-import classnames from 'classnames'
 
-
-const IconYouTube = ({ link, margin }) => {
+const IconYouTube = ({ link }) => {
   return (
     <a href={link}
-      className={classnames(`m-${margin}`)}
-      target="_blank">
+      className="" target="_blank">
       <svg height="30pt" viewBox="0 0 512 512" width="30pt"
         xmlns="http://www.w3.org/2000/svg">
         <linearGradient id="a" gradientUnits="userSpaceOnUse" x1="42.966156268" x2="469.0337477"

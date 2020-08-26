@@ -1,10 +1,10 @@
 import React from 'react'
 import classnames from 'classnames'
 
-const IconLinkedin = ({ link, margin }) => {
+const IconLinkedin = ({ link }) => {
   return (
     <a href={link}
-      className={classnames(`m-${margin}`)}
+      className={classnames(`bg-green-400 flex md:p-4 border-gray-800 lg:bg-opacity-75`)}
       target="_blank" >
       <svg height="30pt" viewBox="0 0 512 512" width="30pt"
         xmlns="http://www.w3.org/2000/svg">

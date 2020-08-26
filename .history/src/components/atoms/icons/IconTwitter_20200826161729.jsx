@@ -1,11 +1,9 @@
 import React from 'react'
-import classnames from 'classnames'
 
-const IconTwitter = ({ link, margin }) => {
+const IconTwitter = ({ link }) => {
   return (
     <a href={link}
-      className={classnames(`m-${margin}`)}
-      target="_blank">
+      className="" >
       <svg height="30pt" viewBox="0 -77 512 512" width="30pt"
         xmlns="http://www.w3.org/2000/svg">
         <path d="m161.019531 416.605469c193.21875 0 298.878907-160.074219 298.878907-298.878907 

@@ -1,7 +1,6 @@
 import React from 'react'
 
-
-const Cards = ({ img, name, title, description, Twitter, Linkedin }) => {
+const Cards = ({ img, name, title, description, icon }) => {
   return (
     <div className="flex flex-col items-center justify-center bg-white p-4 shadow rounded-lg">
       <div
@@ -18,9 +17,11 @@ const Cards = ({ img, name, title, description, Twitter, Linkedin }) => {
       </p>
       <ul className="flex flex-row mt-4 space-x-2">
         <li>
-          <a href="" className="flex items-center justify-center h-8 w-8">
-            {Twitter}
-            {Linkedin}
+          <a href="" className="flex items-center justify-center h-8 w-8 border rounded-full
+          text-gray-800 border-gray-800">
+            <i className="">
+              {icon}
+            </i>
           </a>
         </li>
       </ul>

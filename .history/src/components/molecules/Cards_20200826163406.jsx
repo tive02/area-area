@@ -1,7 +1,7 @@
 import React from 'react'
 
 
-const Cards = ({ img, name, title, description, Twitter, Linkedin }) => {
+const Cards = ({ img, name, title, description, Twitter }) => {
   return (
     <div className="flex flex-col items-center justify-center bg-white p-4 shadow rounded-lg">
       <div
@@ -20,7 +20,6 @@ const Cards = ({ img, name, title, description, Twitter, Linkedin }) => {
         <li>
           <a href="" className="flex items-center justify-center h-8 w-8">
             {Twitter}
-            {Linkedin}
           </a>
         </li>
       </ul>

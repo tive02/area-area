@@ -1,11 +1,9 @@
 import React from 'react'
-import classnames from 'classnames'
 
-
-const IconYouTube = ({ link, margin }) => {
+const IconYouTube = ({ link }) => {
   return (
     <a href={link}
-      className={classnames(`m-${margin}`)}
+      className=""
       target="_blank">
       <svg height="30pt" viewBox="0 -77 512.00213 512" width="30pt"
         xmlns="http://www.w3.org/2000/svg">

@@ -20,9 +20,7 @@ export const Copywriters = () => (
         description="Soy estudiante de contaduria publica y administracion de empresas"
       />
       <Cards
-        Twitter= <IconTwitter
-        link="https://twitter.com/tives02"
-        margin="2"/>
+        Twitter= <IconTwitter link="https://twitter.com/tives02" />
 
         Linkedin= <IconLinkedin
         link="https://www.linkedin.com/in/jorge-steven-parra/"

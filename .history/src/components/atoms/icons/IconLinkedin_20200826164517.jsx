@@ -1,7 +1,7 @@
 import React from 'react'
 import classnames from 'classnames'
 
-const IconLinkedin = ({ link, margin }) => {
+const IconLinkedin = ({ link }) => {
   return (
     <a href={link}
       className={classnames(`m-${margin}`)}

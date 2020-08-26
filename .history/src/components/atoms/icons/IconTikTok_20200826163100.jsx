@@ -1,11 +1,9 @@
 import React from 'react'
-import classnames from 'classnames'
 
-
-const IconTikTok = ({ link, margin }) => {
+const IconTikTok = ({ link }) => {
   return (
     <a href={link}
-      className={classnames(`m-${margin}`)}
+      className=""
       target="_blank">
       <svg id="Capa_1" enable-background="new 0 0 512 512" height="30pt" viewBox="0 0 512 512" width="30pt"
         xmlns="http://www.w3.org/2000/svg"><g>
