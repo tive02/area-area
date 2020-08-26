@@ -4,7 +4,7 @@ import classnames from 'classnames'
 
 const Banner = ({ bgColor, title, subtitle }) => (
 
-  <div className={classnames(`bg-${bgColor} pb-4 flex-col flex-grow md:pb-4 border-gray-800`)}
+  <div className={classnames(`bg-${bgColor} pb-8 flex-col flex-grow md:pb-0 border-gray-800`)}
   >
     <h1 className="text-center text-5xl font-serif font-back pt-6 pb-0  md:text-6xl ">
       {title}

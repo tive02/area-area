@@ -6,6 +6,7 @@ import ButtonHamburguer from '../atoms/ButtonHamburguer';
 
 
 const Header = () => (
+
   <header>
     <div className="flex items-center justify-between flex-wrap bg-purple-700  p-6 border-gray-800" >
       <Logo />
@@ -25,6 +26,7 @@ const Header = () => (
           hoverColor="green-400"
           borderColor="green-400"
           label="Suscribete" />
+
       </div>
     </div>
   </header >
