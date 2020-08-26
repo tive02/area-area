@@ -14,7 +14,7 @@ const Banner = ({ title, subtitle }) => (
         alt="Imagen del Banner"
       />
     </div>
-    <div className="content-center w-full lg:w-1/2 pt-16 pb-8 lg:pt-20">
+    <div className="content-center w-full lg:w-1/2 pt-8 lg:pt-20">
       <h1 className="text-center text-5xl font-serif font-back pt-6 pb-0  md:text-6xl ">
         {title}
       </h1>

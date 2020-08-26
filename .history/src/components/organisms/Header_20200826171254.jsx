@@ -6,8 +6,8 @@ import ButtonHamburguer from '../atoms/ButtonHamburguer';
 
 
 const Header = () => (
-  <header className="fixed z-10 inset-x-0 top-0 w-full" >
-    <div className="flex items-center justify-between flex-wrap bg-purple-700  
+  <header className="relative w-full" >
+    <div className=" fixed flex items-center justify-between flex-wrap bg-purple-700  
     p-2 lg:p-6 border-gray-800" >
       <Logo />
       <ButtonHamburguer />
