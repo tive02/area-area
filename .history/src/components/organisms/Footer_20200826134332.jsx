@@ -1,11 +1,6 @@
 import React from 'react'
 import Logo from '../atoms/Logo'
 import IconYouTube from '../atoms/icons/IconYouTube'
-import IconInstagram from '../atoms/icons/IconInstagram'
-import IconLinkedin from '../atoms/icons/IconLinkedin'
-import IconSpotify from '../atoms/icons/IconSpotify'
-import IconTikTok from '../atoms/icons/IconTikTok'
-import IconTwitter from '../atoms/icons/IconTwitter'
 import Button from '../atoms/Button'
 
 
@@ -19,13 +14,11 @@ const Footer = () => {
         <p className="text-white text-xl text-justify">
           Siguenos en redes sociales.
         </p>
-        <div className="flex flex-auto items-baseline justify-between m-4">
+        <div className="flex justify-center ">
           <IconInstagram />
           <IconTikTok />
-          <IconYouTube />
           <IconSpotify />
-          <IconTwitter />
-          <IconLinkedin />
+          <IconYouTube />
 
         </div>
         <div className="text-white text-sm text-justify">

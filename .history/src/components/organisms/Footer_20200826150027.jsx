@@ -19,7 +19,7 @@ const Footer = () => {
         <p className="text-white text-xl text-justify">
           Siguenos en redes sociales.
         </p>
-        <div className="flex flex-auto items-baseline justify-between m-4">
+        <div className=" grid grid-cols-6 ">
           <IconInstagram />
           <IconTikTok />
           <IconYouTube />
