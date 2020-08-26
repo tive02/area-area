@@ -22,16 +22,11 @@ const Footer = () => {
         <div className="flex flex-auto items-baseline justify-between m-4">
           <IconInstagram
             link="#" />
-          <IconTikTok
-            link="#" />
-          <IconYouTube
-            link="#" />
-          <IconSpotify
-            link="#" />
-          <IconTwitter
-            link="#" />
-          <IconLinkedin
-            link="#" />
+          <IconTikTok />
+          <IconYouTube />
+          <IconSpotify />
+          <IconTwitter />
+          <IconLinkedin />
 
         </div>
         <div className="text-white text-sm text-justify">

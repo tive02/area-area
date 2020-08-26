@@ -15,7 +15,7 @@ const Logo = () => {
           10.8-10.8 0-12.15-8.1-17.55-9.45-3.6-.9-6.75.45-9.45 4.05z"
         />
       </svg>
-      <span className="text-center text-4xl lg:text-xl tracking-tight">De Área a Área</span>
+      <span className="text-xl tracking-tight">De Área a Área</span>
     </NavLink>
   )
 }
