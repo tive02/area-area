@@ -4,8 +4,7 @@ import Button from '../atoms/Button'
 
 const MenuMobile = () => {
   return (
-    <nav className="bg-purple-700 fixed inset-y-0 right-0 p-4 
-    transition duration-1000 ease-in-out">
+    <nav className="bg-purple-700 opacity-75 fixed inset-y-0 right-0 p-4">
       <div className="mt-16 ml-8">
         <Button
           bgColor="green-400"
