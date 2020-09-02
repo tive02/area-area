@@ -62,14 +62,14 @@ export const Copywriters = () => (
       />
       <Cards
         Instagram= <IconInstagram
-        link="https://www.instagram.com/karenciita__londono/?hl=es-la"
+        link="https://instagram.com/namona.4?igshid=8j99u9frxj6l"
         margin="2" />
 
         Facebook= <IconFacebook
-        link="https://www.facebook.com/karenviviana.londonogordillo.1/"
+        link="https://www.facebook.com/natalia.morenonavarro.9"
         margin="2" />
 
-        img="https://scontent-bog1-1.xx.fbcdn.net/v/t1.0-9/69773273_2414230815524464_2977807298556067840_o.jpg?_nc_cat=106&_nc_sid=8bfeb9&_nc_eui2=AeHBv7jPIAUrCsaur0DvzvYBAats36DbzEYBq2zfoNvMRn0_iQrHvW4Rjk2HNZUqsBHS2fIA0RZj2di4XgeBQTcd&_nc_ohc=xub51maNUyMAX8HrlK8&_nc_ht=scontent-bog1-1.xx&oh=b8391edb066a32a1994fe3acbd4a2206&oe=5F72A873"
+        img="https://scontent.fbog2-1.fna.fbcdn.net/v/t1.0-9/92800396_1521927927971929_5894266323638157312_o.jpg?_nc_cat=100&_nc_sid=09cbfe&_nc_ohc=asEf2dN6vT4AX8DQsrJ&_nc_ht=scontent.fbog2-1.fna&oh=ff0d8421110591c0d74ebf59f398f750&oe=5F7350BB"
         name="Karen Londoño"
         title="Co-funder"
         description="Soy estudiante de Economia"
