@@ -11,7 +11,7 @@ import IconFacebook from '../atoms/icons/IconFacebook'
 export const Copywriters = () => (
   <>
     <Banner
-
+      bgColor="blue-400"
       title="Conoce nuestro equipo"
       subtitle="Dale click a cada uno y conoce mas acerca de ellos"
       img="https://scontent-bog1-1.xx.fbcdn.net/v/t1.0-9/118010825_10160133396276102_4404504646712132106_n.jpg?_nc_cat=101&_nc_sid=09cbfe&_nc_ohc=kJe-bOWuArsAX9oTHBn&_nc_ht=scontent-bog1-1.xx&oh=41dd3bd158c1e411ba2088d150f0b87f&oe=5F72ED1A"
@@ -41,7 +41,7 @@ export const Copywriters = () => (
         link="https://instagram.com/lala_lopez3?igshid=1bmw1mdn6ukcp"
         margin="2" />
 
-        img="https://www.instagram.com/p/B9b_2Han51P/?igshid=1lo18kd1wza2l"
+        img="https://photos.google.com/share/AF1QipNl3FsRcylfVDpUWxjtwBu6g3K58VTxleGDCsH7EGM5xz5sjUyFJ6CPlGYmiVHp7w/photo/AF1QipN2xlQXJ_c2IR9iWJ3WtR64A43QeRFgk3oCFLaF?key=eFlMRXIzYWc5akYwYUJfU09CNlJLb1hvWmJhM1RR"
         name="lala lopez"
         title="Co-funder"
         description="Soy estudiante de contaduria publica y administracion de empresas"
@@ -51,8 +51,8 @@ export const Copywriters = () => (
         link="https://instagram.com/namona.4?igshid=8j99u9frxj6l"
         margin="2" />
 
-        Facebook= <IconFacebook
-        link="https://www.facebook.com/natalia.morenonavarro.9"
+Facebook= <IconFacebook
+        link="https://www.facebook.com/rafa.roman.90"
         margin="2" />
 
         img="https://scontent.fbog2-1.fna.fbcdn.net/v/t1.0-9/92800396_1521927927971929_5894266323638157312_o.jpg?_nc_cat=100&_nc_sid=09cbfe&_nc_ohc=asEf2dN6vT4AX8DQsrJ&_nc_ht=scontent.fbog2-1.fna&oh=ff0d8421110591c0d74ebf59f398f750&oe=5F7350BB"

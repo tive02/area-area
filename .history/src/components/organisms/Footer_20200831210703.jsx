@@ -25,7 +25,7 @@ const Footer = () => {
           <IconTikTok
             link="https://vm.tiktok.com/ZSPFA7VT/" />
           <IconYouTube
-            link="https://www.youtube.com/channel/UCxQwfFTrLSWq5wQj9dBsGdA/playlists?view_as=subscriber" />
+            link="#" />
           <IconSpotify
             link="#" />
           <IconTwitter

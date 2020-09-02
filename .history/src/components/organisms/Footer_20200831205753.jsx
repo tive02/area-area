@@ -23,9 +23,9 @@ const Footer = () => {
           <IconInstagram
             link="https://www.instagram.com/de_area_/?hl=es" />
           <IconTikTok
-            link="https://vm.tiktok.com/ZSPFA7VT/" />
+            link="#" />
           <IconYouTube
-            link="https://www.youtube.com/channel/UCxQwfFTrLSWq5wQj9dBsGdA/playlists?view_as=subscriber" />
+            link="#" />
           <IconSpotify
             link="#" />
           <IconTwitter

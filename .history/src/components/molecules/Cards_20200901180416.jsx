@@ -18,13 +18,13 @@ const Cards = ({ img, name, title, description, Twitter, Linkedin, Instagram, Ti
       </p>
       <ul className="flex flex-row mt-4 space-x-2">
         <li>
-          <button className="flex items-center justify-center h-8 w-8">
+          <a href="#" className="flex items-center justify-center h-8 w-8">
             {Twitter}
             {Linkedin}
             {Instagram}
             {TikTok}
             {Facebook}
-          </button>
+          </a>
         </li>
       </ul>
     </div>
