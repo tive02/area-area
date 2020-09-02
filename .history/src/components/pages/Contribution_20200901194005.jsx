@@ -10,7 +10,6 @@ const Contribution = () => (
     Description=""
   />
 
-
 )
 
 export default Contribution;

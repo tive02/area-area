@@ -4,12 +4,10 @@ import Banner from '../organisms/Banner'
 
 const Contribution = () => (
   <Banner
+    bgColor="yellow-400"
     title="¿Quieres contribuir al proyecto?"
     subtitle="Existen muchas formas de hacerlo"
-    img=""
-    Description=""
   />
-
 
 )
 
