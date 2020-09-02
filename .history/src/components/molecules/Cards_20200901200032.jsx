@@ -16,7 +16,7 @@ const Cards = ({ img, name, title, description, Twitter, Linkedin, Instagram, Ti
       <p className="font-sans text-xs text-gray-500 text-center mt-3">
         {description}
       </p>
-      <ul className="flex flex-row mt-2 lg:mt-4 space-x-2">
+      <ul className="flex flex-row mt-0 lg:mt-4 space-x-2">
         <li>
           <button className="flex items-center justify-center h-8 w-8">
             {Twitter}
