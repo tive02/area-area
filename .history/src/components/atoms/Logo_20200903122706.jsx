@@ -4,7 +4,7 @@ import { NavLink } from 'react-router-dom';
 
 const Logo = () => {
   return (
-    <NavLink exact to="/" className="flex md:grid md:grid-cols-1 gap-0 text-white ">
+    <NavLink exact to="/" className="md:grid md:grid-cols-1 gap-0 text-white ">
       <div className="md:flex md:justify-center">
         <img
           className="rounded-full h-16 w-16 lg:h-16 lg:w-16 "
