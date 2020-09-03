@@ -28,7 +28,7 @@ export const Copywriters = () => (
 
         img="https://scontent.fbog2-2.fna.fbcdn.net/v/t1.0-9/101305146_10159839709056102_5671161451423727616_n.jpg?_nc_cat=107&_nc_sid=174925&_nc_ohc=tgW1FuUU3AYAX8eWakn&_nc_ht=scontent.fbog2-2.fna&oh=3571c83ca3961df59a1ed73d05a6fb62&oe=5F72FD96"
         name="Rafa Roman"
-        title="Co-founder"
+        title="Co-funder"
         description="Soy Rafael Román entrenador deportivo y administrador de empresas, amante fiel del fútbol ... Que busca a través de la práctica cambiar vidas y darle la visibilidad que necesita la mujer"
       />
 
@@ -43,7 +43,7 @@ export const Copywriters = () => (
 
         img="https://scontent.fbga3-1.fna.fbcdn.net/v/t1.0-9/95589260_3249111905108634_1872009221638193152_o.jpg?_nc_cat=103&_nc_sid=09cbfe&_nc_ohc=HbMAtjmOH88AX-JsxHr&_nc_ht=scontent.fbga3-1.fna&oh=0b3599c4320e5b3542d38c49d4456a71&oe=5F76205C"
         name="lala lopez"
-        title="Co-founder"
+        title="Co-funder"
         description="Santandereana y amor infinito al Bucaramanga y actualmente estudiante de Contaduría Pública de la Universidad Nacional de Colombia"
       />
       <Cards
@@ -57,8 +57,8 @@ export const Copywriters = () => (
 
         img="https://scontent.fbog2-1.fna.fbcdn.net/v/t1.0-9/92800396_1521927927971929_5894266323638157312_o.jpg?_nc_cat=100&_nc_sid=09cbfe&_nc_ohc=asEf2dN6vT4AX8DQsrJ&_nc_ht=scontent.fbog2-1.fna&oh=ff0d8421110591c0d74ebf59f398f750&oe=5F7350BB"
         name="Nata Moreno"
-        title="Co-founder"
-        description="Mis pasiones en la vida el fútbol y la música y soy estudiante de Contaduría Pública."
+        title="Co-funder"
+        description="Soy estudiante de contaduria publica y administracion de empresas"
       />
       <Cards
         Instagram= <IconInstagram
@@ -71,8 +71,8 @@ export const Copywriters = () => (
 
         img="https://scontent-bog1-1.xx.fbcdn.net/v/t1.0-9/69773273_2414230815524464_2977807298556067840_o.jpg?_nc_cat=106&_nc_sid=8bfeb9&_nc_eui2=AeHBv7jPIAUrCsaur0DvzvYBAats36DbzEYBq2zfoNvMRn0_iQrHvW4Rjk2HNZUqsBHS2fIA0RZj2di4XgeBQTcd&_nc_ohc=xub51maNUyMAX8HrlK8&_nc_ht=scontent-bog1-1.xx&oh=b8391edb066a32a1994fe3acbd4a2206&oe=5F72A873"
         name="Karen Londoño"
-        title="Co-founder"
-        description="Si de fútbol se trata, no hay fronteras para mí, seguiré el balón hasta dónde este me lleve. Economista apasionada por el increíble mundo del fútbol."
+        title="Co-funder"
+        description="Soy estudiante de Economia"
       />
       <Cards
         Instagram= <IconInstagram
@@ -85,7 +85,7 @@ export const Copywriters = () => (
 
         img="https://scontent.fbog2-2.fna.fbcdn.net/v/t1.0-9/117626045_10222736813226908_1764311527785625511_o.jpg?_nc_cat=103&_nc_sid=09cbfe&_nc_ohc=1okCFjYT3lgAX8o4So1&_nc_ht=scontent.fbog2-2.fna&oh=55bc55602d3a625cb2dcf65423b8f19b&oe=5F76F08E"
         name="Liz Lopez"
-        title="Co-founder"
+        title="Co-funder"
         description="Soy Liz, tengo un cuarto de siglo y estoy atrasada con la tarea. Administración de empresas  y en proyecto de administración deportiva. Fiel creyente de la gente buena."
       />
       <Cards
@@ -99,8 +99,8 @@ export const Copywriters = () => (
 
         img="https://media-exp1.licdn.com/dms/image/C4D03AQF00yWQs5GKug/profile-displayphoto-shrink_200_200/0?e=1603929600&v=beta&t=0PX7XMBN_ivW9WiWtEGSL5iutcMY_iJ1r4bsySPb_M8"
         name="Steven Moreno"
-        title="Co-founder"
-        description="Amante del fútbol y de la web, desarrollador junior y estudiante de contaduria pública y administración de empresas"
+        title="Co-funder"
+        description="Soy estudiante de contaduria publica y administracion de empresas"
       />
     </div>
   </>
