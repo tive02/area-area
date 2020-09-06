@@ -1,4 +1,3 @@
-import Link from 'next/link'
 import Header from '../../components/organisms/Header'
 import Banner from '../../components/organisms/Banner'
 import Footer from '../../components/organisms/Footer'
@@ -20,24 +19,22 @@ export default function About() {
         img="https://scontent-bog1-1.xx.fbcdn.net/v/t1.0-9/118010825_10160133396276102_4404504646712132106_n.jpg?_nc_cat=101&_nc_sid=09cbfe&_nc_ohc=kJe-bOWuArsAX9oTHBn&_nc_ht=scontent-bog1-1.xx&oh=41dd3bd158c1e411ba2088d150f0b87f&oe=5F72ED1A"
       />
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 container p-8">
-        <Link href="/team/RafaRoman">
-          <Cards
-            Instagram= <IconInstagram
-          link="https://www.instagram.com/rafaromaan/?hl=es"
-          margin="2"/>
+        <Cards
+          Instagram= <IconInstagram
+        link="https://www.instagram.com/rafaromaan/?hl=es"
+        margin="2"/>
 
         Facebook= <IconFacebook
-            link="https://www.facebook.com/rafa.roman.90"
-            margin="2" />
+          link="https://www.facebook.com/rafa.roman.90"
+          margin="2" />
 
         img="https://scontent.fbog2-2.fna.fbcdn.net/v/t1.0-9/101305146_10159839709056102_5671161451423727616_n.jpg?_nc_cat=107&_nc_sid=174925&_nc_ohc=tgW1FuUU3AYAX8eWakn&_nc_ht=scontent.fbog2-2.fna&oh=3571c83ca3961df59a1ed73d05a6fb62&oe=5F72FD96"
         name="Rafa Roman"
         title="Co-founder"
         description="Soy Rafael Román entrenador deportivo y administrador de empresas, amante fiel del fútbol ... Que busca a través de la práctica cambiar vidas y darle la visibilidad que necesita la mujer"
       />
-          </Link>
 
-        <Cards
+      <Cards
           TikTok= <IconTikTok
         link="https://vm.tiktok.com/ZSPLXWp6/"
         margin="2"/>
