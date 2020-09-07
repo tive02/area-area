@@ -20,7 +20,7 @@ const Header = () => (
           hoverColor="green-400"
           label="Ingresa" />
         <Button
-          bgColor="green-400"
+          bgColor="purple-700"
           hoverColor="green-400"
           label="Suscribete" />
       </div>

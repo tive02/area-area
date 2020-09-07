@@ -16,7 +16,7 @@ const Header = () => (
       </nav>
       <div className="flex-col flex-grow pb-4 lg:pb-0 hidden lg:flex lg:justify-end lg:flex-row" >
         <Button
-          bgColor="green-400"
+          bgColor="purple-500"
           hoverColor="green-400"
           label="Ingresa" />
         <Button
