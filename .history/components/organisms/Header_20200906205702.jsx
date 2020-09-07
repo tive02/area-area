@@ -19,10 +19,12 @@ const Header = () => (
         <Button
           bgColor="green-400"
           hoverColor="green-400"
+
           label="Ingresa" />
         <Button
           bgColor="green-400"
           hoverColor="green-400"
+          borderColor="green-400"
           label="Suscribete" />
       </div>
     </div>
