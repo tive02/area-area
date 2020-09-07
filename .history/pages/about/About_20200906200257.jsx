@@ -14,12 +14,14 @@ export default function About() {
     <div>
       <Header />
       <Banner
+
         title="Conoce nuestro equipo"
         subtitle="Dale click a cada uno y conoce mas acerca de ellos"
         img="https://scontent-bog1-1.xx.fbcdn.net/v/t1.0-9/118010825_10160133396276102_4404504646712132106_n.jpg?_nc_cat=101&_nc_sid=09cbfe&_nc_ohc=kJe-bOWuArsAX9oTHBn&_nc_ht=scontent-bog1-1.xx&oh=41dd3bd158c1e411ba2088d150f0b87f&oe=5F72ED1A"
       />
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 container p-8">
         <Link href="team/RafaRoman">
+
           <section>
             <Cards
               img="https://scontent.fbog2-2.fna.fbcdn.net/v/t1.0-9/101305146_10159839709056102_5671161451423727616_n.jpg?_nc_cat=107&_nc_sid=174925&_nc_ohc=tgW1FuUU3AYAX8eWakn&_nc_ht=scontent.fbog2-2.fna&oh=3571c83ca3961df59a1ed73d05a6fb62&oe=5F72FD96"
@@ -54,16 +56,16 @@ export default function About() {
               name="Nata Moreno"
               title="Co-founder"
               description="Mis pasiones en la vida el fútbol y la música y soy estudiante de Contaduría Pública."
+            />
               Instagram= <IconInstagram
               link="https://instagram.com/namona.4?igshid=8j99u9frxj6l"
               margin="2" />
               Facebook= <IconFacebook
               link="https://www.facebook.com/natalia.morenonavarro.9"
               margin="2" />
-              />
           </section>
         </Link>
-        <Link href="team/KarenLondono">
+        <Link href="team/KarenLondoño">
           <section>
             <Cards
               img="https://scontent-bog1-1.xx.fbcdn.net/v/t1.0-9/69773273_2414230815524464_2977807298556067840_o.jpg?_nc_cat=106&_nc_sid=8bfeb9&_nc_eui2=AeHBv7jPIAUrCsaur0DvzvYBAats36DbzEYBq2zfoNvMRn0_iQrHvW4Rjk2HNZUqsBHS2fIA0RZj2di4XgeBQTcd&_nc_ohc=xub51maNUyMAX8HrlK8&_nc_ht=scontent-bog1-1.xx&oh=b8391edb066a32a1994fe3acbd4a2206&oe=5F72A873"
@@ -73,10 +75,11 @@ export default function About() {
               Instagram= <IconInstagram
               link="https://www.instagram.com/karenciita__londono/?hl=es-la"
               margin="2" />
-              Facebook= <IconFacebook
+               Facebook= <IconFacebook
               link="https://www.facebook.com/karenviviana.londonogordillo.1/"
-              margin="2" />/>
-          </section>
+              margin="2" />
+      />
+      </section>
         </Link>
         <Link href="team/LizLopez">
           <section>
