@@ -87,17 +87,15 @@ export default function About() {
               />
             </section>
           </Link>
-          <SocialNetworks
-            Twitter= <IconTwitter
+              Twitter= <IconTwitter
             link="https://twitter.com/tives02"
             margin="2" />
               Linkedin= <IconLinkedin
             link="https://www.linkedin.com/in/jorge-steven-parra/"
             margin="2" />
-            />
-            </article>
+            
       </div>
-      <Footer />
-    </div >
+        <Footer />
+      </div >
   )
 }

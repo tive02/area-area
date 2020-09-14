@@ -56,48 +56,43 @@ export default function About() {
               Instagram= <IconInstagram link="https://instagram.com/lala_lopez3?igshid=1bmw1mdn6ukcp" margin="2" />
        />
        </article>
-        <article className="flex flex-col items-center justify-center bg-white p-4 shadow rounded-lg">
-          <Link href="team/NataliaMoreno">
-            <section>
-              <Cards
-                img="https://scontent.fbog2-1.fna.fbcdn.net/v/t1.0-9/92800396_1521927927971929_5894266323638157312_o.jpg?_nc_cat=100&_nc_sid=09cbfe&_nc_ohc=asEf2dN6vT4AX8DQsrJ&_nc_ht=scontent.fbog2-1.fna&oh=ff0d8421110591c0d74ebf59f398f750&oe=5F7350BB"
-                name="Nata Moreno"
-                title="Co-founder"
-                description="Mis pasiones en la vida el fútbol y la música y soy estudiante de Contaduría Pública."
-              />
-            </section>
-          </Link>
-          <SocialNetworks
-            Instagram= <IconInstagram
+        <article className="flex flex-col items-center justify-center bg-white p-4 shadow rounded-lg"></article>
+        <Link href="team/NataliaMoreno">
+          <section>
+            <Cards
+              img="https://scontent.fbog2-1.fna.fbcdn.net/v/t1.0-9/92800396_1521927927971929_5894266323638157312_o.jpg?_nc_cat=100&_nc_sid=09cbfe&_nc_ohc=asEf2dN6vT4AX8DQsrJ&_nc_ht=scontent.fbog2-1.fna&oh=ff0d8421110591c0d74ebf59f398f750&oe=5F7350BB"
+              name="Nata Moreno"
+              title="Co-founder"
+              description="Mis pasiones en la vida el fútbol y la música y soy estudiante de Contaduría Pública."
+            />
+          </section>
+        </Link>
+        <SocialNetworks
+          Instagram= <IconInstagram
               link="https://instagram.com/namona.4?igshid=8j99u9frxj6l"
-              margin="2" />
+              margin="2"
               Facebook= <IconFacebook
-            link="https://www.facebook.com/natalia.morenonavarro.9"
-            margin="2" />
-          />
-        </article>
-        <article className="flex flex-col items-center justify-center bg-white p-4 shadow rounded-lg">
-          <Link href="team/StevenParra">
-            <section>
-              <Cards
-                img="https://media-exp1.licdn.com/dms/image/C4D03AQF00yWQs5GKug/profile-displayphoto-shrink_200_200/0?e=1603929600&v=beta&t=0PX7XMBN_ivW9WiWtEGSL5iutcMY_iJ1r4bsySPb_M8"
-                name="Steven Moreno"
-                title="Co-founder"
-                description="Amante del fútbol y de la web, desarrollador junior y estudiante de contaduria pública y administración de empresas"
-              />
-            </section>
-          </Link>
-          <SocialNetworks
+          link="https://www.facebook.com/natalia.morenonavarro.9"
+          margin="2" />
+                </article>
+      <Link href="team/StevenParra">
+        <section>
+          <Cards
+            img="https://media-exp1.licdn.com/dms/image/C4D03AQF00yWQs5GKug/profile-displayphoto-shrink_200_200/0?e=1603929600&v=beta&t=0PX7XMBN_ivW9WiWtEGSL5iutcMY_iJ1r4bsySPb_M8"
+            name="Steven Moreno"
+            title="Co-founder"
+            description="Amante del fútbol y de la web, desarrollador junior y estudiante de contaduria pública y administración de empresas"
             Twitter= <IconTwitter
-            link="https://twitter.com/tives02"
-            margin="2" />
+              link="https://twitter.com/tives02"
+              margin="2"/>
               Linkedin= <IconLinkedin
             link="https://www.linkedin.com/in/jorge-steven-parra/"
             margin="2" />
             />
-            </article>
-      </div>
-      <Footer />
+      </section>
+      </Link>
+    </div>
+    <Footer />
     </div >
   )
 }

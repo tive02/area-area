@@ -3,9 +3,9 @@ const { default: SocialNetworks } = require("./ SocialNetworks")
 const Cards = ({ img, name, title, description }) => {
   return (
     <div >
-      <div className="grid justify-items-center">
+      <div className="">
         <img
-          className="rounded-full overflow-hidden h-40 w-40"
+          className="bg-blue-500 justify-center rounded-full overflow-hidden h-40 w-40"
           src={img}
           alt="" />
       </div>

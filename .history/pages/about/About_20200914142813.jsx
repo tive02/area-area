@@ -76,26 +76,22 @@ export default function About() {
             margin="2" />
           />
         </article>
-        <article className="flex flex-col items-center justify-center bg-white p-4 shadow rounded-lg">
-          <Link href="team/StevenParra">
-            <section>
-              <Cards
-                img="https://media-exp1.licdn.com/dms/image/C4D03AQF00yWQs5GKug/profile-displayphoto-shrink_200_200/0?e=1603929600&v=beta&t=0PX7XMBN_ivW9WiWtEGSL5iutcMY_iJ1r4bsySPb_M8"
-                name="Steven Moreno"
-                title="Co-founder"
-                description="Amante del fútbol y de la web, desarrollador junior y estudiante de contaduria pública y administración de empresas"
-              />
-            </section>
-          </Link>
-          <SocialNetworks
-            Twitter= <IconTwitter
-            link="https://twitter.com/tives02"
-            margin="2" />
+        <Link href="team/StevenParra">
+          <section>
+            <Cards
+              img="https://media-exp1.licdn.com/dms/image/C4D03AQF00yWQs5GKug/profile-displayphoto-shrink_200_200/0?e=1603929600&v=beta&t=0PX7XMBN_ivW9WiWtEGSL5iutcMY_iJ1r4bsySPb_M8"
+              name="Steven Moreno"
+              title="Co-founder"
+              description="Amante del fútbol y de la web, desarrollador junior y estudiante de contaduria pública y administración de empresas"
+              Twitter= <IconTwitter
+              link="https://twitter.com/tives02"
+              margin="2"/>
               Linkedin= <IconLinkedin
-            link="https://www.linkedin.com/in/jorge-steven-parra/"
-            margin="2" />
+              link="https://www.linkedin.com/in/jorge-steven-parra/"
+              margin="2" />
             />
-            </article>
+      </section>
+        </Link>
       </div>
       <Footer />
     </div >
