@@ -63,6 +63,7 @@ export default function About() {
               />
           </section>
         </Link>
+
         <Link href="team/StevenParra">
           <section>
             <Cards

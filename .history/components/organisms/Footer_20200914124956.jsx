@@ -13,10 +13,11 @@ const Footer = () => {
   return (
     <footer
       className="border-current border-2 bg-gray-700 
-      grid grid-cols-1 lg:grid-cols-3 divide-white" >
+      grid grid-cols-1 lg:grid-cols-3 divide-white
+      p-2 md:p-4 " >
       <div className=" border-b-2 border-white p-2 lg:border-r-4 lg:p-4 lg:border-b-0">
         <p className="text-white text-xl text-justify">
-          Síguenos en redes sociales.
+          Siguenos en redes sociales.
         </p>
         <div className="flex flex-auto items-baseline justify-between m-4">
           <IconInstagram
@@ -58,7 +59,9 @@ const Footer = () => {
         </p>
         <span className="pt-4 text-white text-xs break-words text-justify">
           Todos los derechos reservados © 2020 | De Área a Área</span>
+
       </div>
+
     </footer>
   )
 }

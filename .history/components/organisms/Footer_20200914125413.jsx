@@ -58,7 +58,9 @@ const Footer = () => {
         </p>
         <span className="pt-4 text-white text-xs break-words text-justify">
           Todos los derechos reservados © 2020 | De Área a Área</span>
+
       </div>
+
     </footer>
   )
 }
