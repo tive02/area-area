@@ -1,4 +1,3 @@
-import React from 'react'
 import Logo from '../atoms/Logo'
 import IconYouTube from '../atoms/icons/IconYouTube'
 import IconInstagram from '../atoms/icons/IconInstagram'
