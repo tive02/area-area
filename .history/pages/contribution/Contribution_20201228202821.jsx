@@ -17,7 +17,7 @@ export default function Contribution() {
       <main >
         <article>
           <section>
-            <p> Amamos los comentarios y las reacciones de nuestra Comunidad, por eso Hablanos acerca de lo que te
+            <p> Amamos los comentarios y als reacciones de nuestra Comunidad, por eso Hablanos acerca de lo que te
                   gusta tus pasiones, en fin acerca de tí</p>
             <Button label="Escribenos"
               bgColor="purple-600"

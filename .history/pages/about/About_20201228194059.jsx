@@ -39,8 +39,6 @@ export default function About() {
             link="https://www.facebook.com/rafa.roman.90"
             margin="2" />
               />
-          </article>
-        <article className="flex flex-col items-center justify-center bg-white p-4 shadow rounded-lg">
           <Link href="team/LauraLopez" >
             <section>
               <Cards
@@ -55,8 +53,6 @@ export default function About() {
             TikTok= <IconTikTok link="https://vm.tiktok.com/ZSPLXWp6/" margin="2"/>
               Instagram= <IconInstagram link="https://instagram.com/lala_lopez3?igshid=1bmw1mdn6ukcp" margin="2" />
        />
-       </article>
-        <article className="flex flex-col items-center justify-center bg-white p-4 shadow rounded-lg">
           <Link href="team/NataliaMoreno">
             <section>
               <Cards
@@ -75,8 +71,6 @@ export default function About() {
             link="https://www.facebook.com/natalia.morenonavarro.9"
             margin="2" />
           />
-        </article>
-        <article className="flex flex-col items-center justify-center bg-white p-4 shadow rounded-lg">
           <Link href="team/StevenParra">
             <section>
               <Cards

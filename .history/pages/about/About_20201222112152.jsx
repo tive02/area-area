@@ -19,7 +19,7 @@ export default function About() {
         subtitle="Dale click a cada uno y conoce mas acerca de ellos"
         img="https://scontent-bog1-1.xx.fbcdn.net/v/t1.0-9/118010825_10160133396276102_4404504646712132106_n.jpg?_nc_cat=101&_nc_sid=09cbfe&_nc_ohc=kJe-bOWuArsAX9oTHBn&_nc_ht=scontent-bog1-1.xx&oh=41dd3bd158c1e411ba2088d150f0b87f&oe=5F72ED1A"
       />
-      <main className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 container p-8">
+      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 container p-8">
         <article className="flex flex-col items-center justify-center bg-white p-4 shadow rounded-lg">
           <Link href="team/RafaRoman">
             <section>
@@ -96,7 +96,7 @@ export default function About() {
             margin="2" />
             />
             </article>
-      </main>
+      </div>
       <Footer />
     </div >
   )
