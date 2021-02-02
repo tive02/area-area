@@ -26,10 +26,6 @@ export default function About() {
             <section>
               <Cards
                 round="full"
-                h="40"
-                w="40"
-                alignText="center"
-                alignTextSubtitle="center"
                 img="https://scontent.fbog2-2.fna.fbcdn.net/v/t1.0-9/101305146_10159839709056102_5671161451423727616_n.jpg?_nc_cat=107&_nc_sid=174925&_nc_ohc=tgW1FuUU3AYAX8eWakn&_nc_ht=scontent.fbog2-2.fna&oh=3571c83ca3961df59a1ed73d05a6fb62&oe=5F72FD96"
                 title="Rafa Roman"
                 subtitle="Co-founder"
@@ -51,10 +47,6 @@ export default function About() {
             <section>
               <Cards
                 round="full"
-                h="40"
-                w="40"
-                alignText="center"
-                alignTextSubtitle="center"
                 img="https://www.instagram.com/p/B9b_2Han51P/?utm_source=ig_web_copy_link"
                 title="lala lopez"
                 subtitle="Co-founder"
@@ -65,17 +57,13 @@ export default function About() {
           <SocialNetworks
             TikTok= <IconTikTok link="https://vm.tiktok.com/ZSPLXWp6/" margin="2"/>
               Instagram= <IconInstagram link="https://instagram.com/lala_lopez3?igshid=1bmw1mdn6ukcp" margin="2" />
-      />
-      </article>
+       />
+       </article>
         <article className="flex flex-col items-center justify-center bg-white p-4 shadow rounded-lg">
           <Link href="team/NataliaMoreno">
             <section>
               <Cards
                 round="full"
-                h="40"
-                w="40"
-                alignText="center"
-                alignTextSubtitle="center"
                 img="https://scontent.fbog2-1.fna.fbcdn.net/v/t1.0-9/92800396_1521927927971929_5894266323638157312_o.jpg?_nc_cat=100&_nc_sid=09cbfe&_nc_ohc=asEf2dN6vT4AX8DQsrJ&_nc_ht=scontent.fbog2-1.fna&oh=ff0d8421110591c0d74ebf59f398f750&oe=5F7350BB"
                 title="Nata Moreno"
                 subtitle="Co-founder"
@@ -97,10 +85,6 @@ export default function About() {
             <section>
               <Cards
                 round="full"
-                h="40"
-                w="40"
-                alignText="center"
-                alignTextSubtitle="center"
                 img="https://pbs.twimg.com/profile_images/1282554706095681536/drB2au6Q_400x400.jpg"
                 title="Steven Moreno"
                 subtitle="Co-founder"

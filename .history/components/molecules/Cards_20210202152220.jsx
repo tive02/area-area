@@ -6,11 +6,11 @@ const Cards = ({
   //Este son las variables que comparte envarios CSS del texto .
   alignText,
   //Estas son las variables CSS de la etiqueta <h2>
-
+  mtTitle,
   //Estas son las variables CSS de la etiqueta <h6>
-  alignTextSubtitle,
+  alignTextSubtitle, mtSubTitle,
   //Estas son las variables CSS de la etiqueta <p> 
-
+  mtDescription,
   //Este son las variables que remplazan el contenido      
   img, title, subtitle, description }) => {
   return (
@@ -21,11 +21,11 @@ const Cards = ({
           src={img}
           alt="" />
       </div>
-      <h2 className={classnames(`font-serif font-bold text-xl text-${alignText}`)}>
+      <h2 className={classnames(`font-serif mt-${mtTitle} font-bold text-xl text-${alignText}`)}>
         {title}</h2>
-      <h6 className={classnames(`font-sans text-sm font-medium text-${alignTextSubtitle}`)}>
+      <h6 className={classnames(`font-sans mt-${mtSubTitle} text-sm font-medium text-${alignTextSubtitle}`)}>
         {subtitle}</h6>
-      <p className={classnames(`font-sans text-xs text-gray-500 text-${alignText} `)}>
+      <p className={classnames(`font-sans mt-${mtDescription} text-xs text-gray-500 text-${alignText} `)}>
         {description}
       </p>
     </div>

@@ -11,8 +11,8 @@ export default function IndexPage() {
       <Header />
       <main >
         <Banner
-          title="Último Episodio"
-          subtitle="Podcast Flash Liga Betplay Femenina Fecha 2"
+          title="Podcast Flash Liga Betplay Femenina Fecha 2"
+          subtitle="Resumen y opiniones de los goles y las mejores jugadas de la Liga Betplay Femenina Fecha 2. Análisis de todos los partidos."
           img="https://images.pexels.com/photos/46798/the-ball-stadion-football-the-pitch-46798.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
           Description=""
         />

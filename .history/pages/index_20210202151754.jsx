@@ -11,9 +11,9 @@ export default function IndexPage() {
       <Header />
       <main >
         <Banner
-          title="Último Episodio"
-          subtitle="Podcast Flash Liga Betplay Femenina Fecha 2"
-          img="https://images.pexels.com/photos/46798/the-ball-stadion-football-the-pitch-46798.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+          title="Ultimo articulo"
+          subtitle="Descripción"
+          img=""
           Description=""
         />
         <div className="flex flex-col-3">

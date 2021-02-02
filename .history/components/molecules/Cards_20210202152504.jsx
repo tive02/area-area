@@ -6,11 +6,11 @@ const Cards = ({
   //Este son las variables que comparte envarios CSS del texto .
   alignText,
   //Estas son las variables CSS de la etiqueta <h2>
-
+  mtTitle,
   //Estas son las variables CSS de la etiqueta <h6>
-  alignTextSubtitle,
+  alignTextSubtitle, mtSubTitle,
   //Estas son las variables CSS de la etiqueta <p> 
-
+  ,
   //Este son las variables que remplazan el contenido      
   img, title, subtitle, description }) => {
   return (
