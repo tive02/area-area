@@ -11,13 +11,12 @@ export default function IndexPage() {
       <Header />
       <main >
         <Banner
-          title="Escucha nuestro ultimo episodio"
+          title="Último Episodio"
           subtitle="Podcast Flash Liga Betplay Femenina Fecha 2"
           img="https://images.pexels.com/photos/46798/the-ball-stadion-football-the-pitch-46798.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
           Description=""
         />
-
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 sm:m-8 md:m-2">
+        <div className="grid sm:grid-col-1 md:grid-col-2 grid-col-3">
           <article className="flex flex-col items-center justify-center bg-white p-4">
             <section>
               <Cards

@@ -10,14 +10,15 @@ export default function IndexPage() {
     <>
       <Header />
       <main >
-        <Banner
-          title="Escucha nuestro ultimo episodio"
-          subtitle="Podcast Flash Liga Betplay Femenina Fecha 2"
-          img="https://images.pexels.com/photos/46798/the-ball-stadion-football-the-pitch-46798.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
-          Description=""
-        />
-
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 sm:m-8 md:m-2">
+        <div className="hidden md:block">
+          <Banner
+            title="Lo ultimo"
+            subtitle="Podcast Flash Liga Betplay Femenina Fecha 2"
+            img="https://images.pexels.com/photos/46798/the-ball-stadion-football-the-pitch-46798.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+            Description=""
+          />
+        </div>
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 sm:p-2 md:p-0">
           <article className="flex flex-col items-center justify-center bg-white p-4">
             <section>
               <Cards
