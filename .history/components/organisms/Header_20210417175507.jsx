@@ -10,20 +10,20 @@ const Header = () => (
     className="
   w-full
   bg-purple-700 
-  flex 
-  items-center
+  flex items-center
   justify-between
   border-gray-800
-  absolute inset-x-0 top-0 
+  absolute inset-x-0 top-0 flex items-center justify-between 
+  
 
     ">
-    <div className=" w-2/4 flex justify-center md:w-2/6 ">
+    <div className=" bg-red-500 w-2/4 flex justify-center md:w-2/6 ">
       <Logo />
     </div>
     <ButtonHamburguer />
-    <div className="md:w-full">
-      <MenuPublic />
-    </div>
+
+    <MenuPublic />
+
     <div className="bg-blue-500 flex-col flex-grow pb-4 lg:pb-0 hidden lg:flex lg:justify-end lg:flex-row">
       <Seeker />
       <Button

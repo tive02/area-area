@@ -4,7 +4,7 @@ import Link from "next/link";
 export const MenuPublic = () => {
   return (
     <nav>
-      <ul className="invisible md:visible md:flex md:flex-row md:justify-around">
+      <ul className="invisible bg-blue-500 md:visible flex flex-row-reverse  md:w-full">
         <li>
           <Link
             className="px-4 py-2 mt-2 text-lg font-semibold text-black-400 
