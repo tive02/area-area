@@ -12,8 +12,8 @@ export default function ButtonHamburguer() {
     <>
       <button
         onClick={toggleNav}
-        className=" w-2/12 focus:shadow-outline z-10 flex justify-center md:hidden ">
-        <svg fill="currentColor" viewBox="0 0 20 20">
+        class="md:hidden rounded-lg focus:outline-none focus:shadow-outline z-10 flex justify-end">
+        <svg fill="currentColor" viewBox="0 0 20 20" className="w-2/4 h-12 ">
           <path
             fill-rule="evenodd"
             d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 
