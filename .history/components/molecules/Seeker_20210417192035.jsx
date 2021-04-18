@@ -8,7 +8,7 @@ const Seeker = () => {
       <input
         type="text"
         placeholder="Buscar Articulos"
-        className="placeholder-gray-900 focus:placeholder-gray-500"
+        className="placeholder-gray-800 focus:placeholder-gray-400"
         //onChange={(e) => guardarBusqueda(e.target.value)}
       />
       <button type="submit" className="flex items-end pl-1.5">
