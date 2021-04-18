@@ -29,13 +29,14 @@ const Header = () => (
       <div>
         <Button
           bgColor="green-400"
-          hoverColor="green-300"
+          hoverColor="green-400"
           borderColor="green-400"
+          css="focus:outline-none focus:ring-2 focus:ring-purple-600 focus:ring-opacity-50"
           label="Ingresa"
         />
         <Button
           bgColor="green-400"
-          hoverColor="green-300"
+          hoverColor="green-400"
           borderColor="green-400"
           label="Suscribete"
         />

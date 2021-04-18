@@ -17,29 +17,27 @@ const Header = () => (
   absolute inset-x-0 top-0 
 
     ">
-    <div className=" w-2/4 flex justify-center md:w-2/6 lg:w-1/6">
+    <div className=" w-2/4 flex justify-center md:w-2/6 ">
       <Logo />
     </div>
     <ButtonHamburguer />
-    <div className="md:w-full lg:w-2/5">
+    <div className="bg-blue-200 md:w-full ">
       <MenuPublic />
     </div>
-    <div className="hidden lg:flex lg:justify-evenly lg:items-center lg:flex-row lg:w-4/6">
+    <div className="bg-blue-500 hidden lg:flex lg:justify-end lg:flex-row lg:w-4/6">
       <Seeker />
-      <div>
-        <Button
-          bgColor="green-400"
-          hoverColor="green-300"
-          borderColor="green-400"
-          label="Ingresa"
-        />
-        <Button
-          bgColor="green-400"
-          hoverColor="green-300"
-          borderColor="green-400"
-          label="Suscribete"
-        />
-      </div>
+      <Button
+        bgColor="green-400"
+        hoverColor="green-400"
+        borderColor="green-400"
+        label="Ingresa"
+      />
+      <Button
+        bgColor="green-400"
+        hoverColor="green-400"
+        borderColor="green-400"
+        label="Suscribete"
+      />
     </div>
   </header>
 );

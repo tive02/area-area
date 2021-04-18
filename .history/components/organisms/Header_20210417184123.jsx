@@ -26,20 +26,18 @@ const Header = () => (
     </div>
     <div className="hidden lg:flex lg:justify-evenly lg:items-center lg:flex-row lg:w-4/6">
       <Seeker />
-      <div>
-        <Button
-          bgColor="green-400"
-          hoverColor="green-300"
-          borderColor="green-400"
-          label="Ingresa"
-        />
-        <Button
-          bgColor="green-400"
-          hoverColor="green-300"
-          borderColor="green-400"
-          label="Suscribete"
-        />
-      </div>
+      <Button
+        bgColor="green-400"
+        hoverColor="green-400"
+        borderColor="green-400"
+        label="Ingresa"
+      />
+      <Button
+        bgColor="green-400"
+        hoverColor="green-400"
+        borderColor="green-400"
+        label="Suscribete"
+      />
     </div>
   </header>
 );

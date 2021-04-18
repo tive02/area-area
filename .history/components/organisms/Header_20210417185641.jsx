@@ -30,7 +30,7 @@ const Header = () => (
         <Button
           bgColor="green-400"
           hoverColor="green-300"
-          borderColor="green-400"
+          borderColor="gray-400"
           label="Ingresa"
         />
         <Button

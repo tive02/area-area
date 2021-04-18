@@ -3,17 +3,17 @@ import React from "react";
 const Seeker = () => {
   return (
     <form
-      //onSubmit={buscarProducto}
-      className="flex flex-row">
+    //onSubmit={buscarProducto}
+    >
       <input
         type="text"
         placeholder="Buscar Articulos"
         //onChange={(e) => guardarBusqueda(e.target.value)}
       />
-      <button type="submit" className="flex items-end pl-1.5">
+      <button type="submit" className="flex items-baseline ">
         <svg
           xmlns="http://www.w3.org/2000/svg"
-          className="h-6 w-6"
+          className="h-5 w-5"
           viewBox="0 0 20 20"
           fill="currentColor">
           <path

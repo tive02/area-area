@@ -10,10 +10,10 @@ const Seeker = () => {
         placeholder="Buscar Articulos"
         //onChange={(e) => guardarBusqueda(e.target.value)}
       />
-      <button type="submit" className="flex items-end pl-1.5">
+      <button type="submit" className="flex items-end ">
         <svg
           xmlns="http://www.w3.org/2000/svg"
-          className="h-6 w-6"
+          className="h-10 w-10"
           viewBox="0 0 20 20"
           fill="currentColor">
           <path

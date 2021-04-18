@@ -29,7 +29,7 @@ const Header = () => (
       <div>
         <Button
           bgColor="green-400"
-          hoverColor="green-300"
+          hoverColor="green-200"
           borderColor="green-400"
           label="Ingresa"
         />
