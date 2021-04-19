@@ -1,6 +1,9 @@
+import React from 'react';
 import classnames from 'classnames'
 
+
 const Banner = ({ title, subtitle, img, Description }) => (
+
   <div className={classnames(`bg-gray-900 flex md:p-8 border-gray-800
   static`)}
   >
@@ -20,6 +23,9 @@ const Banner = ({ title, subtitle, img, Description }) => (
       </h2>
     </div >
   </div>
+
+
+
 )
 
 

@@ -1,25 +1,47 @@
-import MenuPublic from '../molecules/MenuPublic';
-import Logo from '../atoms/Logo';
-import Button from '../atoms/Button';
-import ButtonHamburguer from '../atoms/ButtonHamburguer';
-
-
+import React from "react";
+import MenuPublic from "../molecules/MenuPublic";
+import Logo from "../atoms/Logo";
+import Button from "../atoms/Button";
+import ButtonHamburguer from "../atoms/ButtonHamburguer";
+import Seeker from "../molecules/Seeker";
 
 const Header = () => (
-  <header className="fixed z-10 inset-x-0 top-0 w-full" >
-    <nav>
-      <div className="flex items-center justify-between flex-wrap bg-purple-700 border-gray-800" >
-        <Logo />
-        <ButtonHamburguer />
-        <div>
-          <MenuPublic />
-        </div>
+  <header
+    className="
+  w-full
+  bg-purple-700 
+  flex 
+  items-center
+  justify-between
+  border-gray-800
+  absolute inset-x-0 top-0 
+
+    ">
+    <div className=" w-2/4 flex justify-center md:w-2/6 lg:w-1/6">
+      <Logo />
+    </div>
+    <ButtonHamburguer />
+    <div className="md:w-full lg:w-2/5">
+      <MenuPublic />
+    </div>
+    <div className="hidden lg:flex lg:justify-evenly lg:items-center lg:flex-row lg:w-4/6">
+      <Seeker />
+      <div>
+        <Button
+          bgColor="green-400"
+          hoverColor="green-300"
+          borderColor="green-400"
+          label="Ingresa"
+        />
+        <Button
+          bgColor="green-400"
+          hoverColor="green-300"
+          borderColor="green-400"
+          label="Suscribete"
+        />
       </div>
-    </nav>
-  </header >
+    </div>
+  </header>
+);
 
-)
-
-
-
-export default Header; 
+export default Header;
