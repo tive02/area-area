@@ -6,7 +6,7 @@ import Logo from "../atoms/Logo";
 const MenuMobile = () => {
   return (
     <>
-      <div className="fixed z-10 min-h-screen flex flex-col flex-auto flex-shrink-0 right-0 w-48">
+      <div className="fixed z-10 min-h-screen flex flex-col flex-auto flex-shrink-0 right-0 w-52">
         <div
           className="bg-purple-700 fixed inset-y-0 flex flex-col w-64 h-full border-r 
         transition duration-1000 ease-in-out"
