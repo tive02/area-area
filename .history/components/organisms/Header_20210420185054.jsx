@@ -21,7 +21,7 @@ const Header = () => (
     <div className=" w-2/4 flex justify-center md:w-2/6 lg:w-1/6">
       <Logo />
     </div>
-    <div className="pl-4 w-2/12 lg:hidden absolute inset-y-0 right-0">
+    <div className="pl-4 w-2/12 lg:hidden absolute inset-y-0 right-0 z-10 ">
       <ButtonHamburguer />
     </div>
     <div className="md:w-full lg:w-2/5">

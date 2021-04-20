@@ -12,7 +12,7 @@ export default function ButtonHamburguer() {
     <>
       <button
         onClick={toggleNav}
-        className=" w-full flex items-end rounded-md  md:hidden"
+        className=" w-full flex items-end rounded-md  md:hidden z-10"
       >
         <svg fill="currentColor" viewBox="0 0 20 20">
           <path
