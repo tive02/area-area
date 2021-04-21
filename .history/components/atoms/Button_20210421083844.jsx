@@ -10,7 +10,7 @@ export const Button = ({ value, bgColor, hoverColor, borderColor, link }) => {
       font-serif
       `)}
     >
-      <Link href={`${link}`}>
+      <Link href={link}>
         <a>{value}</a>
       </Link>
     </button>

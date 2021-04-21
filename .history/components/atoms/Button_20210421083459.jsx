@@ -1,8 +1,7 @@
 import React from "react";
 import classnames from "classnames";
-import Link from "next/link";
 
-export const Button = ({ value, bgColor, hoverColor, borderColor, link }) => {
+export const Button = ({ label, bgColor, hoverColor, borderColor }) => {
   return (
     <button
       className={classnames(`${bgColor} hover:${hoverColor} ${borderColor}
@@ -10,9 +9,7 @@ export const Button = ({ value, bgColor, hoverColor, borderColor, link }) => {
       font-serif
       `)}
     >
-      <Link href={`${link}`}>
-        <a>{value}</a>
-      </Link>
+      <a>{label}</a>
     </button>
   );
 };
