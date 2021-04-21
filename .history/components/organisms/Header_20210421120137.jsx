@@ -23,7 +23,7 @@ const Header = () => (
       bg-purple-700
       md:flex 
   md:items-center
-  md:justify-between "
+  md:justify-between bt-4"
     >
       <div className="w-2/4 flex justify-center md:hidden ">
         <LogoResponsive />

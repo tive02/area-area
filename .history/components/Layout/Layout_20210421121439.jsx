@@ -3,12 +3,18 @@ import Banner from "../organisms/Banner";
 import Footer from "../organisms/Footer";
 import Header from "../organisms/Header";
 
-const Layout = (props) => {
+const Layout = () => {
   return (
     <>
-      <Header />
       <main>
-        {props.children}
+        <Header />
+
+        <div className="fixed bg-purple-700  border-gray-800  w-full ">
+          <Banner
+            title="De Área a Área"
+            subtitle="Proyecto social para incentivar el Fútbol femenino"
+          />
+        </div>
 
         <Footer />
       </main>

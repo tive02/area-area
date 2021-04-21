@@ -3,7 +3,7 @@ import classnames from "classnames";
 
 const Banner = ({ title, subtitle, img, Description }) => (
   <div className={classnames(` hidden md:block md:flex`)}>
-    <div className="  pb-8 ">
+    <div className=" w-1/2 pt-16 pb-8 ">
       <h1 className="text-green-400 text-center text-5xl font-serif font-back  pt-6 pb-0 ">
         {title}
       </h1>

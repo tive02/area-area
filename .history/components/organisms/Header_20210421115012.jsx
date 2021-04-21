@@ -14,7 +14,9 @@ const Header = () => (
   bg-purple-700 
   border-gray-800
   absolute inset-x-0 top-0 
-  border-gray-800"
+  border-gray-800
+  border-b-2
+    "
   >
     <header
       className="
@@ -23,7 +25,7 @@ const Header = () => (
       bg-purple-700
       md:flex 
   md:items-center
-  md:justify-between "
+  md:justify-between"
     >
       <div className="w-2/4 flex justify-center md:hidden ">
         <LogoResponsive />
