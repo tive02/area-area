@@ -4,7 +4,7 @@ import Link from "next/link";
 const Logo = () => {
   return (
     <Link href="/">
-      <a className="flex flex-col lg:ml-4 ">
+      <a className="flex flex-col md:ml-4 ">
         <svg
           version="1.0"
           xmlns="http://www.w3.org/2000/svg"

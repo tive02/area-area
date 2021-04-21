@@ -28,7 +28,7 @@ const Header = () => (
       <div className="w-2/4 flex justify-center md:hidden ">
         <LogoResponsive />
       </div>
-      <div className=" hidden md:block md:w-2/6 lg:w-1/6 ">
+      <div className=" hidden md:block md:w-2/6 lg:w-1/6 justify-end bg-red-500">
         <Logo />
       </div>
       <div className="pl-4 w-2/12 lg:hidden absolute inset-y-0 right-0">
@@ -39,7 +39,7 @@ const Header = () => (
       </div>
       <div className="hidden lg:flex lg:justify-evenly lg:items-center lg:flex-row lg:w-4/6">
         <Seeker />
-        <div className="flex justify-end">
+        <div>
           <Button
             bgColor="bg-green-400"
             hoverColor="bg-green-300"

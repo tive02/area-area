@@ -39,7 +39,7 @@ const Header = () => (
       </div>
       <div className="hidden lg:flex lg:justify-evenly lg:items-center lg:flex-row lg:w-4/6">
         <Seeker />
-        <div className="flex justify-end">
+        <div className="flex justify-end bg-red-500">
           <Button
             bgColor="bg-green-400"
             hoverColor="bg-green-300"
