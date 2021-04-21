@@ -18,8 +18,8 @@ const Header = () => (
   >
     <header
       className="
-      h-24
-      md:max-h-28
+      h-20
+      md:h-24
       bg-purple-700
       md:flex 
   md:items-center

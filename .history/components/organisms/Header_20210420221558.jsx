@@ -7,7 +7,7 @@ import Seeker from "../molecules/Seeker";
 import LogoResponsive from "../atoms/LogoResponsive";
 
 const Header = () => (
-  <div
+  <header
     className="
   h-0
   w-full
@@ -16,11 +16,9 @@ const Header = () => (
   absolute inset-x-0 top-0 
     "
   >
-    <header
+    <div
       className="
-      h-24
-      md:max-h-28
-      bg-purple-700
+      h-1
       md:flex 
   md:items-center
   md:justify-between"
@@ -54,8 +52,8 @@ const Header = () => (
           />
         </div>
       </div>
-    </header>
-  </div>
+    </div>
+  </header>
 );
 
 export default Header;
