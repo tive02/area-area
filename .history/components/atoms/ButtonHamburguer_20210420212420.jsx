@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-
+import classnames from "classnames";
 import MenuMobile from "../molecules/MenuMobile";
 
 export default function ButtonHamburguer() {
@@ -13,7 +13,7 @@ export default function ButtonHamburguer() {
     <>
       <button
         onClick={toggleNav}
-        className="w-full flex items-end rounded-md md:hidden"
+        className={classnames(`w-full flex items-end rounded-md md:hidden `)}
       >
         <svg fill="currentColor" viewBox="0 0 20 20">
           <path

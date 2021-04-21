@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-
 import MenuMobile from "../molecules/MenuMobile";
 
 export default function ButtonHamburguer() {
@@ -8,12 +7,31 @@ export default function ButtonHamburguer() {
   const toggleNav = () => {
     setIsNavVisible(!isNavVisible);
   };
+  const closeToggleNav = () => {
+    setIsNavVisible(true);
+  };
 
   return (
     <>
+      <button onClick={closeToggleNav}>
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          className="h-10 w-10 fixed"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke="currentColor"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2"
+            d="M10 14l2-2m0 0l2-2m-2 2l-2-2m2 2l2 2m7-2a9 9 0 11-18 0 9 9 0 0118 0z"
+          />
+        </svg>
+      </button>
       <button
         onClick={toggleNav}
-        className="w-full flex items-end rounded-md md:hidden"
+        className=" w-full flex items-end rounded-md  md:hidden"
       >
         <svg fill="currentColor" viewBox="0 0 20 20">
           <path

@@ -1,22 +1,12 @@
-import React, { Fragment, useState } from "react";
+import React, { Fragment } from "react";
 import Link from "next/link";
 import Button from "../atoms/Button";
 import Logo from "../atoms/Logo";
-import classNames from "classnames";
+
 const MenuMobile = () => {
-  const [closeNavVisible, setCloseNavVisible] = useState(false);
-
-  const closeToggleNav = () => {
-    setCloseNavVisible(true);
-  };
-
   return (
     <>
-      <div
-        className={classNames(`
-      ${closeNavVisible && "hidden"}
-      fixed z-10 min-h-screen flex flex-col flex-auto flex-shrink-0 right-0 w-48`)}
-      >
+      <div className="fixed z-10 min-h-screen flex flex-col flex-auto flex-shrink-0 right-0 w-48">
         <div
           className="bg-purple-700 fixed inset-y-0 flex flex-col w-64 h-full border-r 
         transition duration-1000 ease-in-out"
@@ -26,7 +16,7 @@ const MenuMobile = () => {
               <div className="text-xl font-light tracking-wide text-gray-700">
                 Menu
               </div>
-              <button className=" w-1/4" onClick={closeToggleNav}>
+              <button className=" w-1/4  ">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   className="h-10 w-10 "
@@ -43,7 +33,6 @@ const MenuMobile = () => {
                 </svg>
               </button>
             </div>
-
             <nav className="pt-4">
               <ul className="flex flex-col py-4 space-y-1">
                 <li>
@@ -67,7 +56,7 @@ const MenuMobile = () => {
                             d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6"
                           ></path>
                         </svg>
-                      </span>
+
                       <span className="ml-2 text-sm tracking-wide truncate">
                         Inicio
                       </span>

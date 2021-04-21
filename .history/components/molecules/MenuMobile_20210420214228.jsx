@@ -12,11 +12,11 @@ const MenuMobile = () => {
 
   return (
     <>
-      <div
-        className={classNames(`
+      <div className={classNames (`
       ${closeNavVisible && "hidden"}
-      fixed z-10 min-h-screen flex flex-col flex-auto flex-shrink-0 right-0 w-48`)}
-      >
+      fixed z-10 min-h-screen flex flex-col flex-auto flex-shrink-0 right-0 w-48`)
+      }
+      ">
         <div
           className="bg-purple-700 fixed inset-y-0 flex flex-col w-64 h-full border-r 
         transition duration-1000 ease-in-out"
@@ -42,6 +42,7 @@ const MenuMobile = () => {
                   />
                 </svg>
               </button>
+              
             </div>
 
             <nav className="pt-4">

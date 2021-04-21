@@ -1,32 +1,22 @@
-import React, { Fragment, useState } from "react";
+import React, { Fragment } from "react";
 import Link from "next/link";
 import Button from "../atoms/Button";
 import Logo from "../atoms/Logo";
-import classNames from "classnames";
+
 const MenuMobile = () => {
-  const [closeNavVisible, setCloseNavVisible] = useState(false);
-
-  const closeToggleNav = () => {
-    setCloseNavVisible(true);
-  };
-
   return (
     <>
-      <div
-        className={classNames(`
-      ${closeNavVisible && "hidden"}
-      fixed z-10 min-h-screen flex flex-col flex-auto flex-shrink-0 right-0 w-48`)}
-      >
+      <div className="fixed z-10 min-h-screen flex flex-col flex-auto flex-shrink-0 right-0 w-48">
         <div
           className="bg-purple-700 fixed inset-y-0 flex flex-col w-64 h-full border-r 
         transition duration-1000 ease-in-out"
         >
-          <div className="overflow-y-auto overflow-x-hidden flex-grow inline">
-            <div className="flex flex-row justify-around h-8 pt-4 pr-4 ">
+          <div className="overflow-y-auto overflow-x-hidden flex-grow">
+            <div className="flex flex-row justify-around h-8 p-4">
               <div className="text-xl font-light tracking-wide text-gray-700">
                 Menu
               </div>
-              <button className=" w-1/4" onClick={closeToggleNav}>
+              <button className=" w-1/4  ">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   className="h-10 w-10 "
@@ -43,8 +33,7 @@ const MenuMobile = () => {
                 </svg>
               </button>
             </div>
-
-            <nav className="pt-4">
+            <nav>
               <ul className="flex flex-col py-4 space-y-1">
                 <li>
                   <Link href="/">
@@ -54,7 +43,7 @@ const MenuMobile = () => {
                     >
                       <span className="inline-flex justify-center items-center ml-4">
                         <svg
-                          className="w-6 h-6"
+                          className="w-5 h-5"
                           fill="none"
                           stroke="currentColor"
                           viewBox="0 0 24 24"
