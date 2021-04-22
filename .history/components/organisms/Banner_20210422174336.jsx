@@ -4,7 +4,7 @@ import classnames from "classnames";
 const Banner = ({ title, subtitle, img, Description }) => (
   <div
     className={classnames(
-      ` hidden xl:block xl:flex xl:grid md:grid-cols-2 xl:justify-items-center xl:place-items-center
+      ` hidden xl:block md:flex md:grid md:grid-cols-2 md:justify-items-center md:place-items-center
       bg-purple-700 divide-x divide-black h-full
       bg-gradient-to-r from-purple-800 via-gray-900 to-gray-900`
     )}
