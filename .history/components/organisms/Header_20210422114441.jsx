@@ -19,7 +19,7 @@ const Header = () => (
       md:flex 
       md:items-center
       md:justify-between
-      sticky top-0
+      fixed
       "
   >
     <div className="w-2/4 flex justify-center md:hidden ">

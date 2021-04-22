@@ -7,8 +7,9 @@ const Layout = (props) => {
   return (
     <>
       <Header />
-      <main>{props.children}</main>
-
+      <div className="container max-w-screen-lg my-0 mx-auto min-h-0 box-border">
+        <main>{props.children}</main>
+      </div>
       <Footer />
     </>
   );

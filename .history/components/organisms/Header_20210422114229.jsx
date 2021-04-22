@@ -10,17 +10,14 @@ const Header = () => (
   <header
     className="
       w-full
-      bg-purple-700 
-      border-black
+      bg-purple-700 border-green-800
       border-b-2
       h-24
       md:max-h-28
       bg-purple-700
       md:flex 
-      md:items-center
-      md:justify-between
-      sticky top-0
-      "
+  md:items-center
+  md:justify-between "
   >
     <div className="w-2/4 flex justify-center md:hidden ">
       <LogoResponsive />

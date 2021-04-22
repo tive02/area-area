@@ -7,8 +7,8 @@ export default function Home() {
   return (
     <>
       <Layout>
-        <div className="">
-          <div className="bg-purple-700 divide-x divide-black">
+        <div className=" fixed w-full top-1/3 ">
+          <div className="bg-purple-700 lg:divide-x lg:divide-black">
             <Banner
               title="Tu espacio de Futbol Fémenino"
               subtitle="Lee y comparte nuevas perspectivas sobre el futbol femenino. Todos son bienvenidos"
