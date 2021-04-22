@@ -9,11 +9,11 @@ const Banner = ({ title, subtitle, img, Description }) => (
       bg-gradient-to-r from-purple-800 via-gray-900 to-gray-900`
     )}
   >
-    <div className="   p-8 ">
-      <p className="flex flex-wrap content-around text-green-400 text-6xl font-serif font-back  ">
+    <div className="   pb-8 ">
+      <p className="flex flex-wrap content-around text-green-400 text-5xl font-serif font-back  p-6  ">
         {title}
       </p>
-      <p className="text-purple-400 text-lg font-serif font-thin  ">
+      <p className="text-purple-400 text-lg font-serif font-thin mr-2 ">
         {subtitle}
       </p>
     </div>

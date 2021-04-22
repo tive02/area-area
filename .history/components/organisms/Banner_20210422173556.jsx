@@ -10,7 +10,7 @@ const Banner = ({ title, subtitle, img, Description }) => (
     )}
   >
     <div className="   p-8 ">
-      <p className="flex flex-wrap content-around text-green-400 text-6xl font-serif font-back  ">
+      <p className="flex flex-wrap content-around text-green-400 text-7xl font-serif font-back  ">
         {title}
       </p>
       <p className="text-purple-400 text-lg font-serif font-thin  ">

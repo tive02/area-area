@@ -4,16 +4,16 @@ import classnames from "classnames";
 const Banner = ({ title, subtitle, img, Description }) => (
   <div
     className={classnames(
-      ` hidden md:block md:flex md:grid md:grid-cols-2 md:justify-items-center md:place-items-center
+      ` hidden md:block md:flex md:grid md:grid-cols-2 md:place-items-center
       bg-purple-700 divide-x divide-black h-full
       bg-gradient-to-r from-purple-800 via-gray-900 to-gray-900`
     )}
   >
-    <div className="   p-8 ">
-      <p className="flex flex-wrap content-around text-green-400 text-6xl font-serif font-back  ">
+    <div className="   pb-8 ">
+      <p className="flex flex-wrap content-around text-green-400 text-center text-5xl font-serif font-back  pt-6 pb-0 ">
         {title}
       </p>
-      <p className="text-purple-400 text-lg font-serif font-thin  ">
+      <p className="text-purple-400 text-center text-lg font-serif font-thin mr-2 ">
         {subtitle}
       </p>
     </div>

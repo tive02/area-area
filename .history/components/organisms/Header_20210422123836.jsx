@@ -20,7 +20,7 @@ const Header = () => (
       md:items-center
       md:justify-between
       sticky top-0
-      
+      bg-gradient-to-r from-purple-700 to-purple-900
       "
   >
     <div className="w-2/4 flex justify-center md:hidden ">

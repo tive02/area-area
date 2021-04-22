@@ -19,7 +19,12 @@ export default function Home() {
           />
         </div>
 
-        <div className="container max-w-screen-lg my-0 mx-auto min-h-0 box-border"></div>
+        <div className="container max-w-screen-lg my-0 mx-auto min-h-0 box-border">
+          <Banner
+            title="Tu espacio de Futbol Fémenino"
+            subtitle="Lee y comparte nuevas perspectivas sobre el futbol femenino. Todos son bienvenidos"
+          />
+        </div>
       </Layout>
     </>
   );

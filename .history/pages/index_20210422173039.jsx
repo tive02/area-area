@@ -10,16 +10,20 @@ export default function Home() {
         <div className=" bg-green-200 h-screen">
           <Banner
             title="¡Buscamos personas como tú!. Que amen el Fútbol Fémenino."
-            subtitle="En de Area a Area puedes crear, compartir, leer, aprender y sobre todo diviertirte 
-            a traves tu propio espacio para 
+            subtitle="Crea, comparte, lee, aprende y sobre todo diviertete a traves tu propio espacio para 
             hablar acerca de 
-            fútbol fémenino."
+            fútbol fémenino. Todos son bienvenidos"
             img="https://cdn.pixabay.com/photo/2013/07/12/19/17/goal-154481_960_720.png"
             descripcion=""
           />
         </div>
 
-        <div className="container max-w-screen-lg my-0 mx-auto min-h-0 box-border"></div>
+        <div className="container max-w-screen-lg my-0 mx-auto min-h-0 box-border">
+          <Banner
+            title="Tu espacio de Futbol Fémenino"
+            subtitle="Lee y comparte nuevas perspectivas sobre el futbol femenino. Todos son bienvenidos"
+          />
+        </div>
       </Layout>
     </>
   );
