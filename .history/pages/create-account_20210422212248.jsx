@@ -7,7 +7,7 @@ import Form from "../components/molecules/Form";
 export default function createAccount() {
   return (
     <Layout>
-      <div className="container max-w-screen-lg my-0 mx-auto min-h-0 box-border bg-red-500 h-screen">
+      <div className="container max-w-screen-lg my-0 mx-auto min-h-0 box-border bg-red-500">
         <Form />
       </div>
     </Layout>
