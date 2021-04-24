@@ -7,8 +7,9 @@ const Form = ({ hidden, title, valueInput }) => {
   return (
     <>
       <form
-        className="grid grid-cols-1 gap-2 place-content-start place-items-center h-auto border-double 
-        p-4 border-4 border-gray-800
+        className="grid grid-cols-1 gap-2 place-content-start place-items-center h-auto border-double  
+        
+        pt-4 pb-4 border-4 border-gray-800
       "
       >
         <leyend className="flex p-4 justify-around">

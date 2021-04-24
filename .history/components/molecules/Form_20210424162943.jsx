@@ -3,12 +3,11 @@ import classnames from "classnames";
 import Link from "next/link";
 import Button from "../atoms/Button";
 
-const Form = ({ hidden, title, valueInput }) => {
+const Form = ({ hidden, title, valueBotton, linkBottom, valueInput }) => {
   return (
     <>
       <form
-        className="grid grid-cols-1 gap-2 place-content-start place-items-center h-auto border-double 
-        p-4 border-4 border-gray-800
+        className="grid grid-cols-1 gap-2 place-content-start place-items-center h-auto border-double p-4 border-4 border-gray-800
       "
       >
         <leyend className="flex p-4 justify-around">

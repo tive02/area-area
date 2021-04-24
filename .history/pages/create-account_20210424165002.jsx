@@ -13,7 +13,7 @@ export default function createAccount() {
         grid grid-col-1  "
       >
         <Form
-          title="Crea tu cuenta en"
+          title="Crea Tú cuenta en"
           valueBotton="Iniciar Sesión"
           linkBottom="/login"
           valueInput="Registrate"

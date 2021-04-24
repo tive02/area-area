@@ -7,12 +7,12 @@ const Seeker = () => {
       className="flex flex-row"
     >
       <input
-        type="search"
+        type="serch"
         placeholder="Buscar Articulos"
         className="placeholder-gray-900 focus:placeholder-gray-500"
         //onChange={(e) => guardarBusqueda(e.target.value)}
       />
-      <button type="submit" className="flex items-center pl-1.5">
+      <button type="submit" className="flex items-end pl-1.5">
         <svg
           xmlns="http://www.w3.org/2000/svg"
           className="h-6 w-6"

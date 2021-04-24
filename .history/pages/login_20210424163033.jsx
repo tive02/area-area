@@ -6,7 +6,7 @@ import Form from "../components/molecules/Form";
 export default function Login() {
   return (
     <Layout>
-      <div className="container max-w-screen-lg mx-auto min-h-0 box-border">
+      <div className="container max-w-screen-lg my-0 mx-auto min-h-0 box-border">
         <Form
           hidden="hidden"
           title="Inicia Sesión"
@@ -14,13 +14,12 @@ export default function Login() {
           valueBotton="Registrate"
           linkBottom="/create-account"
         />
-        <div className="flex flex-row justify-center items-baseline p-2.5">
-          <p className="text-xl pr-2">¿No Tienes Cuenta? </p>
+        <div className="p-2.5">
           <Button
             bgColor="bg-purple-700"
             borderColor="border-gray-700"
-            value="Registrate"
-            link="/create-account"
+            value=""
+            link=""
           />
         </div>
       </div>

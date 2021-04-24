@@ -3,21 +3,20 @@ import classnames from "classnames";
 import Link from "next/link";
 import Button from "../atoms/Button";
 
-const Form = ({ hidden, title, valueInput }) => {
+const Form = ({ hidden, title, valueBotton, linkBottom, valueInput }) => {
   return (
     <>
-      <form
-        className="grid grid-cols-1 gap-2 place-content-start place-items-center h-auto border-double 
-        p-4 border-4 border-gray-800
+      <FormData
+        className="grid grid-cols-1 gap-2 place-content-start place-items-center h-auto 
       "
       >
-        <leyend className="flex p-4 justify-around">
+        <div className="flex p-4 justify-around">
           <h1 className=" text-center text-xl">
             {title}
             <span className="text-lg text-purple-800"> de Area a Area</span>
           </h1>
-        </leyend>
-        <fieldset className="flex flex-col text-sm space-y-5">
+        </div>
+        <div className="flex flex-col text-sm space-y-5">
           <div
             className={classnames(
               `flex justify-between items-baseline flex-wrap ${hidden} `
@@ -72,7 +71,15 @@ const Form = ({ hidden, title, valueInput }) => {
               />
             </Button>
           </div>
-        </fieldset>
+        </div>
+        <div className="p-2.5">
+          <Button
+            bgColor="bg-purple-700"
+            borderColor="border-gray-700"
+            value={valueBotton}
+            link={linkBottom}
+          />
+        </div>
       </form>
     </>
   );
