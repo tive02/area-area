@@ -5,7 +5,7 @@ const Form = () => {
   return (
     <>
       <div className="grid grid-cols-1 gap-2 place-content-start place-items-center bg-green-100">
-        <h1 className="text-center text-5xl ">Crea una Cuenta</h1>
+        <h1 className="text-center text-5xl">Crea una Cuenta</h1>
         <form className="bg-blue-100 ">
           <div className="">
             <label htmlFor="name">Nombres </label>

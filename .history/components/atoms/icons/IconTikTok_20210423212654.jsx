@@ -11,7 +11,7 @@ const IconTikTok = ({ link, margin }) => {
     >
       <svg
         id="Capa_1"
-        enableBackground="new 0 0 512 512"
+        enable-background="new 0 0 512 512"
         height="30pt"
         viewBox="0 0 512 512"
         width="30pt"

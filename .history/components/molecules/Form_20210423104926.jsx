@@ -4,9 +4,9 @@ import Link from "next/link";
 const Form = () => {
   return (
     <>
-      <div className="grid grid-cols-1 gap-2 place-content-start place-items-center bg-green-100">
-        <h1 className="text-center text-5xl ">Crea una Cuenta</h1>
-        <form className="bg-blue-100 ">
+      <div className="flex flex-col flex-wrap content-center">
+        <h1>Crea una Cuenta</h1>
+        <form className="justify-around">
           <div className="">
             <label htmlFor="name">Nombres </label>
             <input type="name" id="name" name="name" placeholder="Tu Nombre" />

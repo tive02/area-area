@@ -35,9 +35,9 @@ const IconYouTube = ({ link, margin }) => {
           y1="348.9538083312"
           y2="163.0428956304"
         >
-          <stop offset="0" stopColor="#ff6400" />
-          <stop offset=".5" stopColor="#ff0100" />
-          <stop offset="1" stopColor="#fd0056" />
+          <stop offset="0" stop-color="#ff6400" />
+          <stop offset=".5" stop-color="#ff0100" />
+          <stop offset="1" stop-color="#fd0056" />
         </linearGradient>
         <linearGradient
           id="c"
@@ -47,8 +47,8 @@ const IconYouTube = ({ link, margin }) => {
           y1="141.0676714336"
           y2="97.6240189856"
         >
-          <stop offset="0" stopColor="#f30072" />
-          <stop offset="1" stopColor="#e50097" />
+          <stop offset="0" stop-color="#f30072" />
+          <stop offset="1" stop-color="#e50097" />
         </linearGradient>
         <path
           d="m510.460938 150.453125c-1.246094-27.25-5.574219-45.859375-11.902344-62.140625-6.425782-17.082031-16.503906-32.554688-29.527344-45.34375-12.785156-13.023438-28.261719-23.105469-45.34375-29.535156-16.285156-6.324219-34.890625-10.648438-62.140625-11.886719-27.300781-1.25-36.023437-1.546875-105.546875-1.546875s-78.246094.296875-105.546875 
