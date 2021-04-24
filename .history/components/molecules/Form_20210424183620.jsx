@@ -14,27 +14,21 @@ const Form = ({ hidden, title, valueInput }) => {
         p-4 border-4 border-gray-800
       "
       >
-        <legend className="flex p-4 justify-around">
-          <h1 className=" text-center text-2xl">
+        <leyend className="flex p-4 justify-around">
+          <h1 className=" text-center text-xl">
             {title}
-            <span className="text-2xl text-purple-800"> de Area a Area</span>
+            <span className="text-lg text-purple-800"> de Area a Area</span>
           </h1>
-        </legend>
-        <fieldset className="grid grid-cols-1 w-auto ">
-          <legend>Con tus cuentas Favoritas </legend>
-          <div className="flex flex-row justify-between ">
-            <IconGmail />
-            <IconFacebook />
-            <IconTwitter />
-          </div>
-        </fieldset>
-        <fieldset className="grid grid-cols-1 w-auto text-sm space-y-5 border-dotted border-4 border-gray-800">
-          <legend className="justify-self-auto text-xl ">
-            O tu Correo Electrónico
-          </legend>
+        </leyend>
+        <div className="flex flex-row justify-between">
+          <IconGmail />
+          <IconFacebook />
+          <IconTwitter />
+        </div>
+        <fieldset className="flex flex-col text-sm space-y-5">
           <div
             className={classnames(
-              `flex justify-between items-baseline flex-wrap p-2 ${hidden} `
+              `flex justify-between items-baseline flex-wrap ${hidden} `
             )}
           >
             <label htmlFor="name" className="pr-2">
@@ -48,7 +42,7 @@ const Form = ({ hidden, title, valueInput }) => {
               className="placeholder-green-800 "
             />
           </div>
-          <div className="flex justify-between items-baseline flex-wrap p-2">
+          <div className="flex justify-between items-baseline flex-wrap ">
             <label htmlFor="email" className="pr-2">
               Tú Email
             </label>
@@ -60,7 +54,7 @@ const Form = ({ hidden, title, valueInput }) => {
               className="placeholder-green-800 "
             />
           </div>
-          <div className="flex justify-between items-baseline flex-wrap p-2">
+          <div className="flex justify-between items-baseline flex-wrap">
             <label htmlFor="password" className="pr-2">
               Tú Contraseña
             </label>
@@ -73,7 +67,7 @@ const Form = ({ hidden, title, valueInput }) => {
             />
           </div>
 
-          <div className="flex justify-center p-2">
+          <div className="flex justify-center ">
             <Button
               bgColor="bg-green-400"
               borderColor="border-gray-700"

@@ -30,7 +30,7 @@ const Form = ({ hidden, title, valueInput }) => {
         </fieldset>
         <fieldset className="grid grid-cols-1 w-auto text-sm space-y-5 border-dotted border-4 border-gray-800">
           <legend className="justify-self-auto text-xl ">
-            O tu Correo Electrónico
+            Correo Electronico
           </legend>
           <div
             className={classnames(
@@ -73,7 +73,7 @@ const Form = ({ hidden, title, valueInput }) => {
             />
           </div>
 
-          <div className="flex justify-center p-2">
+          <div className="flex justify-center ">
             <Button
               bgColor="bg-green-400"
               borderColor="border-gray-700"

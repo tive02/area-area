@@ -30,7 +30,7 @@ const Form = ({ hidden, title, valueInput }) => {
         </fieldset>
         <fieldset className="grid grid-cols-1 w-auto text-sm space-y-5 border-dotted border-4 border-gray-800">
           <legend className="justify-self-auto text-xl ">
-            O tu Correo Electrónico
+            Correo Electronico
           </legend>
           <div
             className={classnames(

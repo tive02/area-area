@@ -29,12 +29,10 @@ const Form = ({ hidden, title, valueInput }) => {
           </div>
         </fieldset>
         <fieldset className="grid grid-cols-1 w-auto text-sm space-y-5 border-dotted border-4 border-gray-800">
-          <legend className="justify-self-auto text-xl ">
-            O tu Correo Electrónico
-          </legend>
+          <legend className="flex justify-center ">Correo Electronico</legend>
           <div
             className={classnames(
-              `flex justify-between items-baseline flex-wrap p-2 ${hidden} `
+              `flex justify-between items-baseline flex-wrap ${hidden} `
             )}
           >
             <label htmlFor="name" className="pr-2">
@@ -48,7 +46,7 @@ const Form = ({ hidden, title, valueInput }) => {
               className="placeholder-green-800 "
             />
           </div>
-          <div className="flex justify-between items-baseline flex-wrap p-2">
+          <div className="flex justify-between items-baseline flex-wrap ">
             <label htmlFor="email" className="pr-2">
               Tú Email
             </label>
@@ -60,7 +58,7 @@ const Form = ({ hidden, title, valueInput }) => {
               className="placeholder-green-800 "
             />
           </div>
-          <div className="flex justify-between items-baseline flex-wrap p-2">
+          <div className="flex justify-between items-baseline flex-wrap">
             <label htmlFor="password" className="pr-2">
               Tú Contraseña
             </label>
@@ -73,7 +71,7 @@ const Form = ({ hidden, title, valueInput }) => {
             />
           </div>
 
-          <div className="flex justify-center p-2">
+          <div className="flex justify-center ">
             <Button
               bgColor="bg-green-400"
               borderColor="border-gray-700"
