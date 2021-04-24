@@ -14,17 +14,16 @@ const Form = ({ hidden, title, valueInput }) => {
         p-4 border-4 border-gray-800
       "
       >
+        <div>
+          <IconGmail />
+          <IconTwitter />
+        </div>
         <leyend className="flex p-4 justify-around">
           <h1 className=" text-center text-xl">
             {title}
             <span className="text-lg text-purple-800"> de Area a Area</span>
           </h1>
         </leyend>
-        <div className="flex flex-row">
-          <IconGmail />
-          <IconFacebook />
-          <IconTwitter />
-        </div>
         <fieldset className="flex flex-col text-sm space-y-5">
           <div
             className={classnames(

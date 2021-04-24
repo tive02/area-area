@@ -20,7 +20,7 @@ const Form = ({ hidden, title, valueInput }) => {
             <span className="text-lg text-purple-800"> de Area a Area</span>
           </h1>
         </leyend>
-        <div className="flex flex-row">
+        <div>
           <IconGmail />
           <IconFacebook />
           <IconTwitter />

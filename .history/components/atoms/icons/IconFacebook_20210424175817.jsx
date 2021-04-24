@@ -10,9 +10,9 @@ const IconYouTube = ({ link, margin }) => {
       rel="noopener noreferrer"
     >
       <svg
-        height="30pt"
+        height="20px"
         viewBox="0 0 512 512"
-        width="30pt"
+        width="20px"
         xmlns="http://www.w3.org/2000/svg"
       >
         <path
