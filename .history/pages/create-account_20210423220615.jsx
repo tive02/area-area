@@ -9,7 +9,7 @@ export default function createAccount() {
     <Layout>
       <div
         className="container max-w-screen-lg my-0 mx-auto min-h-0 box-border h-auto
-      grid grid-col-1 pb-4  "
+      grid grid-col-1  "
       >
         <Form />
       </div>

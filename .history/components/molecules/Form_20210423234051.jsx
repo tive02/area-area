@@ -19,8 +19,7 @@ const Form = () => {
               type="text"
               id="name"
               name="name"
-              placeholder="Tus Nombres Completo"
-              className="placeholder-green-800"
+              placeholder="Tu Nombres Completo"
             />
           </div>
           <div className="flex justify-between items-baseline flex-wrap">
@@ -30,7 +29,6 @@ const Form = () => {
               id="email"
               name="email"
               placeholder="Tu Email"
-              className="placeholder-green-800"
             />
           </div>
           <div className="flex justify-between items-baseline flex-wrap">
@@ -40,7 +38,6 @@ const Form = () => {
               id="password"
               name="password"
               placeholder="Tu Password"
-              className="placeholder-green-800"
             />
           </div>
           <div className="flex flex-row justify-between items-center flex-grow">
@@ -52,13 +49,13 @@ const Form = () => {
               id="confirmar"
               name="confirmar"
               placeholder="Repite tu Pasword"
-              className="placeholder-green-800"
             />
           </div>
-          <div className="flex justify-center ">
+          <div className="flex justify-center pt-4">
             <Button
               bgColor="bg-green-400"
-              borderColor="border-gray-700"
+              hoverColor="bg-green-300"
+              borderColor="border-green-400"
               value="Registrate"
             >
               {/* <input
@@ -69,14 +66,14 @@ const Form = () => {
             </Button>
           </div>
         </form>
-        <div className="p-2.5">
-          <Button
-            bgColor="bg-purple-700"
-            borderColor="border-gray-700"
-            value="Inicia Sesión"
-            link="/login"
-          />
-        </div>
+
+        <Button
+          bgColor="bg-purple-700"
+          hoverColor="bg-green-400"
+          borderColor="border-purple-700"
+          value="Inicia Sesión"
+          link="/login"
+        />
       </div>
     </>
   );

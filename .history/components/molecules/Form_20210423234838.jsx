@@ -20,7 +20,7 @@ const Form = () => {
               id="name"
               name="name"
               placeholder="Tus Nombres Completo"
-              className="placeholder-green-800"
+              className="placeholder-green-400"
             />
           </div>
           <div className="flex justify-between items-baseline flex-wrap">
@@ -30,7 +30,7 @@ const Form = () => {
               id="email"
               name="email"
               placeholder="Tu Email"
-              className="placeholder-green-800"
+              className="placeholder-green-400"
             />
           </div>
           <div className="flex justify-between items-baseline flex-wrap">

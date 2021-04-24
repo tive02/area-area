@@ -12,71 +12,57 @@ const Form = () => {
             <span className="text-lg text-purple-800"> de Area a Area</span>
           </h1>
         </div>
-        <form className="flex flex-col text-sm space-y-5">
-          <div className="flex justify-between items-baseline flex-wrap">
+        {/* formulario de registro */}
+        <form className="bg-blue-100 flex flex-col  text-sm space-y-5">
+          <div className="flex justify-between items-baseline">
             <label htmlFor="name">Nombres </label>
-            <input
-              type="text"
-              id="name"
-              name="name"
-              placeholder="Tus Nombres Completo"
-              className="placeholder-green-800"
-            />
+            <input type="text" name="name" placeholder="Tus Nombres" />
           </div>
-          <div className="flex justify-between items-baseline flex-wrap">
+          <div className="flex justify-between items-baseline">
+            <label htmlFor="lastName">Apellidos </label>
+            <input type="text" name="lastName" placeholder="Tus Apellidos" />
+          </div>
+          <div className="flex justify-between items-baseline">
             <label htmlFor="email">Email </label>
             <input
               type="email"
               id="email"
               name="email"
               placeholder="Tu Email"
-              className="placeholder-green-800"
             />
           </div>
-          <div className="flex justify-between items-baseline flex-wrap">
+          <div className="flex justify-between items-baseline">
             <label htmlFor="password">Password </label>
             <input
               type="password"
               id="password"
               name="password"
               placeholder="Tu Password"
-              className="placeholder-green-800"
             />
           </div>
-          <div className="flex flex-row justify-between items-center flex-grow">
-            <label htmlFor="confirmar" className="flex-shrink pr-2">
-              Confirma el Password
-            </label>
+          <div className="flex justify-between items-center">
+            <label htmlFor="confirmar">Confirma el Password </label>
             <input
               type="password"
               id="confirmar"
               name="confirmar"
               placeholder="Repite tu Pasword"
-              className="placeholder-green-800"
             />
           </div>
-          <div className="flex justify-center ">
-            <Button
-              bgColor="bg-green-400"
-              borderColor="border-gray-700"
-              value="Registrate"
-            >
-              {/* <input
+          <div className="flex justify-between ">
+            <Button>
+              <input
                 type="submit"
                 className="btn btn-primario btn-block"
                 value="Registrarme"
-              /> */}
+              />
             </Button>
           </div>
         </form>
-        <div className="p-2.5">
-          <Button
-            bgColor="bg-purple-700"
-            borderColor="border-gray-700"
-            value="Inicia Sesión"
-            link="/login"
-          />
-        </div>
+
+        <Link href="/login">
+          <a>Volver a Iniciar Sesión</a>
+        </Link>
       </div>
     </>
   );

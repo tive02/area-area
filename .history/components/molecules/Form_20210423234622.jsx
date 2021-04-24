@@ -20,7 +20,7 @@ const Form = () => {
               id="name"
               name="name"
               placeholder="Tus Nombres Completo"
-              className="placeholder-green-800"
+              className="placeholder-green-400"
             />
           </div>
           <div className="flex justify-between items-baseline flex-wrap">
@@ -30,7 +30,7 @@ const Form = () => {
               id="email"
               name="email"
               placeholder="Tu Email"
-              className="placeholder-green-800"
+              className="placeholder-green-400"
             />
           </div>
           <div className="flex justify-between items-baseline flex-wrap">
@@ -40,7 +40,7 @@ const Form = () => {
               id="password"
               name="password"
               placeholder="Tu Password"
-              className="placeholder-green-800"
+              className="placeholder-green-400"
             />
           </div>
           <div className="flex flex-row justify-between items-center flex-grow">
@@ -52,13 +52,14 @@ const Form = () => {
               id="confirmar"
               name="confirmar"
               placeholder="Repite tu Pasword"
-              className="placeholder-green-800"
+              className="placeholder-green-400"
             />
           </div>
           <div className="flex justify-center ">
             <Button
               bgColor="bg-green-400"
-              borderColor="border-gray-700"
+              hoverColor="bg-green-300"
+              borderColor="border-green-400"
               value="Registrate"
             >
               {/* <input
