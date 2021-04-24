@@ -8,8 +8,8 @@ export default function createAccount() {
   return (
     <Layout>
       <div
-        className="container max-w-screen-lg my-0 mx-auto min-h-0 box-border h-auto
-        grid grid-col-1 pb-4 lg:hidden "
+        className="hidden  lg:container lg:max-w-screen-lg lg:my-0 lg:mx-auto lg:min-h-0 lg:box-border lg:h-auto
+        lg:grid lg:grid-col-1 lg:pb-4  "
       >
         <Form />
       </div>
