@@ -19,42 +19,36 @@ const Form = ({ hidden, title }) => {
         <form className="flex flex-col text-sm space-y-5">
           <div
             className={classnames(
-              `flex justify-between items-baseline flex-wrap ${hidden} `
+              `flex justify-between items-baseline flex-wrap  ${hidden} `
             )}
           >
-            <label htmlFor="name" className="pr-2">
-              Nombre Completo
-            </label>
+            <label htmlFor="name">Nombre Completo </label>
             <input
               type="text"
               id="name"
               name="name"
               placeholder="Tus Nombres Completo"
-              className="placeholder-green-800 "
+              className="placeholder-green-800"
             />
           </div>
-          <div className="flex justify-between items-baseline flex-wrap ">
-            <label htmlFor="email" className="pr-2">
-              Tú Email
-            </label>
+          <div className="flex justify-between items-baseline flex-wrap">
+            <label htmlFor="email">Tú Email </label>
             <input
               type="email"
               id="email"
               name="email"
               placeholder="Tu Email"
-              className="placeholder-green-800 "
+              className="placeholder-green-800"
             />
           </div>
           <div className="flex justify-between items-baseline flex-wrap">
-            <label htmlFor="password" className="pr-2">
-              Tú Contraseña
-            </label>
+            <label htmlFor="password"> Tú Contraseña </label>
             <input
               type="password"
               id="password"
               name="password"
               placeholder="Tu Password"
-              className="placeholder-green-800 "
+              className="placeholder-green-800"
             />
           </div>
 

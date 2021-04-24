@@ -3,17 +3,10 @@ import MenuPublic from "../molecules/MenuPublic";
 import Logo from "../atoms/Logo";
 import Button from "../atoms/Button";
 import ButtonHamburguer from "../atoms/ButtonHamburguer";
-import LogoResponsive from "../atoms/LogoResponsive";
 import Seeker from "../molecules/Seeker";
-import Form from "../molecules/Form";
+import LogoResponsive from "../atoms/LogoResponsive";
 
 const Header = () => {
-  const [isNavVisible, setIsNavVisible] = useState(false);
-
-  const toggleCreateAccount = () => {
-    setIsNavVisible(true);
-  };
-
   return (
     <header
       className="
@@ -58,9 +51,8 @@ const Header = () => {
             borderColor="border-green-400"
             value="Crear Cuenta"
             link="create-account"
-            onClick={toggleCreateAccount}
+            onClick={createAcount}
           />
-          {isNavVisible && <Form />}
         </div>
       </div>
     </header>

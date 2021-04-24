@@ -11,7 +11,7 @@ export default function createAccount() {
         className="container max-w-screen-lg my-0 mx-auto min-h-0 box-border h-auto
         grid grid-col-1 pb-4 lg:hidden "
       >
-        <Form title="Crea Tú cuenta en" />
+        <Form />
       </div>
     </Layout>
   );

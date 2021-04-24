@@ -35,7 +35,7 @@ const Form = ({ hidden, title }) => {
           </div>
           <div className="flex justify-between items-baseline flex-wrap ">
             <label htmlFor="email" className="pr-2">
-              Tú Email
+              Tú Email{" "}
             </label>
             <input
               type="email"
@@ -47,7 +47,8 @@ const Form = ({ hidden, title }) => {
           </div>
           <div className="flex justify-between items-baseline flex-wrap">
             <label htmlFor="password" className="pr-2">
-              Tú Contraseña
+              {" "}
+              Tú Contraseña{" "}
             </label>
             <input
               type="password"
