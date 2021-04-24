@@ -15,7 +15,7 @@ export default function createAccount() {
           title="Crea Tú cuenta en"
           valueBotton="Iniciar Sesión"
           linkBottom="/login"
-          valueInput="Registrate"
+          valueInput=""
         />
       </div>
     </Layout>

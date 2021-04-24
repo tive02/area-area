@@ -29,7 +29,7 @@ const Form = ({ hidden, title, valueBotton, linkBottom, valueInput }) => {
               type="text"
               id="name"
               name="name"
-              placeholder="Tu Nombre Completo"
+              placeholder="Tus Nombres Completo"
               className="placeholder-green-800 "
             />
           </div>

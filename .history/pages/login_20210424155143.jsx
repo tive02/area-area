@@ -9,9 +9,9 @@ export default function Login() {
         <Form
           hidden="hidden"
           title="Inicia Sesión"
-          valueInput="Inicia Sesión"
           valueBotton="Registrate"
           linkBottom="/create-account"
+          valueInput="Inicia Sesión"
         />
       </div>
     </Layout>

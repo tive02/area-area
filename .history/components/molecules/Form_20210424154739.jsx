@@ -3,7 +3,7 @@ import classnames from "classnames";
 import Link from "next/link";
 import Button from "../atoms/Button";
 
-const Form = ({ hidden, title, valueBotton, linkBottom, valueInput }) => {
+const Form = ({ hidden, title, valueBotton, linkBottom }) => {
   return (
     <>
       <div
@@ -29,7 +29,7 @@ const Form = ({ hidden, title, valueBotton, linkBottom, valueInput }) => {
               type="text"
               id="name"
               name="name"
-              placeholder="Tu Nombre Completo"
+              placeholder="Tus Nombres Completo"
               className="placeholder-green-800 "
             />
           </div>
@@ -62,12 +62,12 @@ const Form = ({ hidden, title, valueBotton, linkBottom, valueInput }) => {
             <Button
               bgColor="bg-green-400"
               borderColor="border-gray-700"
-              value={valueInput}
+              value="Registrate"
             >
               <input
                 type="submit"
                 className="btn btn-primario btn-block"
-                value={valueInput}
+                value="Registrarme"
               />
             </Button>
           </div>

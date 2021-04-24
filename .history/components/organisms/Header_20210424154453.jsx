@@ -43,7 +43,7 @@ const Header = () => {
             hoverColor="bg-green-300"
             borderColor="border-green-400"
             value="Iniciar Sesión"
-            link="/login"
+            link="login"
           />
 
           <Button
@@ -51,7 +51,8 @@ const Header = () => {
             hoverColor="bg-green-300"
             borderColor="border-green-400"
             value="Crear Cuenta"
-            link="/create-account"
+            link="create-account"
+            onClick={toggleCreateAccount}
           />
         </div>
       </div>

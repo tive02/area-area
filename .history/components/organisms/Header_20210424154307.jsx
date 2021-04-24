@@ -5,8 +5,15 @@ import Button from "../atoms/Button";
 import ButtonHamburguer from "../atoms/ButtonHamburguer";
 import LogoResponsive from "../atoms/LogoResponsive";
 import Seeker from "../molecules/Seeker";
+import Form from "../molecules/Form";
 
 const Header = () => {
+  const [isCreateAccountVisible, setIsCreateAccountVisible] = useState(false);
+
+  const toggleCreateAccount = () => {
+    setIsCreateAccountVisible(true);
+  };
+
   return (
     <header
       className="
@@ -43,7 +50,7 @@ const Header = () => {
             hoverColor="bg-green-300"
             borderColor="border-green-400"
             value="Iniciar Sesión"
-            link="/login"
+            link="login"
           />
 
           <Button
@@ -51,8 +58,14 @@ const Header = () => {
             hoverColor="bg-green-300"
             borderColor="border-green-400"
             value="Crear Cuenta"
-            link="/create-account"
+            link="create-account"
+            onClick={toggleCreateAccount}
           />
+          {isCreateAccountVisible && (
+            <div className="bg-red-700 pl-4 w-2/12 absolute inset-y-0 right-0 ">
+              <Form />
+            </div>
+          )}
         </div>
       </div>
     </header>
