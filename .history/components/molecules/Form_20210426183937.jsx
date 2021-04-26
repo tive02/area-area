@@ -61,6 +61,7 @@ const Form = ({ hidden, title, valueInput }) => {
               />
               <ErrorMessage errors={errors} name="name" />
             </div>
+
             <div className="flex justify-between items-baseline flex-wrap p-2">
               <label htmlFor="email" className="pr-2">
                 Tú Email
@@ -75,12 +76,11 @@ const Form = ({ hidden, title, valueInput }) => {
                   required: "El email es obligatorio.",
                   pattern: {
                     value: /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/,
-                    message: "Por favor, ingresa un email valido.",
+                    message: "Por favor, ingresa un correo valido.",
                   },
                 })}
               />
             </div>
-
             <ErrorMessage errors={errors} name="email">
               {({ messages }) =>
                 messages &&

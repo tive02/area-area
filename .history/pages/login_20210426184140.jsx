@@ -11,7 +11,7 @@ export default function Login() {
           hidden="hidden"
           title="Inicia Sesión"
           valueInput="Inicia Sesión"
-          linkBottom="/login"
+          valueBotton="Registrate"
         />
         <div className="flex flex-row justify-center items-baseline p-2.5">
           <p className="text-xl pr-2">¿No Tienes Cuenta? </p>
