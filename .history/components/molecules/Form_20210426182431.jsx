@@ -59,9 +59,8 @@ const Form = ({ hidden, title, valueInput }) => {
                 className="placeholder-green-800"
                 {...register("name", { required: "Este campo es obligatorio" })}
               />
-              <ErrorMessage errors={errors} name="name" />
             </div>
-
+            <ErrorMessage errors={errors} name="name" />
             <div className="flex justify-between items-baseline flex-wrap p-2">
               <label htmlFor="email" className="pr-2">
                 Tú Email

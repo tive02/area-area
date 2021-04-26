@@ -59,9 +59,8 @@ const Form = ({ hidden, title, valueInput }) => {
                 className="placeholder-green-800"
                 {...register("name", { required: "Este campo es obligatorio" })}
               />
-              <ErrorMessage errors={errors} name="name" />
             </div>
-
+            <ErrorMessage errors={errors} name="name" />
             <div className="flex justify-between items-baseline flex-wrap p-2">
               <label htmlFor="email" className="pr-2">
                 Tú Email
@@ -72,13 +71,7 @@ const Form = ({ hidden, title, valueInput }) => {
                 name="email"
                 placeholder="Tu Email"
                 className="placeholder-green-800 "
-                {...register("email", {
-                  required: "El email es obligatorio.",
-                  pattern: {
-                    value: /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/,
-                    message: "Por favor, ingresa un correo valido.",
-                  },
-                })}
+                {...register("email", { required: true })}
               />
             </div>
             <ErrorMessage errors={errors} name="email">
@@ -100,11 +93,10 @@ const Form = ({ hidden, title, valueInput }) => {
                 placeholder="Tu Password"
                 className="placeholder-green-800 "
                 {...register("password", {
-                  required: "La Contraseña es obligatoria.",
+                  required: "This is required.",
                   minLength: {
-                    value: 6,
-                    message:
-                      "La contraseña debe tener como minimo 6 Caracteres.",
+                    value: 8,
+                    message: "This input exceed maxLength.",
                   },
                 })}
               />

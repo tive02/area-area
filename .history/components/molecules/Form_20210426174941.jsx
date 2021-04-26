@@ -2,7 +2,7 @@ import React, { Fragment, useEffect } from "react";
 import classnames from "classnames";
 import Link from "next/link";
 import { useForm } from "react-hook-form";
-import { ErrorMessage } from "@hookform/error-message";
+
 import Button from "../atoms/Button";
 import IconGmail from "../atoms/icons/IconGmail";
 import IconTwitter from "../atoms/icons/IconTwitter";
@@ -10,11 +10,10 @@ import IconFacebook from "../atoms/icons/IconFacebook";
 
 const Form = ({ hidden, title, valueInput }) => {
   //Debuggin useForm of library react-hook-form
-  const { register, formState, handleSubmit } = useForm({
-    criteriaMode: "all",
+  const { register, errors, handleSubmit } = useForm({
+    criteriaMode "all"
   });
-
-  const { errors } = formState;
+ 
 
   const onSubmit = (data) => console.log(data);
   return (
@@ -57,11 +56,9 @@ const Form = ({ hidden, title, valueInput }) => {
                 name="name"
                 placeholder="Tu Nombre Completo"
                 className="placeholder-green-800"
-                {...register("name", { required: "Este campo es obligatorio" })}
+                {...register("name", { required: true })}
               />
-              <ErrorMessage errors={errors} name="name" />
             </div>
-
             <div className="flex justify-between items-baseline flex-wrap p-2">
               <label htmlFor="email" className="pr-2">
                 Tú Email
@@ -72,23 +69,9 @@ const Form = ({ hidden, title, valueInput }) => {
                 name="email"
                 placeholder="Tu Email"
                 className="placeholder-green-800 "
-                {...register("email", {
-                  required: "El email es obligatorio.",
-                  pattern: {
-                    value: /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/,
-                    message: "Por favor, ingresa un correo valido.",
-                  },
-                })}
+                {...register("email", { required: true })}
               />
             </div>
-            <ErrorMessage errors={errors} name="email">
-              {({ messages }) =>
-                messages &&
-                Object.entries(messages).map(([type, message]) => (
-                  <p key={type}>{message}</p>
-                ))
-              }
-            </ErrorMessage>
             <div className="flex justify-between items-baseline flex-wrap p-2">
               <label htmlFor="password" className="pr-2">
                 Tú Contraseña
@@ -100,23 +83,14 @@ const Form = ({ hidden, title, valueInput }) => {
                 placeholder="Tu Password"
                 className="placeholder-green-800 "
                 {...register("password", {
-                  required: "La Contraseña es obligatoria.",
                   minLength: {
                     value: 6,
-                    message:
-                      "La contraseña debe tener como minimo 6 Caracteres.",
+                    message: "la Contraseña debe tener minimo 6 caracteres",
                   },
                 })}
               />
             </div>
-            <ErrorMessage errors={errors} name="password">
-              {({ messages }) =>
-                messages &&
-                Object.entries(messages).map(([type, message]) => (
-                  <p key={type}>{message}</p>
-                ))
-              }
-            </ErrorMessage>
+
             <div className="flex justify-center p-2">
               {/* <Button
                 bgColor="bg-green-400"

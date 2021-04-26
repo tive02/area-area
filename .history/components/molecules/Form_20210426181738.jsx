@@ -59,9 +59,8 @@ const Form = ({ hidden, title, valueInput }) => {
                 className="placeholder-green-800"
                 {...register("name", { required: "Este campo es obligatorio" })}
               />
-              <ErrorMessage errors={errors} name="name" />
             </div>
-
+            <ErrorMessage errors={errors} name="name" />
             <div className="flex justify-between items-baseline flex-wrap p-2">
               <label htmlFor="email" className="pr-2">
                 Tú Email
@@ -75,7 +74,7 @@ const Form = ({ hidden, title, valueInput }) => {
                 {...register("email", {
                   required: "El email es obligatorio.",
                   pattern: {
-                    value: /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/,
+                    value: !/^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,}$/i,
                     message: "Por favor, ingresa un correo valido.",
                   },
                 })}
