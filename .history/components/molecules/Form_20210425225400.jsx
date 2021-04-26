@@ -9,15 +9,16 @@ import IconFacebook from "../atoms/icons/IconFacebook";
 
 const Form = ({ hidden, title, valueInput }) => {
   //Debuggin useForm of library react-hook-form
-  const { register, handleSubmit } = useForm({
+  const { register, handleSubmit, control } = useForm({
     defaultValues: {
-      name: "",
-      email: "",
-      password: "",
+      name,
+      email,
+      password,
     },
   });
-  const { errors } = useForm;
-
+  const { dirtyFields } = useFormState({
+    control,
+  });
   const onSubmit = (data) => console.log(data);
   return (
     <>
@@ -59,9 +60,10 @@ const Form = ({ hidden, title, valueInput }) => {
                 name="name"
                 placeholder="Tu Nombre Completo"
                 className="placeholder-green-800"
-                {...register("name", { required: true })}
+                {...register("name")}
               />
             </div>
+            {dirtyFields.name && <p>Field is dirty.</p>}
             <div className="flex justify-between items-baseline flex-wrap p-2">
               <label htmlFor="email" className="pr-2">
                 Tú Email
@@ -72,9 +74,10 @@ const Form = ({ hidden, title, valueInput }) => {
                 name="email"
                 placeholder="Tu Email"
                 className="placeholder-green-800 "
-                {...register("email", { required: true })}
+                {...register("email")}
               />
             </div>
+            {dirtyFields.email && <p>Field is dirty.</p>}
             <div className="flex justify-between items-baseline flex-wrap p-2">
               <label htmlFor="password" className="pr-2">
                 Tú Contraseña
@@ -85,15 +88,10 @@ const Form = ({ hidden, title, valueInput }) => {
                 name="password"
                 placeholder="Tu Password"
                 className="placeholder-green-800 "
-                {...register("password", {
-                  minLength: {
-                    value: 6,
-                    message: "la Contraseña debe tener minimo 6 caracteres",
-                  },
-                })}
+                {...register("password")}
               />
             </div>
-
+            {dirtyFields.password && <p>Field is dirty.</p>}
             <div className="flex justify-center p-2">
               {/* <Button
                 bgColor="bg-green-400"

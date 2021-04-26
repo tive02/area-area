@@ -93,6 +93,7 @@ const Form = ({ hidden, title, valueInput }) => {
                 })}
               />
             </div>
+            {errors.password && <p>{errors.password.message}</p>}
 
             <div className="flex justify-center p-2">
               {/* <Button

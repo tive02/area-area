@@ -9,7 +9,6 @@ export const Button = ({
   borderColor,
   link,
   onClick,
-  type,
 }) => {
   return (
     <button

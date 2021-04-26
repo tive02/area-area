@@ -1,7 +1,7 @@
-import React, { Fragment, useEffect } from "react";
+import React, { Fragment } from "react";
 import classnames from "classnames";
 import Link from "next/link";
-import { useForm, useFormState } from "react-hook-form";
+import { useForm } from "react-hook-form";
 import Button from "../atoms/Button";
 import IconGmail from "../atoms/icons/IconGmail";
 import IconTwitter from "../atoms/icons/IconTwitter";
@@ -9,16 +9,18 @@ import IconFacebook from "../atoms/icons/IconFacebook";
 
 const Form = ({ hidden, title, valueInput }) => {
   //Debuggin useForm of library react-hook-form
-  const { register, handleSubmit } = useForm({
-    defaultValues: {
-      name: "",
-      email: "",
-      password: "",
-    },
-  });
-  const { errors } = useForm;
+  const {
+    register,
+    handleSubmit,
+    setError,
+    formState: { errors },
+  } = useForm();
 
-  const onSubmit = (data) => console.log(data);
+  const onSubmit = (e) => {
+    e.preventDefault();
+    console.log(e);
+  };
+
   return (
     <>
       <div
@@ -59,9 +61,10 @@ const Form = ({ hidden, title, valueInput }) => {
                 name="name"
                 placeholder="Tu Nombre Completo"
                 className="placeholder-green-800"
-                {...register("name", { required: true })}
+                {...register("name")}
               />
             </div>
+            {errors.name && "First name is required"}
             <div className="flex justify-between items-baseline flex-wrap p-2">
               <label htmlFor="email" className="pr-2">
                 Tú Email
@@ -72,9 +75,10 @@ const Form = ({ hidden, title, valueInput }) => {
                 name="email"
                 placeholder="Tu Email"
                 className="placeholder-green-800 "
-                {...register("email", { required: true })}
+                {...register("email")}
               />
             </div>
+            {errors.email && "email is required"}
             <div className="flex justify-between items-baseline flex-wrap p-2">
               <label htmlFor="password" className="pr-2">
                 Tú Contraseña
@@ -85,24 +89,16 @@ const Form = ({ hidden, title, valueInput }) => {
                 name="password"
                 placeholder="Tu Password"
                 className="placeholder-green-800 "
-                {...register("password", {
-                  minLength: {
-                    value: 6,
-                    message: "la Contraseña debe tener minimo 6 caracteres",
-                  },
-                })}
+                {...register("password")}
               />
             </div>
-
+            {errors.pasword && "contraseña is required"}
             <div className="flex justify-center p-2">
-              {/* <Button
+              <Button
                 bgColor="bg-green-400"
                 borderColor="border-gray-700"
                 value={valueInput}
-              >
-                
-              </Button> */}
-              <input type="submit" />
+              />
             </div>
           </fieldset>
         </form>

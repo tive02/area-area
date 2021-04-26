@@ -1,7 +1,7 @@
-import React, { Fragment, useEffect } from "react";
+import React, { Fragment } from "react";
 import classnames from "classnames";
 import Link from "next/link";
-import { useForm, useFormState } from "react-hook-form";
+import { useForm } from "react-hook-form";
 import Button from "../atoms/Button";
 import IconGmail from "../atoms/icons/IconGmail";
 import IconTwitter from "../atoms/icons/IconTwitter";
@@ -9,16 +9,22 @@ import IconFacebook from "../atoms/icons/IconFacebook";
 
 const Form = ({ hidden, title, valueInput }) => {
   //Debuggin useForm of library react-hook-form
-  const { register, handleSubmit } = useForm({
-    defaultValues: {
-      name: "",
-      email: "",
-      password: "",
-    },
+  const { register, handleSubmit, errors } = useForm({
+    mode: "onBlur",
   });
-  const { errors } = useForm;
-
-  const onSubmit = (data) => console.log(data);
+  const handleRegistration = (data) => console.log(data);
+  const handleError = (errors) => {};
+  const registerOptions = {
+    name: { required: "Nombre es obligatorio" },
+    email: { required: "Email es obligatorio" },
+    password: {
+      required: "La contraseña es obligatorio",
+      minLength: {
+        value: 8,
+        message: "La contraseña debe ser de al menos 8 Caracteres",
+      },
+    },
+  };
   return (
     <>
       <div
@@ -40,7 +46,7 @@ const Form = ({ hidden, title, valueInput }) => {
             <IconTwitter />
           </div>
         </div>
-        <form onSubmit={handleSubmit(onSubmit)}>
+        <form onSubmit={handleSubmit(handleRegistration, handleError)}>
           <fieldset className="grid grid-cols-1 w-auto text-sm space-y-5 border-dotted border-4 border-gray-800">
             <legend className="justify-self-auto text-xl ">
               O tu Correo Electrónico
@@ -59,9 +65,10 @@ const Form = ({ hidden, title, valueInput }) => {
                 name="name"
                 placeholder="Tu Nombre Completo"
                 className="placeholder-green-800"
-                {...register("name", { required: true })}
+                {...register({registerOptions(name)})}
               />
             </div>
+            {errors.name && errors.name.message}
             <div className="flex justify-between items-baseline flex-wrap p-2">
               <label htmlFor="email" className="pr-2">
                 Tú Email
@@ -72,9 +79,10 @@ const Form = ({ hidden, title, valueInput }) => {
                 name="email"
                 placeholder="Tu Email"
                 className="placeholder-green-800 "
-                {...register("email", { required: true })}
+                innerRef={register(registerOptions.email)}
               />
             </div>
+            {errors.email && errors.email.message}
             <div className="flex justify-between items-baseline flex-wrap p-2">
               <label htmlFor="password" className="pr-2">
                 Tú Contraseña
@@ -85,24 +93,16 @@ const Form = ({ hidden, title, valueInput }) => {
                 name="password"
                 placeholder="Tu Password"
                 className="placeholder-green-800 "
-                {...register("password", {
-                  minLength: {
-                    value: 6,
-                    message: "la Contraseña debe tener minimo 6 caracteres",
-                  },
-                })}
+                innerRef={register(registerOptions.password)}
               />
             </div>
-
+            {errors.password && errors.password.message}
             <div className="flex justify-center p-2">
-              {/* <Button
+              <Button
                 bgColor="bg-green-400"
                 borderColor="border-gray-700"
                 value={valueInput}
-              >
-                
-              </Button> */}
-              <input type="submit" />
+              />
             </div>
           </fieldset>
         </form>

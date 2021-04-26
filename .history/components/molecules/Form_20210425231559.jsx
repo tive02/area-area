@@ -16,7 +16,6 @@ const Form = ({ hidden, title, valueInput }) => {
       password: "",
     },
   });
-  const { errors } = useForm;
 
   const onSubmit = (data) => console.log(data);
   return (
@@ -93,7 +92,6 @@ const Form = ({ hidden, title, valueInput }) => {
                 })}
               />
             </div>
-
             <div className="flex justify-center p-2">
               {/* <Button
                 bgColor="bg-green-400"

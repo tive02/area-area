@@ -16,7 +16,6 @@ const Form = ({ hidden, title, valueInput }) => {
       password: "",
     },
   });
-  const { errors } = useForm;
 
   const onSubmit = (data) => console.log(data);
   return (
@@ -85,15 +84,9 @@ const Form = ({ hidden, title, valueInput }) => {
                 name="password"
                 placeholder="Tu Password"
                 className="placeholder-green-800 "
-                {...register("password", {
-                  minLength: {
-                    value: 6,
-                    message: "la Contraseña debe tener minimo 6 caracteres",
-                  },
-                })}
+                {...register("password", { required: true }, { minLength: 6 })}
               />
             </div>
-
             <div className="flex justify-center p-2">
               {/* <Button
                 bgColor="bg-green-400"

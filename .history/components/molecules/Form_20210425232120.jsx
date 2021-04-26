@@ -93,6 +93,7 @@ const Form = ({ hidden, title, valueInput }) => {
                 })}
               />
             </div>
+            {errors.firstName && <p>{errors.firstName.message}</p>}
 
             <div className="flex justify-center p-2">
               {/* <Button
