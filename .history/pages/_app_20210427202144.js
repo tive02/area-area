@@ -1,9 +1,9 @@
 import firebase, { FirebaseContext } from "../firebase";
+import useAutenticacion from "../hooks/useAutenticacion";
 import "../styles/globals.css";
-//import useAutenticacion from "../hooks/useAutenticacion";
 
 function MyApp(props) {
-  //const usuario = useAutenticacion();
+  const usuario = useAutenticacion();
 
   const { Component, pageProps } = props;
   return (

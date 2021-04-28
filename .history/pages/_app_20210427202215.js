@@ -1,4 +1,5 @@
 import firebase, { FirebaseContext } from "../firebase";
+
 import "../styles/globals.css";
 //import useAutenticacion from "../hooks/useAutenticacion";
 
