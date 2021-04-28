@@ -1,9 +1,7 @@
-import { useState } from "react";
 import Head from "next/head";
-import Router from "next/router";
-//Componentes del proyecto
 import Banner from "../components/organisms/Banner";
 import Layout from "../components/Layout/Layout";
+import { Fragment } from "react";
 import Form from "../components/molecules/Form";
 import Button from "../components/atoms/Button";
 
@@ -11,10 +9,9 @@ import Button from "../components/atoms/Button";
 import firebase from "../firebase";
 
 export default function createAccount() {
-  const [error, guardarError] = useState(false);
   async function CreateUser() {
     try {
-      await firebase.register(name, email, password);
+      await firebase.register(nombre, email, password);
       Router.push("/");
     } catch (error) {
       console.error("Existio un error", error.message);
