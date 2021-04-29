@@ -13,6 +13,12 @@ import useValidate from "../../hooks/useValidate";
 import validateCreateUser from "../../validate/validateCreateUser";
 import firebase from "../../firebase/firebase";
 
+const STATE_INITIAL = {
+  name: "",
+  email: "",
+  password: "",
+};
+
 const Form = ({ hidden, title, valueInput }) => {
   //Debuggin useForm of library react-hook-form
   //const { register, formState, handleSubmit } = useForm({
@@ -23,16 +29,10 @@ const Form = ({ hidden, title, valueInput }) => {
   //funcion cuando el usuario hace submit al formulario
   //State para los errores
   const [error, setError] = useState(false);
-  const STATE_INITIAL = {
-    name: "",
-    email: "",
-    password: "",
-  };
 
   const {
     values,
     errorsValidate,
-    submitForm,
     handleChange,
     manipulateSubmit,
     handleBlur,
@@ -41,7 +41,6 @@ const Form = ({ hidden, title, valueInput }) => {
   const { name, email, password } = values;
 
   async function createAccount() {
-    console.log("crear cuenta...");
     try {
       await firebase.register(name, email, password);
       Router.push("/");
@@ -92,8 +91,6 @@ const Form = ({ hidden, title, valueInput }) => {
                 value={name}
                 placeholder="Tu Nombre Completo"
                 className="placeholder-green-800"
-                onChange={handleChange}
-                onBlur={handleBlur}
                 //{...register("name", { required: "Este campo es obligatorio" })}
               />
               {/* <ErrorMessage errors={errors} name="name" /> */}
@@ -107,8 +104,6 @@ const Form = ({ hidden, title, valueInput }) => {
                 id="email"
                 name="email"
                 value={email}
-                onChange={handleChange}
-                onBlur={handleBlur}
                 placeholder="Tu Email"
                 className="placeholder-green-800 "
                 //{...register("email", {
@@ -138,8 +133,6 @@ const Form = ({ hidden, title, valueInput }) => {
                 id="password"
                 name="password"
                 value={password}
-                onChange={handleChange}
-                onBlur={handleBlur}
                 placeholder="Tu Password"
                 className="placeholder-green-800 "
                 //{...register("password", {

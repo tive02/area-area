@@ -6,7 +6,7 @@ import "firebase/storage";
 import firebaseConfig from "./config";
 
 class Firebase {
-  constructor() {
+  builder() {
     if (!app.apps.length) {
       app.initializeApp(firebaseConfig);
     }

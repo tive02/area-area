@@ -10,7 +10,7 @@ import Button from "../components/atoms/Button";
 //modulos de firebase
 import firebase from "../firebase";
 
-export default function createAccount() {
+
   return (
     <Layout>
       <div

@@ -41,7 +41,6 @@ const Form = ({ hidden, title, valueInput }) => {
   const { name, email, password } = values;
 
   async function createAccount() {
-    console.log("crear cuenta...");
     try {
       await firebase.register(name, email, password);
       Router.push("/");
