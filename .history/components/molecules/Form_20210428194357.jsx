@@ -164,9 +164,10 @@ const Form = ({ hidden, title, valueInput }) => {
               <Button
                 bgColor="bg-green-400"
                 borderColor="border-gray-700"
-                value="Crear Cuenta"
-                type="submit"
-              />
+                value={valueInput}
+              >
+                <input type="submit" value="Crear Cuenta" />
+              </Button>
             </div>
           </fieldset>
         </form>
