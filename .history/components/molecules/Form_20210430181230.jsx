@@ -7,14 +7,8 @@ import IconTwitter from "../atoms/icons/IconTwitter";
 import IconFacebook from "../atoms/icons/IconFacebook";
 import ButtonSubmit from "../atoms/ButtonSubmit";
 
-const Form = ({ hidden, title, onSubmit, value, nameUser }) => {
-  const { register, formState, handleSubmit } = useForm({
-    defaultValues: {
-      name: `${nameUser}`,
-      email: "",
-      password: "",
-    },
-  });
+const Form = ({ hidden, title, onSubmit, value }) => {
+  const { register, formState, handleSubmit } = useForm();
   const { errors } = formState;
   return (
     <>
@@ -47,14 +41,14 @@ const Form = ({ hidden, title, onSubmit, value, nameUser }) => {
                 `flex justify-between items-baseline flex-wrap p-2 ${hidden} `
               )}
             >
-              <label htmlFor="name" className="pr-2">
+              <label htmlFor="name" className={classnames(`pr-2 ${hidden}`)}>
                 Nombre Completo
               </label>
               <input
                 type="text"
                 name="name"
                 placeholder="Tu Nombre Completo"
-                className="placeholder-green-800"
+                className={classnames(`placeholder-green-800 ${hidden}`)}
                 {...register("name", { required: "Este campo es obligatorio" })}
               />
               {<ErrorMessage errors={errors} name="name" />}

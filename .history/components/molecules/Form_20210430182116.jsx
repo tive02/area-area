@@ -7,10 +7,10 @@ import IconTwitter from "../atoms/icons/IconTwitter";
 import IconFacebook from "../atoms/icons/IconFacebook";
 import ButtonSubmit from "../atoms/ButtonSubmit";
 
-const Form = ({ hidden, title, onSubmit, value, nameUser }) => {
+const Form = ({ hidden, title, onSubmit, value }) => {
   const { register, formState, handleSubmit } = useForm({
     defaultValues: {
-      name: `${nameUser}`,
+      name: "user",
       email: "",
       password: "",
     },

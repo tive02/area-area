@@ -22,7 +22,6 @@ export default function Login() {
     <Layout>
       <div className="container max-w-screen-lg mx-auto min-h-0 box-border">
         <Form
-          nameUser="user"
           hidden="hidden"
           title="Inicia Sesión"
           onSubmit={LoginUser}

@@ -7,14 +7,8 @@ import IconTwitter from "../atoms/icons/IconTwitter";
 import IconFacebook from "../atoms/icons/IconFacebook";
 import ButtonSubmit from "../atoms/ButtonSubmit";
 
-const Form = ({ hidden, title, onSubmit, value, nameUser }) => {
-  const { register, formState, handleSubmit } = useForm({
-    defaultValues: {
-      name: `${nameUser}`,
-      email: "",
-      password: "",
-    },
-  });
+const Form = ({ hidden, title, onSubmit, value }) => {
+  const { register, formState, handleSubmit } = useForm();
   const { errors } = formState;
   return (
     <>
@@ -52,6 +46,7 @@ const Form = ({ hidden, title, onSubmit, value, nameUser }) => {
               </label>
               <input
                 type="text"
+                id="name"
                 name="name"
                 placeholder="Tu Nombre Completo"
                 className="placeholder-green-800"
@@ -65,6 +60,7 @@ const Form = ({ hidden, title, onSubmit, value, nameUser }) => {
               </label>
               <input
                 type="email"
+                id="email"
                 name="email"
                 placeholder="Tu Email"
                 className="placeholder-green-800 "
@@ -93,6 +89,7 @@ const Form = ({ hidden, title, onSubmit, value, nameUser }) => {
               </label>
               <input
                 type="password"
+                id="password"
                 name="password"
                 placeholder="Tu Password"
                 className="placeholder-green-800 "

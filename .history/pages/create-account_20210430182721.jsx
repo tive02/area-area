@@ -28,7 +28,7 @@ export default function createAccount() {
         grid grid-col-1  "
       >
         <Form
-          nameUser=""
+          nameUser={`i`}
           title="Crea tu cuenta en"
           onSubmit={onSubmit}
           value="Crea tu Cuenta"

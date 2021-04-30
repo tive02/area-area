@@ -1,5 +1,5 @@
 import Head from "next/head";
-import Router from "next/router";
+import { useForm } from "react-hook-form";
 import Button from "../components/atoms/Button";
 import Layout from "../components/Layout/Layout";
 import Form from "../components/molecules/Form";
@@ -8,26 +8,24 @@ import Form from "../components/molecules/Form";
 import firebase from "../firebase/firebase";
 
 export default function Login() {
+  //Debuggin useForm of library react-hook-form
+  const { handleSubmit } = useForm();
+
   //Funcion cuando el usuario hace submit
 
-  async function LoginUser(data) {
+  async function Login(data) {
     try {
       await firebase.login(data["email"], data["password"]);
       Router.push("/");
     } catch (error) {
       console.error("Existio un error", error.message);
+      guardarError(error.message);
     }
   }
   return (
     <Layout>
       <div className="container max-w-screen-lg mx-auto min-h-0 box-border">
-        <Form
-          nameUser="user"
-          hidden="hidden"
-          title="Inicia Sesión"
-          onSubmit={LoginUser}
-          value="Iniciar Sesión"
-        />
+        <Form hidden="hidden" title="Inicia Sesión" onSubmit={Login} />
         <div className="flex flex-row justify-center items-baseline p-2.5">
           <p className="text-xl pr-2">¿No Tienes Cuenta? </p>
           <Button

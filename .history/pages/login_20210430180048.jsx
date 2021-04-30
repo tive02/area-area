@@ -10,7 +10,7 @@ import firebase from "../firebase/firebase";
 export default function Login() {
   //Funcion cuando el usuario hace submit
 
-  async function LoginUser(data) {
+  async function Login(data) {
     try {
       await firebase.login(data["email"], data["password"]);
       Router.push("/");
@@ -22,10 +22,9 @@ export default function Login() {
     <Layout>
       <div className="container max-w-screen-lg mx-auto min-h-0 box-border">
         <Form
-          nameUser="user"
           hidden="hidden"
           title="Inicia Sesión"
-          onSubmit={LoginUser}
+          onSubmit={Login}
           value="Iniciar Sesión"
         />
         <div className="flex flex-row justify-center items-baseline p-2.5">
