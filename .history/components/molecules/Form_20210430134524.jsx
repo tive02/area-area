@@ -1,5 +1,6 @@
 import React from "react";
 import classnames from "classnames";
+
 import Router from "next/router";
 import { useForm } from "react-hook-form";
 import { ErrorMessage } from "@hookform/error-message";
@@ -10,7 +11,7 @@ import IconFacebook from "../atoms/icons/IconFacebook";
 
 import firebase from "../../firebase/firebase";
 
-const Form = ({ hidden, title }) => {
+const Form = ({ hidden, title, valueInput }) => {
   //Debuggin useForm of library react-hook-form
   const { register, formState, handleSubmit } = useForm({
     criteriaMode: "all",
@@ -25,6 +26,7 @@ const Form = ({ hidden, title }) => {
       Router.push("/");
     } catch (error) {
       console.error("Existio un error", error.message);
+      setError(error.message);
     }
   }
 
@@ -66,8 +68,11 @@ const Form = ({ hidden, title }) => {
                 type="text"
                 id="name"
                 name="name"
+                //value={name}
                 placeholder="Tu Nombre Completo"
                 className="placeholder-green-800"
+                //onChange={handleChange}
+                //onBlur={handleBlur}
                 {...register("name", { required: "Este campo es obligatorio" })}
               />
               {<ErrorMessage errors={errors} name="name" />}
@@ -80,6 +85,9 @@ const Form = ({ hidden, title }) => {
                 type="email"
                 id="email"
                 name="email"
+                //value={email}
+                //onChange={handleChange}
+                //onBlur={handleBlur}
                 placeholder="Tu Email"
                 className="placeholder-green-800 "
                 {...register("email", {
@@ -109,6 +117,9 @@ const Form = ({ hidden, title }) => {
                 type="password"
                 id="password"
                 name="password"
+                //value={password}
+                //onChange={handleChange}
+                //onBlur={handleBlur}
                 placeholder="Tu Password"
                 className="placeholder-green-800 "
                 {...register("password", {

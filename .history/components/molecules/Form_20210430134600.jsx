@@ -10,7 +10,7 @@ import IconFacebook from "../atoms/icons/IconFacebook";
 
 import firebase from "../../firebase/firebase";
 
-const Form = ({ hidden, title }) => {
+const Form = ({ hidden, title, valueInput }) => {
   //Debuggin useForm of library react-hook-form
   const { register, formState, handleSubmit } = useForm({
     criteriaMode: "all",
@@ -25,6 +25,7 @@ const Form = ({ hidden, title }) => {
       Router.push("/");
     } catch (error) {
       console.error("Existio un error", error.message);
+      setError(error.message);
     }
   }
 

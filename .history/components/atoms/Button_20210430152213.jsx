@@ -8,6 +8,7 @@ export const Button = ({
   hoverColor,
   borderColor,
   link,
+
   type,
 }) => {
   return (

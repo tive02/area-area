@@ -10,7 +10,7 @@ import IconFacebook from "../atoms/icons/IconFacebook";
 
 import firebase from "../../firebase/firebase";
 
-const Form = ({ hidden, title }) => {
+const Form = ({ hidden, title, valueInput }) => {
   //Debuggin useForm of library react-hook-form
   const { register, formState, handleSubmit } = useForm({
     criteriaMode: "all",

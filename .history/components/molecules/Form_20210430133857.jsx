@@ -1,5 +1,6 @@
-import React from "react";
+import React, { Fragment, useState } from "react";
 import classnames from "classnames";
+import Link from "next/link";
 import Router from "next/router";
 import { useForm } from "react-hook-form";
 import { ErrorMessage } from "@hookform/error-message";
@@ -8,9 +9,11 @@ import IconGmail from "../atoms/icons/IconGmail";
 import IconTwitter from "../atoms/icons/IconTwitter";
 import IconFacebook from "../atoms/icons/IconFacebook";
 
+import useValidate from "../../hooks/useValidate";
+import validateCreateUser from "../../validate/validateCreateUser";
 import firebase from "../../firebase/firebase";
 
-const Form = ({ hidden, title }) => {
+const Form = ({ hidden, title, valueInput }) => {
   //Debuggin useForm of library react-hook-form
   const { register, formState, handleSubmit } = useForm({
     criteriaMode: "all",
@@ -18,13 +21,15 @@ const Form = ({ hidden, title }) => {
 
   const { errors } = formState;
 
-  //Funcion cuando el usuario hace submit
   async function onSubmit(data) {
+    console.log(data["name"]);
+
     try {
       await firebase.register(data["name"], data["email"], data["password"]);
       Router.push("/");
     } catch (error) {
       console.error("Existio un error", error.message);
+      setError(error.message);
     }
   }
 
@@ -66,8 +71,11 @@ const Form = ({ hidden, title }) => {
                 type="text"
                 id="name"
                 name="name"
+                //value={name}
                 placeholder="Tu Nombre Completo"
                 className="placeholder-green-800"
+                //onChange={handleChange}
+                //onBlur={handleBlur}
                 {...register("name", { required: "Este campo es obligatorio" })}
               />
               {<ErrorMessage errors={errors} name="name" />}
@@ -80,6 +88,9 @@ const Form = ({ hidden, title }) => {
                 type="email"
                 id="email"
                 name="email"
+                //value={email}
+                //onChange={handleChange}
+                //onBlur={handleBlur}
                 placeholder="Tu Email"
                 className="placeholder-green-800 "
                 {...register("email", {
@@ -109,6 +120,9 @@ const Form = ({ hidden, title }) => {
                 type="password"
                 id="password"
                 name="password"
+                //value={password}
+                //onChange={handleChange}
+                //onBlur={handleBlur}
                 placeholder="Tu Password"
                 className="placeholder-green-800 "
                 {...register("password", {

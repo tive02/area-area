@@ -136,7 +136,7 @@ const Form = ({ hidden, title }) => {
                 bgColor="bg-green-400"
                 borderColor="border-gray-700"
                 value="Crear Cuenta"
-                type="submit"
+                type={"submit"}
               />
             </div>
           </fieldset>
