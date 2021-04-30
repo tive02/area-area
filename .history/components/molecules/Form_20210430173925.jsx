@@ -2,6 +2,7 @@ import React from "react";
 import classnames from "classnames";
 import { ErrorMessage } from "@hookform/error-message";
 import { useForm } from "react-hook-form";
+import Button from "../atoms/Button";
 import IconGmail from "../atoms/icons/IconGmail";
 import IconTwitter from "../atoms/icons/IconTwitter";
 import IconFacebook from "../atoms/icons/IconFacebook";

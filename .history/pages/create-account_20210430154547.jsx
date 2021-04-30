@@ -13,7 +13,9 @@ import firebase from "../firebase/firebase";
 
 export default function createAccount() {
   //Debuggin useForm of library react-hook-form
-  const { handleSubmit } = useForm();
+  const { handleSubmit } = useForm({
+    criteriaMode: "all",
+  });
 
   //Funcion cuando el usuario hace submit
   async function onSubmit(data) {

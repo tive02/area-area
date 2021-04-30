@@ -9,11 +9,13 @@ import Form from "../components/molecules/Form";
 import Button from "../components/atoms/Button";
 
 //modulos de firebase
-import firebase from "../firebase/firebase";
+import firebase from "../firebase";
 
 export default function createAccount() {
   //Debuggin useForm of library react-hook-form
-  const { handleSubmit } = useForm();
+  const { handleSubmit } = useForm({
+    criteriaMode: "all",
+  });
 
   //Funcion cuando el usuario hace submit
   async function onSubmit(data) {
@@ -31,7 +33,7 @@ export default function createAccount() {
         className="container max-w-screen-lg mx-auto min-h-0 box-border h-auto
         grid grid-col-1  "
       >
-        <Form title="Crea tu cuenta en" onSubmit={onSubmit} />
+        <Form title="Crea tu cuenta en" onSubmit={handleSubmit(onSubmit)} />
         <div className="flex flex-row justify-center items-baseline p-2.5">
           <p className="text-xl pr-2">¿Tienes Cuenta? </p>
           <Button
