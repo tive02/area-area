@@ -190,7 +190,7 @@ const MenuMobile = () => {
                           </svg>
                         </span>
                         <span className="ml-2 text-sm tracking-wide truncate">
-                          Ajustes.
+                          Ajustes
                         </span>
                       </p>
                     </li>
@@ -218,7 +218,7 @@ const MenuMobile = () => {
                           </svg>
                         </span>
                         <span className="ml-2 text-sm tracking-wide truncate">
-                          Cerrar sesión.
+                          Cierra Sesión
                         </span>
                       </button>
                     </li>

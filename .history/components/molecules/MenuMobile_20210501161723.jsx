@@ -190,37 +190,17 @@ const MenuMobile = () => {
                           </svg>
                         </span>
                         <span className="ml-2 text-sm tracking-wide truncate">
-                          Ajustes.
+                          Modifica tu Cuenta
                         </span>
                       </p>
                     </li>
-                    <li>
-                      <button
+                    <li className="justify-self-center p-1">
+                      <ButtonSubmit
+                        bgColor="bg-green-400"
+                        borderColor="border-gray-700"
+                        value="Cerrar Sesión"
                         onClick={() => firebase.outLogin()}
-                        className="relative flex flex-row items-center h-11 focus:outline-none hover:bg-green-500
-                  text-gray-800 hover:text-gray-800 border-l-4 border-transparent 
-                  hover:border-indigo-500 pr-6"
-                      >
-                        <span className="inline-flex justify-center items-center ml-4">
-                          <svg
-                            xmlns="http://www.w3.org/2000/svg"
-                            class="h-6 w-6"
-                            fill="none"
-                            viewBox="0 0 24 24"
-                            stroke="currentColor"
-                          >
-                            <path
-                              stroke-linecap="round"
-                              stroke-linejoin="round"
-                              stroke-width="2"
-                              d="M17 16l4-4m0 0l-4-4m4 4H7m6 4v1a3 3 0 01-3 3H6a3 3 0 01-3-3V7a3 3 0 013-3h4a3 3 0 013 3v1"
-                            />
-                          </svg>
-                        </span>
-                        <span className="ml-2 text-sm tracking-wide truncate">
-                          Cerrar sesión.
-                        </span>
-                      </button>
+                      />
                     </li>
                   </>
                 ) : (

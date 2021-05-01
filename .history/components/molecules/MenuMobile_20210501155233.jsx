@@ -168,59 +168,15 @@ const MenuMobile = () => {
                 {user ? (
                   <>
                     <li>
-                      <p
-                        className="relative flex flex-row items-center h-11 focus:outline-none hover:bg-green-500
-                  text-gray-800 hover:text-gray-800 border-l-4 border-transparent 
-                  hover:border-indigo-500 pr-6"
-                      >
-                        <span className="inline-flex justify-center items-center ml-4">
-                          <svg
-                            xmlns="http://www.w3.org/2000/svg"
-                            class="h-6 w-6"
-                            fill="none"
-                            viewBox="0 0 24 24"
-                            stroke="currentColor"
-                          >
-                            <path
-                              stroke-linecap="round"
-                              stroke-linejoin="round"
-                              stroke-width="2"
-                              d="M12 6V4m0 2a2 2 0 100 4m0-4a2 2 0 110 4m-6 8a2 2 0 100-4m0 4a2 2 0 110-4m0 4v2m0-6V4m6 6v10m6-2a2 2 0 100-4m0 4a2 2 0 110-4m0 4v2m0-6V4"
-                            />
-                          </svg>
-                        </span>
-                        <span className="ml-2 text-sm tracking-wide truncate">
-                          Ajustes.
-                        </span>
-                      </p>
+                      <p className="pr-2">Hola: {user.displayName}</p>
                     </li>
                     <li>
-                      <button
+                      <ButtonSubmit
+                        bgColor="bg-green-400"
+                        borderColor="border-gray-700"
+                        value="Cerrar Sesión"
                         onClick={() => firebase.outLogin()}
-                        className="relative flex flex-row items-center h-11 focus:outline-none hover:bg-green-500
-                  text-gray-800 hover:text-gray-800 border-l-4 border-transparent 
-                  hover:border-indigo-500 pr-6"
-                      >
-                        <span className="inline-flex justify-center items-center ml-4">
-                          <svg
-                            xmlns="http://www.w3.org/2000/svg"
-                            class="h-6 w-6"
-                            fill="none"
-                            viewBox="0 0 24 24"
-                            stroke="currentColor"
-                          >
-                            <path
-                              stroke-linecap="round"
-                              stroke-linejoin="round"
-                              stroke-width="2"
-                              d="M17 16l4-4m0 0l-4-4m4 4H7m6 4v1a3 3 0 01-3 3H6a3 3 0 01-3-3V7a3 3 0 013-3h4a3 3 0 013 3v1"
-                            />
-                          </svg>
-                        </span>
-                        <span className="ml-2 text-sm tracking-wide truncate">
-                          Cerrar sesión.
-                        </span>
-                      </button>
+                      />
                     </li>
                   </>
                 ) : (
