@@ -1,16 +1,15 @@
 import firebase, { FirebaseContext } from "../firebase";
 import "../styles/globals.css";
-import useAuthentication from "../hooks/useAuthentication";
+import useAutenticacion from "../hooks/useAutenticacion";
 
 function MyApp(props) {
-  const user = useAuthentication();
+  const usuario = useAutenticacion();
 
   const { Component, pageProps } = props;
   return (
     <FirebaseContext.Provider
       value={{
         firebase,
-        user,
       }}
     >
       <Component {...pageProps} />
