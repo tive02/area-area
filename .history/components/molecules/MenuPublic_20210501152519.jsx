@@ -6,7 +6,7 @@ export const MenuPublic = () => {
     <nav>
       <ul className="hidden  md:flex md:flex-row md:justify-around font-serif">
         <li
-          className="px-2 py-2 mt-2 text-sm font-semibold text-black-400 
+          className="px-4 py-2 mt-2 text-sm font-semibold text-black-400 
           md:mt-0 hover:text-gray-900 focus:text-gray-900 hover:bg-green-400 focus:bg-green-400 
           focus:outline-none focus:shadow-outline"
         >
@@ -15,7 +15,7 @@ export const MenuPublic = () => {
           </Link>
         </li>
         <li
-          className="px-2 py-2 mt-2 text-sm tracking-tight font-semibold text-black-400 
+          className="px-4 mt-2 text-sm tracking-tight font-semibold text-black-400 
           md:mt-0 hover:text-gray-900 focus:text-gray-900 hover:bg-green-400 focus:bg-green-400 
           focus:outline-none focus:shadow-outline"
         >
@@ -24,7 +24,7 @@ export const MenuPublic = () => {
           </Link>
         </li>
         <li
-          className="px-2 py-2 mt-2 text-sm font-semibold text-black-400 
+          className="px-4 py-2 mt-2 text-sm font-semibold text-black-400 
           md:mt-0 hover:text-gray-900 focus:text-gray-900 hover:bg-green-400 focus:bg-green-400 
           focus:outline-none focus:shadow-outline"
         >
@@ -33,7 +33,7 @@ export const MenuPublic = () => {
           </Link>
         </li>
         <li
-          className="px-2 py-2 mt-2 text-sm font-semibold text-black-400 
+          className="px-4 py-2 mt-2 text-sm font-semibold text-black-400 
           md:mt-0 hover:text-gray-900 focus:text-gray-900 hover:bg-green-400 focus:bg-green-400 
           focus:outline-none focus:shadow-outline"
         >

@@ -42,8 +42,8 @@ const Header = () => {
 
         {user ? (
           <>
-            <div className="flex justify-end items-baseline">
-              <p className="pr-2">Hola: {user.displayName}</p>
+            <div className="flex justify-end">
+              <p>Hola: {user.displayName}</p>
 
               <ButtonSubmit
                 bgColor="bg-green-400"

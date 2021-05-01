@@ -1,4 +1,4 @@
-import React, { Fragment, useState, useContext } from "react";
+import React, { Fragment, useState } from "react";
 import MenuPublic from "../molecules/MenuPublic";
 import Logo from "../atoms/Logo";
 import Button from "../atoms/Button";
@@ -39,41 +39,38 @@ const Header = () => {
       </div>
       <div className="hidden lg:flex lg:justify-evenly lg:items-center lg:flex-row lg:w-4/6">
         <Seeker />
-
-        {user ? (
-          <>
-            <div className="flex justify-end items-baseline">
-              <p className="pr-2">Hola: {user.displayName}</p>
-
-              <ButtonSubmit
-                bgColor="bg-green-400"
+      {user ? 
+      <>
+      <div className="flex justify-end">
+        <p>Hola: {user.displayName}</p>
+              
+          <ButtonSubmit bgColor="bg-green-400"
                 borderColor="border-gray-700"
                 value="Cerrar Sesión"
-                onClick={() => firebase.outLogin()}
-              />
-            </div>
-          </>
-        ) : (
-          <>
-            <div className="flex justify-end">
-              <Button
-                bgColor="bg-green-400"
-                hoverColor="bg-green-300"
-                borderColor="border-green-400"
-                value="Iniciar Sesión"
-                link="/login"
-              />
+                onClick={() => firebase.cerrarSesion()}
+                />
+        </div>
+      </>
+      :      <>
+        <div className="flex justify-end">
+          <Button
+            bgColor="bg-green-400"
+            hoverColor="bg-green-300"
+            borderColor="border-green-400"
+            value="Iniciar Sesión"
+            link="/login"
+          />
 
-              <Button
-                bgColor="bg-green-400"
-                hoverColor="bg-green-300"
-                borderColor="border-green-400"
-                value="Crear Cuenta"
-                link="/create-account"
-              />
-            </div>
-          </>
-        )}
+          <Button
+            bgColor="bg-green-400"
+            hoverColor="bg-green-300"
+            borderColor="border-green-400"
+            value="Crear Cuenta"
+            link="/create-account"
+          />
+        </div>
+        <>
+      }
       </div>
     </header>
   );

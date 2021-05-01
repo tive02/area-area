@@ -33,6 +33,7 @@ const Form = ({ hidden, title, onSubmit, value, nameUser }) => {
           <h2>Con tus cuentas Favoritas </h2>
           <div className="flex flex-row justify-between ">
             <IconGmail />
+
             <IconTwitter />
           </div>
         </div>
