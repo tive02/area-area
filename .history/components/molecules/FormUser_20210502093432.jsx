@@ -8,6 +8,7 @@ import ButtonSubmit from "../atoms/ButtonSubmit";
 
 const Form = ({ hidden, title, onSubmit, value, nameUser }) => {
   const { register, formState, handleSubmit } = useForm({
+    mode: "onBlur",
     defaultValues: {
       name: `${nameUser}`,
       email: "",

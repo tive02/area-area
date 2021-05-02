@@ -1,0 +1,132 @@
+import React from "react";
+import classnames from "classnames";
+import { ErrorMessage } from "@hookform/error-message";
+import { useForm } from "react-hook-form";
+import IconGmail from "../atoms/icons/IconGmail";
+import IconTwitter from "../atoms/icons/IconTwitter";
+import ButtonSubmit from "../atoms/ButtonSubmit";
+
+const Form = ({ hidden, title, onSubmit, value, nameUser }) => {
+  const { register, formState, handleSubmit } = useForm({
+    mode: "onBlur",
+    defaultValues: {
+      name: `${nameUser}`,
+      email: "",
+      password: "",
+    },
+  });
+  const { errors } = formState;
+  return (
+    <>
+      <div
+        className="grid grid-cols-1 gap-2 place-content-start place-items-center h-auto border-double 
+        p-4 border-4 border-gray-800
+      "
+      >
+        <div className="flex p-4 justify-around">
+          <h1 className=" text-center text-2xl">
+            {title}
+            <span className="text-2xl text-purple-800"> de Area a Area</span>
+          </h1>
+        </div>
+        <div className="grid grid-cols-1 w-auto ">
+          <h2>Con tus cuentas Favoritas </h2>
+          <div className="flex flex-row justify-between ">
+            <IconGmail />
+            <IconTwitter />
+          </div>
+        </div>
+        <form onSubmit={handleSubmit(onSubmit)}>
+          <fieldset className="grid grid-cols-1 w-auto text-sm space-y-5 border-dotted border-4 border-gray-800">
+            <legend className="justify-self-auto text-xl ">
+              O tu Correo Electrónico
+            </legend>
+            <div
+              className={classnames(
+                `flex justify-between items-baseline flex-wrap p-2 ${hidden} `
+              )}
+            >
+              <label htmlFor="name" className="pr-2">
+                Nombre Completo
+              </label>
+              <input
+                type="text"
+                name="name"
+                placeholder="Tu Nombre Completo"
+                className="placeholder-green-800"
+                {...register("name", { required: "Este campo es obligatorio" })}
+              />
+              {<ErrorMessage errors={errors} name="name" />}
+            </div>
+            <div className="flex justify-between items-baseline flex-wrap p-2">
+              <label htmlFor="email" className="pr-2">
+                Tú Email
+              </label>
+              <input
+                type="email"
+                name="email"
+                placeholder="Tu Email"
+                className="placeholder-green-800 "
+                {...register("email", {
+                  required: "El email es obligatorio.",
+                  pattern: {
+                    value: /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/,
+                    message: "Por favor, ingresa un email valido.",
+                  },
+                })}
+              />
+            </div>
+            {
+              <ErrorMessage errors={errors} name="email">
+                {({ messages }) =>
+                  messages &&
+                  Object.entries(messages).map(([type, message]) => (
+                    <p key={type}>{message}</p>
+                  ))
+                }
+              </ErrorMessage>
+            }
+            <div className="flex justify-between items-baseline flex-wrap p-2">
+              <label htmlFor="password" className="pr-2">
+                Tú Contraseña
+              </label>
+              <input
+                type="password"
+                name="password"
+                placeholder="Tu Password"
+                className="placeholder-green-800 "
+                {...register("password", {
+                  required: "La Contraseña es obligatoria.",
+                  minLength: {
+                    value: 6,
+                    message:
+                      "La contraseña debe tener como minimo 6 Caracteres.",
+                  },
+                })}
+              />
+            </div>
+            {
+              <ErrorMessage errors={errors} name="password">
+                {({ messages }) =>
+                  messages &&
+                  Object.entries(messages).map(([type, message]) => (
+                    <p key={type}>{message}</p>
+                  ))
+                }
+              </ErrorMessage>
+            }
+            <div className="flex justify-center p-2">
+              <ButtonSubmit
+                bgColor="bg-green-400"
+                borderColor="border-gray-700"
+                value={value}
+              />
+            </div>
+          </fieldset>
+        </form>
+      </div>
+    </>
+  );
+};
+
+export default Form;
