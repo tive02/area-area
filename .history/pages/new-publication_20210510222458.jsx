@@ -21,7 +21,7 @@ const NewPublication = () => {
                   <Editor
                     onInit={(evt, editor) => (editorRef.current = editor)}
                     apiKey="xjhwud0akjjmhfr743jpag1sf4qx71gqiqjwjt0smon3qo40"
-                    initialValue="<p>Escribe tus ideas y juntos fortalecer el futbol femenino</p>"
+                    initialValue="<p>Escribe tus ideas y juntos fortalescamos el futbol femenino</p>"
                     init={{
                       height: 500,
                       menubar: true,

@@ -1524,6 +1524,14 @@
     reduce-css-calc "^2.1.8"
     resolve "^1.20.0"
 
+"@tinymce/tinymce-react@^3.12.3":
+  version "3.12.3"
+  resolved "https://registry.yarnpkg.com/@tinymce/tinymce-react/-/tinymce-react-3.12.3.tgz#d6f7cc97359d59f95545dda6a9f34ef8f8495812"
+  integrity sha512-jUWBNHIaNR7vnwYRwdCPUVsOqZS8S9/5ryQPLDAVDj3KxHf41twPZJqyc+WXhm8qIAn262MuNhPqum1DEzFeOQ==
+  dependencies:
+    prop-types "^15.6.2"
+    tinymce "^5.7.1"
+
 "@tootallnate/once@1":
   version "1.1.2"
   resolved "https://registry.yarnpkg.com/@tootallnate/once/-/once-1.1.2.tgz#ccb91445360179a04e7fe6aff78c00ffc1eeaf82"
@@ -6260,6 +6268,11 @@ timers-browserify@^2.0.4:
   integrity sha512-60aV6sgJ5YEbzUdn9c8kYGIqOubPoUdqQCul3SBAsRCZ40s6Y5cMcrW4dt3/k/EsbLVJNl9n6Vz3fTc+k2GeKQ==
   dependencies:
     setimmediate "^1.0.4"
+
+tinymce@^5.7.1:
+  version "5.8.0"
+  resolved "https://registry.yarnpkg.com/tinymce/-/tinymce-5.8.0.tgz#3ffd1d96da2619153bd0bd2023a382052339bb0a"
+  integrity sha512-1bOI3k+1D76rVjAJC3XkHezXJVghurnKBDREF1STHBLTQUY17XTbaDNJUxNgJqJHa2xg1udd5I1bzdfSd77DGw==
 
 to-arraybuffer@^1.0.0:
   version "1.0.1"

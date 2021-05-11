@@ -18,13 +18,37 @@ const NewPublication = () => {
             <div class="bg-white overflow-hidden shadow-sm sm:rounded-lg">
               <div class="p-6 bg-white border-b border-gray-200">
                 <form method="POST" action="action.php">
+                  <div class="mb-4">
+                    <label class="text-xl text-gray-600">
+                      Title <span class="text-red-500">*</span>
+                    </label>
+                    <input
+                      type="text"
+                      class="border-2 border-gray-300 p-2 w-full"
+                      name="title"
+                      id="title"
+                      value=""
+                      required
+                    ></input>
+                  </div>
+
+                  <div class="mb-4">
+                    <label class="text-xl text-gray-600">Description</label>
+                    <input
+                      type="text"
+                      class="border-2 border-gray-300 p-2 w-full"
+                      name="description"
+                      id="description"
+                      placeholder="(Optional)"
+                    ></input>
+                  </div>
+
                   <Editor
                     onInit={(evt, editor) => (editorRef.current = editor)}
-                    apiKey="xjhwud0akjjmhfr743jpag1sf4qx71gqiqjwjt0smon3qo40"
-                    initialValue="<p>Escribe tus ideas y juntos fortalecer el futbol femenino</p>"
+                    initialValue="<p>This is the initial content of the editor.</p>"
                     init={{
                       height: 500,
-                      menubar: true,
+                      menubar: false,
                       plugins: [
                         "advlist autolink lists link image charmap print preview anchor",
                         "searchreplace visualblocks code fullscreen",
@@ -39,16 +63,6 @@ const NewPublication = () => {
                         "body { font-family:Helvetica,Arial,sans-serif; font-size:14px }",
                     }}
                   />
-                  <div class="mb-4">
-                    <label class="text-xl text-gray-600">Resumen</label>
-                    <input
-                      type="text"
-                      class="border-2 border-gray-300 p-2 w-full"
-                      name="description"
-                      id="description"
-                      placeholder="(Optional)"
-                    ></input>
-                  </div>
 
                   <div class="flex p-1">
                     <select

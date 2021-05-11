@@ -21,10 +21,10 @@ const NewPublication = () => {
                   <Editor
                     onInit={(evt, editor) => (editorRef.current = editor)}
                     apiKey="xjhwud0akjjmhfr743jpag1sf4qx71gqiqjwjt0smon3qo40"
-                    initialValue="<p>Escribe tus ideas y juntos fortalecer el futbol femenino</p>"
+                    initialValue="<p>This is the initial content of the editor.</p>"
                     init={{
                       height: 500,
-                      menubar: true,
+                      menubar: false,
                       plugins: [
                         "advlist autolink lists link image charmap print preview anchor",
                         "searchreplace visualblocks code fullscreen",
