@@ -6,7 +6,7 @@ export default function Home() {
   return (
     <>
       <Layout>
-        <main>
+        <main class=>
           <div class="block md:flex md:space-x-2 px-2 lg:p-0">
             <a
               class="mb-4 md:mb-0 w-full md:w-2/3 relative rounded inline-block h-screen"

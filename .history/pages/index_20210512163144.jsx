@@ -1,4 +1,5 @@
 import Head from "next/head";
+import Banner from "../components/organisms/Banner";
 import Layout from "../components/Layout/Layout";
 import { Fragment } from "react";
 
@@ -6,12 +7,28 @@ export default function Home() {
   return (
     <>
       <Layout>
-        <main>
+        <div className=" bg-green-200 h-screen">
+          {/* {/*<!-- main post -->*/}
+          <Banner
+            title="¡Buscamos personas como tú!. Que amen el Fútbol Fémenino."
+            subtitle="En de Area a Area puedes crear, compartir, leer, aprender y sobre todo diviertirte 
+            a traves tu propio espacio para 
+            hablar acerca de 
+            fútbol fémenino."
+            img="https://cdn.pixabay.com/photo/2013/07/12/19/17/goal-154481_960_720.png"
+            descripcion=""
+          />
+        </div>
+        <main class="mt-10">
           <div class="block md:flex md:space-x-2 px-2 lg:p-0">
             <a
-              class="mb-4 md:mb-0 w-full md:w-2/3 relative rounded inline-block h-screen"
-              href="#"
+              class="mb-4 md:mb-0 w-full md:w-2/3 relative rounded inline-block"
+              href="./blog.html"
             >
+              <div
+                class="absolute left-0 bottom-0 w-full h-full z-10"
+                style="background-image: linear-gradient(180deg,transparent,rgba(0,0,0,.7));"
+              ></div>
               <img
                 src="https://images.unsplash.com/photo-1493770348161-369560ae357d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2100&q=80"
                 class="absolute left-0 top-0 w-full h-full rounded z-0 object-cover"
@@ -40,8 +57,15 @@ export default function Home() {
               </div>
             </a>
 
-            <a class="w-full md:w-1/3 relative rounded" href="./blog.html">
-              <div class="absolute left-0 top-0 w-full h-full z-10"></div>
+            <a
+              class="w-full md:w-1/3 relative rounded"
+              style="height: 24em;"
+              href="./blog.html"
+            >
+              <div
+                class="absolute left-0 top-0 w-full h-full z-10"
+                style="background-image: linear-gradient(180deg,transparent,rgba(0,0,0,.7));"
+              ></div>
               <img
                 src="https://images.unsplash.com/photo-1543362906-acfc16c67564?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1301&q=80"
                 class="absolute left-0 top-0 w-full h-full rounded z-0 object-cover"
@@ -78,6 +102,7 @@ export default function Home() {
               >
                 <div
                   class="h-48 lg:w-48 flex-none bg-cover text-center overflow-hidden opacity-75"
+                  style="background-image: url('https://images.unsplash.com/photo-1512621776951-a57141f2eefd?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2100&q=80')"
                   title="deit is very important"
                 ></div>
                 <div class="bg-white rounded px-4 flex flex-col justify-between leading-normal">
@@ -111,6 +136,7 @@ export default function Home() {
               <div class="rounded w-full lg:flex mb-10">
                 <div
                   class="h-48 lg:w-48 flex-none bg-cover text-center overflow-hidden opacity-75"
+                  style="background-image: url('https://images.unsplash.com/photo-1515003197210-e0cd71810b5f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2100&q=80')"
                   title="deit is very important"
                 ></div>
                 <div class="bg-white rounded px-4 flex flex-col justify-between leading-normal">
@@ -144,6 +170,7 @@ export default function Home() {
               <div class="rounded w-full lg:flex mb-10">
                 <div
                   class="h-48 lg:w-48 flex-none bg-cover text-center overflow-hidden opacity-75"
+                  style="background-image: url('https://images.unsplash.com/photo-1512621776951-a57141f2eefd?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2100&q=80')"
                   title="deit is very important"
                 ></div>
                 <div class="bg-white rounded px-4 flex flex-col justify-between leading-normal">

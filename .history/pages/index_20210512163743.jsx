@@ -1,4 +1,5 @@
 import Head from "next/head";
+import Banner from "../components/organisms/Banner";
 import Layout from "../components/Layout/Layout";
 import { Fragment } from "react";
 
@@ -6,12 +7,25 @@ export default function Home() {
   return (
     <>
       <Layout>
-        <main>
+        <div className=" bg-green-200 h-screen">
+          {/* {/*<!-- main post -->*/}
+          <Banner
+            title="¡Buscamos personas como tú!. Que amen el Fútbol Fémenino."
+            subtitle="En de Area a Area puedes crear, compartir, leer, aprender y sobre todo diviertirte 
+            a traves tu propio espacio para 
+            hablar acerca de 
+            fútbol fémenino."
+            img="https://cdn.pixabay.com/photo/2013/07/12/19/17/goal-154481_960_720.png"
+            descripcion=""
+          />
+        </div>
+        <main class="mt-10">
           <div class="block md:flex md:space-x-2 px-2 lg:p-0">
             <a
-              class="mb-4 md:mb-0 w-full md:w-2/3 relative rounded inline-block h-screen"
+              class="mb-4 md:mb-0 w-full md:w-2/3 relative rounded inline-block"
               href="#"
             >
+              <div class="absolute left-0 bottom-0 w-full h-full z-10"></div>
               <img
                 src="https://images.unsplash.com/photo-1493770348161-369560ae357d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2100&q=80"
                 class="absolute left-0 top-0 w-full h-full rounded z-0 object-cover"
