@@ -1,23 +1,9 @@
 import React from "react";
-
-import Banner from "../components/organisms/Banner";
 import Layout from "../components/Layout/Layout";
 
-const About = () => {
+const Contribution = () => {
   return (
     <Layout>
-      <div className=" bg-green-200 h-screen">
-        {/* {/*<!-- main post -->*/}
-        <Banner
-          title="¡Buscamos personas como tú!. Que amen el Fútbol Fémenino."
-          subtitle="En de Area a Area puedes crear, compartir, leer, aprender y sobre todo diviertirte 
-            a traves tu propio espacio para 
-            hablar acerca de 
-            fútbol fémenino."
-          img="https://cdn.pixabay.com/photo/2013/07/12/19/17/goal-154481_960_720.png"
-          descripcion=""
-        />
-      </div>
       <section class="bg-white">
         <div class="max-w-5xl px-6 py-16 mx-auto">
           <div class="items-center md:flex md:space-x-6">
@@ -41,6 +27,7 @@ const About = () => {
                 <div class="max-w-md">
                   <img
                     class="object-cover object-center w-full rounded-md shadow"
+                    style="height: 500px;"
                     src="https://images.unsplash.com/photo-1618346136472-090de27fe8b4?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=673&q=80"
                   />
                 </div>
@@ -58,6 +45,7 @@ const About = () => {
                 <div class="max-w-md">
                   <img
                     class="object-cover object-center w-full rounded-md shadow"
+                    style="height: 500px;"
                     src="https://images.unsplash.com/photo-1616874535244-73aea5daadb9?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=634&q=80"
                   />
                 </div>
@@ -259,6 +247,7 @@ const About = () => {
           <div class="md:w-1/3">
             <img
               class="object-cover object-center w-full rounded-md shadow"
+              style="height: 700px;"
               src="https://images.unsplash.com/photo-1593352216840-1aee13f45818?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=634&q=80"
             />
             //
@@ -319,4 +308,4 @@ const About = () => {
   );
 };
 
-export default About;
+export default Contribution;

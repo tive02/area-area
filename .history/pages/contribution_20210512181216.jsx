@@ -1,9 +1,7 @@
 import React from "react";
-
-import Banner from "../components/organisms/Banner";
 import Layout from "../components/Layout/Layout";
 
-const About = () => {
+const Contribution = () => {
   return (
     <Layout>
       <div className=" bg-green-200 h-screen">
@@ -319,4 +317,4 @@ const About = () => {
   );
 };
 
-export default About;
+export default Contribution;
