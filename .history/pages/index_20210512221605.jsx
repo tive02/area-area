@@ -73,24 +73,83 @@ export default function Home() {
           <div class="block lg:flex lg:space-x-2 px-2 lg:p-0 mt-10 mb-10">
             {/*<!-- post cards -->*/}
             <div class="w-full lg:w-2/3">
-              <div class="h-auto lg:w-48 bg-cover text-center overflow-hidden opacity-75"></div>
-              <div class="bg-white rounded grid grid-cols-1 lg:grid-cols-2 gap-2 place-items-stretch leading-normal">
-                <CardsPost />
-                <CardsPost />
-                <CardsPost />
-                <CardsPost />
-                <CardsPost />
-                <CardsPost />
-                <CardsPost />
-                <CardsPost />
-                <CardsPost />
-                <CardsPost />
-                <CardsPost />
-                <CardsPost />
-                <CardsPost />
-                <CardsPost />
-                <CardsPost />
-                <CardsPost />
+              <a
+                class="block rounded w-full lg:flex mb-10"
+                href="./blog-single-1.html"
+              >
+                <div
+                  class="h-48 lg:w-48 flex-none bg-cover text-center overflow-hidden opacity-75"
+                  title="deit is very important"
+                ></div>
+                <div class="bg-white rounded px-4 flex flex-col justify-between leading-normal">
+                  <CardsPost />
+                </div>
+              </a>
+
+              <div class="rounded w-full lg:flex mb-10">
+                <div
+                  class="h-48 lg:w-48 flex-none bg-cover text-center overflow-hidden opacity-75"
+                  title="deit is very important"
+                ></div>
+                <div class="bg-white rounded px-4 flex flex-col justify-between leading-normal">
+                  <div>
+                    <div class="mt-3 md:mt-0 text-gray-700 font-bold text-2xl mb-2">
+                      Integer commodo, sapien ut vulputate viverra
+                    </div>
+                    <p class="text-gray-700 text-base">
+                      Nam malesuada aliquet metus, ac commodo augue mollis sit
+                      amet. Nam bibendum risus sit amet metus semper
+                      consectetur. Proin consequat ullamcorper eleifend. Nam
+                      bibendum risus sit amet metus semper consectetur.
+                    </p>
+                  </div>
+                  <div class="flex mt-3">
+                    <img
+                      src="https://randomuser.me/api/portraits/women/54.jpg"
+                      class="h-10 w-10 rounded-full mr-2 object-cover"
+                    />
+                    <div>
+                      <p class="font-semibold text-gray-700 text-sm capitalize">
+                        {" "}
+                        Serenity Hughes{" "}
+                      </p>
+                      <p class="text-gray-600 text-xs"> 14 Aug </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="rounded w-full lg:flex mb-10">
+                <div
+                  class="h-48 lg:w-48 flex-none bg-cover text-center overflow-hidden opacity-75"
+                  title="deit is very important"
+                ></div>
+                <div class="bg-white rounded px-4 flex flex-col justify-between leading-normal">
+                  <div>
+                    <div class="mt-3 md:mt-0 text-gray-700 font-bold text-2xl mb-2">
+                      Suspendisse varius justo eu risus laoreet fermentum non
+                      aliquam dolor
+                    </div>
+                    <p class="text-gray-700 text-base">
+                      Mauris porttitor, velit at tempus vulputate, odio turpis
+                      facilisis dui, vitae eleifend odio ipsum at odio.
+                      Phasellus luctus scelerisque felis eget suscipit.
+                    </p>
+                  </div>
+                  <div class="flex mt-3">
+                    <img
+                      src="https://randomuser.me/api/portraits/men/86.jpg"
+                      class="h-10 w-10 rounded-full mr-2 object-cover"
+                    />
+                    <div>
+                      <p class="font-semibold text-gray-700 text-sm capitalize">
+                        {" "}
+                        eduard franz{" "}
+                      </p>
+                      <p class="text-gray-600 text-xs"> 14 Aug </p>
+                    </div>
+                  </div>
+                </div>
               </div>
             </div>
 

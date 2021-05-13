@@ -73,22 +73,8 @@ export default function Home() {
           <div class="block lg:flex lg:space-x-2 px-2 lg:p-0 mt-10 mb-10">
             {/*<!-- post cards -->*/}
             <div class="w-full lg:w-2/3">
-              <div class="h-auto lg:w-48 bg-cover text-center overflow-hidden opacity-75"></div>
-              <div class="bg-white rounded grid grid-cols-1 lg:grid-cols-2 gap-2 place-items-stretch leading-normal">
-                <CardsPost />
-                <CardsPost />
-                <CardsPost />
-                <CardsPost />
-                <CardsPost />
-                <CardsPost />
-                <CardsPost />
-                <CardsPost />
-                <CardsPost />
-                <CardsPost />
-                <CardsPost />
-                <CardsPost />
-                <CardsPost />
-                <CardsPost />
+              <div class="h-48 lg:w-48 grid  bg-cover text-center overflow-hidden opacity-75"></div>
+              <div class="bg-white rounded grid-cols-2 gap-2 place-items-stretch px-4  leading-normal">
                 <CardsPost />
                 <CardsPost />
               </div>

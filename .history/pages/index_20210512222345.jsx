@@ -74,7 +74,7 @@ export default function Home() {
             {/*<!-- post cards -->*/}
             <div class="w-full lg:w-2/3">
               <div class="h-auto lg:w-48 bg-cover text-center overflow-hidden opacity-75"></div>
-              <div class="bg-white rounded grid grid-cols-1 lg:grid-cols-2 gap-2 place-items-stretch leading-normal">
+              <div class="bg-white rounded grid grid-cols-2 gap-2 place-items-stretch leading-normal">
                 <CardsPost />
                 <CardsPost />
                 <CardsPost />
