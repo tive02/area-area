@@ -8,13 +8,13 @@ import IconSpotify from "../atoms/icons/IconSpotify";
 import IconTikTok from "../atoms/icons/IconTikTok";
 import IconTwitter from "../atoms/icons/IconTwitter";
 
-const Footer = ({}) => {
+const Footer = ({ hidden }) => {
   return (
     <>
       <footer
         className={classnames(`border-current border-2 bg-gray-700 
       grid grid-cols-1 lg:grid-cols-3 divide-white
-      p-2 md:p-4  space-y-6 space-x-4`)}
+      p-2 md:p-4  space-y-6 space-x-4 )}
       >
         <div className=" border-white border-b-2  lg:border-r-4 lg:border-b-0 ">
           <div className="flex justify-center">

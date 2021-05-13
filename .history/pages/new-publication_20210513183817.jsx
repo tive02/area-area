@@ -44,7 +44,7 @@ const newPublication = () => {
 
                   <Editor />
                 </div>
-                <div className="max-w-7xl mx-auto bg-red-500">
+                <div className="max-w-7xl mx-auto">
                   <ButtonSubmit
                     bgColor="bg-purple-700"
                     borderColor="border-gray-700"

@@ -8,7 +8,7 @@ import IconSpotify from "../atoms/icons/IconSpotify";
 import IconTikTok from "../atoms/icons/IconTikTok";
 import IconTwitter from "../atoms/icons/IconTwitter";
 
-const Footer = ({}) => {
+const Footer = ({ hidden }) => {
   return (
     <>
       <footer

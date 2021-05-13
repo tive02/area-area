@@ -3,8 +3,6 @@ import Banner from "../components/organisms/Banner";
 import Layout from "../components/Layout/Layout";
 import Editor from "../components/organisms/Editor";
 import Header from "../components/organisms/Header";
-import Button from "../components/atoms/Button";
-import ButtonSubmit from "../components/atoms/ButtonSubmit";
 
 const newPublication = () => {
   return (
@@ -14,7 +12,7 @@ const newPublication = () => {
         <div class="max-w-7xl mx-auto sm:px-6 lg:px-8">
           <div class="bg-white overflow-hidden shadow-sm sm:rounded-lg">
             <div class="p-6 bg-white border-b border-gray-200">
-              <form method="POST">
+              <form method="POST" action="action.php">
                 <div class="mb-4">
                   <label class="text-xl text-gray-600">
                     Titulo <span class="text-red-500">*</span>
@@ -28,6 +26,7 @@ const newPublication = () => {
                     required
                   ></input>
                 </div>
+
                 <div class="mb-4">
                   <label class="text-xl text-gray-600">Resumen</label>
                   <input
@@ -39,18 +38,20 @@ const newPublication = () => {
                     placeholder="(Optional)"
                   ></input>
                 </div>
+
                 <div className="container mx-auto px-4">
                   {/* {/*<!-- main post -->*/}
 
                   <Editor />
                 </div>
-                <div className="max-w-7xl mx-auto bg-red-500">
-                  <ButtonSubmit
-                    bgColor="bg-purple-700"
-                    borderColor="border-gray-700"
-                    value="Publicar"
-                  />
-                </div>
+
+                <button
+                  role="submit"
+                  class="p-3 bg-blue-500 text-white hover:bg-blue-400"
+                  required
+                >
+                  Publicar
+                </button>
               </form>
             </div>
           </div>

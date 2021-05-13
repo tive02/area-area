@@ -14,7 +14,7 @@ const newPublication = () => {
         <div class="max-w-7xl mx-auto sm:px-6 lg:px-8">
           <div class="bg-white overflow-hidden shadow-sm sm:rounded-lg">
             <div class="p-6 bg-white border-b border-gray-200">
-              <form method="POST">
+              <form method="POST" action="action.php">
                 <div class="mb-4">
                   <label class="text-xl text-gray-600">
                     Titulo <span class="text-red-500">*</span>
@@ -44,13 +44,11 @@ const newPublication = () => {
 
                   <Editor />
                 </div>
-                <div className="max-w-7xl mx-auto bg-red-500">
-                  <ButtonSubmit
-                    bgColor="bg-purple-700"
-                    borderColor="border-gray-700"
-                    value="Publicar"
-                  />
-                </div>
+                <ButtonSubmit
+                  bgColor="bg-purple-700"
+                  borderColor="border-gray-700"
+                  value="Publicar"
+                />
               </form>
             </div>
           </div>
