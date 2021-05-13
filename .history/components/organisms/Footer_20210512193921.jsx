@@ -17,7 +17,7 @@ const Footer = () => {
       grid grid-cols-1 lg:grid-cols-3 divide-white
       p-2 md:p-4 "
       >
-        <div className="space-y-4 border-white border-b-2  lg:border-r-4 lg:border-b-0">
+        <div className="border-white border-b-2  p-2 lg:border-r-4 lg:p-4 lg:border-b-0">
           <div className="flex justify-center">
             <Logo />
           </div>
@@ -30,21 +30,21 @@ const Footer = () => {
           </span>
         </div>
         <div
-          className="space-y-4 border-b-2 border-white p-2 lg:border-r-4  lg:p-4 lg:border-b-0 
+          className="border-b-2 border-white p-2 lg:border-r-4  lg:p-4 lg:border-b-0 
         flex flex-row justify-evenly text-white "
         >
-          <div class="w-full flex flex-col space-y-4">
+          <div class="w-full sm:w-1/5 flex flex-col space-y-4">
             <a class="opacity-60 ">Acerca de Nosotros</a>
             <a class="opacity-60 ">Nuestros Servicios</a>
             <a class="opacity-60 ">Contacto</a>
           </div>
-          <div class="w-full flex flex-col space-y-4">
+          <div class="w-full sm:w-1/5 flex flex-col space-y-4">
             <a class="opacity-60">Testimonios</a>
             <a class="opacity-60">Política de privacidad</a>
             <a class="opacity-60">Términos de servicio</a>
           </div>
         </div>
-        <div className="space-y-4 border-b-2 border-white p-2 lg:border-r-4 lg:p-4 lg:border-b-0">
+        <div className=" border-b-2 border-white p-2 lg:border-r-4 lg:p-4 lg:border-b-0">
           <p className="text-white text-xl text-justify">
             Siguenos en redes sociales.
           </p>
@@ -54,6 +54,7 @@ const Footer = () => {
             <IconYouTube link="https://www.youtube.com/channel/UCxQwfFTrLSWq5wQj9dBsGdA/playlists?view_as=subscriber" />
             <IconSpotify link="#" />
             <IconTwitter link="https://twitter.com/dearea16?s=08" />
+            <IconLinkedin link="#" />
           </div>
           <div className="text-white text-xs text-justify">
             Iconos diseñados por

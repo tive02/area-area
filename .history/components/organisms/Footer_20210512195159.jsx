@@ -30,7 +30,7 @@ const Footer = () => {
           </span>
         </div>
         <div
-          className="space-y-4 border-b-2 border-white p-2 lg:border-r-4  lg:p-4 lg:border-b-0 
+          className="border-b-2 border-white p-2 lg:border-r-4  lg:p-4 lg:border-b-0 
         flex flex-row justify-evenly text-white "
         >
           <div class="w-full flex flex-col space-y-4">
@@ -44,7 +44,7 @@ const Footer = () => {
             <a class="opacity-60">Términos de servicio</a>
           </div>
         </div>
-        <div className="space-y-4 border-b-2 border-white p-2 lg:border-r-4 lg:p-4 lg:border-b-0">
+        <div className=" border-b-2 border-white p-2 lg:border-r-4 lg:p-4 lg:border-b-0">
           <p className="text-white text-xl text-justify">
             Siguenos en redes sociales.
           </p>
