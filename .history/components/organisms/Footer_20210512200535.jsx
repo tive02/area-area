@@ -15,17 +15,17 @@ const Footer = () => {
         className="
           border-current border-2 bg-gray-700 
       grid grid-cols-1 lg:grid-cols-3 divide-white
-      p-2 md:p-4  space-y-6 space-x-4"
+      p-2 md:p-4 space-x-4"
       >
-        <div className=" border-white border-b-2  lg:border-r-4 lg:border-b-0 ">
+        <div className=" border-white border-b-2  lg:border-r-4 lg:border-b-0">
           <div className="flex justify-center">
             <Logo />
           </div>
-          <p className="text-white text-sm break-words text-justify opacity-60">
+          <p className="text-white text-sm break-words text-justify">
             Somos una organización que busca empoderar y mostrar el futbol
             femenino en latinoamerica
           </p>
-          <span className="pt-4 text-white text-xs break-words text-justify opacity-60">
+          <span className="pt-4 text-white text-xs break-words text-justify">
             Todos los derechos reservados © 2021 | De Área a Área
           </span>
         </div>
@@ -44,7 +44,7 @@ const Footer = () => {
             <a class="opacity-60">Términos de servicio</a>
           </div>
         </div>
-        <div className=" border-b-2 border-white lg:border-r-4 lg:border-b-0 opacity-60">
+        <div className=" border-b-2 border-white p-2 lg:border-r-4 lg:p-4 lg:border-b-0">
           <p className="text-white text-xl text-justify">
             Siguenos en redes sociales.
           </p>
@@ -55,10 +55,10 @@ const Footer = () => {
             <IconSpotify link="#" />
             <IconTwitter link="https://twitter.com/dearea16?s=08" />
           </div>
-          <div className="text-white text-xs text-justify opacity-80">
+          <div className="text-white text-xs text-justify">
             Iconos diseñados por
             <a href="https://www.flaticon.es/autores/freepik" title="Freepik">
-              {""}Freepik
+              Freepik
             </a>
             from
             <a href="https://www.flaticon.es/" title="Flaticon">
