@@ -23,7 +23,13 @@ class Editor extends React.Component {
           editorState={this.state.editorState}
           onChange={this.onChange}
           placeholder="Agrega tu texto en este espacio."
-          language="es-ES"
+          i18n = {
+            "Type the link and press enter": "Escriba el enlace y presione enter ",
+            "Invalid Link": "Link Invalido",
+            "Can't show plugin, component {{type}} not found.":
+              "No se puede mostrar el {{type}}, o no se encuentra el {{type}}.",
+            "Block List": "Lista de Bloqueos"
+          }
         />
       </div>
     );
