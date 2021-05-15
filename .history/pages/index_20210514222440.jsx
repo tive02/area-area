@@ -113,7 +113,7 @@ export default function Home() {
                       class="flex items-center text-gray-600 cursor-pointer"
                     >
                       <span class="inline-block h-4 w-4 bg-green-300 mr-3"></span>
-                      Soccer
+                      Nutrition
                       <span class="text-gray-500 ml-auto">23 articles</span>
                       <i class="text-gray-500 bx bx-right-arrow-alt ml-1"></i>
                     </a>
@@ -124,7 +124,7 @@ export default function Home() {
                       class="flex items-center text-gray-600 cursor-pointer"
                     >
                       <span class="inline-block h-4 w-4 bg-indigo-300 mr-3"></span>
-                      Futbol Callejero
+                      Food & Diet
                       <span class="text-gray-500 ml-auto">18 articles</span>
                       <i class="text-gray-500 bx bx-right-arrow-alt ml-1"></i>
                     </a>
@@ -135,7 +135,7 @@ export default function Home() {
                       class="flex items-center text-gray-600 cursor-pointer"
                     >
                       <span class="inline-block h-4 w-4 bg-yellow-300 mr-3"></span>
-                      Freestyle
+                      Workouts
                       <span class="text-gray-500 ml-auto">34 articles</span>
                       <i class="text-gray-500 bx bx-right-arrow-alt ml-1"></i>
                     </a>
@@ -146,7 +146,7 @@ export default function Home() {
                       class="flex items-center text-gray-600 cursor-pointer"
                     >
                       <span class="inline-block h-4 w-4 bg-blue-300 mr-3"></span>
-                      Copa Mundial
+                      Immunity
                       <span class="text-gray-500 ml-auto">9 articles</span>
                       <i class="text-gray-500 bx bx-right-arrow-alt ml-1"></i>
                     </a>
@@ -160,18 +160,19 @@ export default function Home() {
               {/*<!-- subscribe -->*/}
               <div class="p-1 mt-4 mb-4">
                 <h5 class="font-bold text-lg uppercase text-gray-700 mb-2">
-                  Suscribete
+                  {" "}
+                  Subscribe{" "}
                 </h5>
                 <p class="text-gray-600">
-                  Suscríbete a nuestro boletín. Entregamos los mejores artículos
-                  relacionados con rl fútbol femenino en tu bandeja de entrada.
+                  Subscribe to our newsletter. We deliver the best health
+                  related articles to your inbox
                 </p>
                 <input
-                  placeholder="Tu dirección de email"
+                  placeholder="your email address"
                   class="text-gray-700 bg-gray-100 rounded-t hover:outline-none p-2 w-full mt-4 border"
                 />
                 <button class="px-4 py-2 bg-indigo-600 text-gray-200 rounded-b w-full capitalize tracking-wide">
-                  Suscribete
+                  Subscribe
                 </button>
               </div>
 
