@@ -42,7 +42,7 @@ export default function Home() {
             </a>
 
             <a
-              class="hidden md:block w-full md:w-1/3 relative rounded"
+              class="hidden w-full md:w-1/3 lg:relative rounded"
               href="./blog.html"
             >
               <div class="absolute left-0 top-0 w-full h-full z-10"></div>

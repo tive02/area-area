@@ -41,11 +41,7 @@ export default function Home() {
               </div>
             </a>
 
-            <a
-              class="hidden md:block w-full md:w-1/3 relative rounded"
-              href="./blog.html"
-            >
-              <div class="absolute left-0 top-0 w-full h-full z-10"></div>
+            <a class="w-full md:w-1/3 relative rounded" href="./blog.html">
               <img
                 src="https://images.unsplash.com/photo-1543362906-acfc16c67564?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1301&q=80"
                 class="absolute left-0 top-0 w-full h-full rounded z-0 object-cover"
