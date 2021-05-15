@@ -97,7 +97,7 @@ export default function Home() {
                 <CardsPost />
                 <CardsPost />
               </div>
-            </div>
+            
 
             {/*<!-- right sidebar -->*/}
             <div class="w-full lg:w-1/3 px-3">
