@@ -1,7 +1,6 @@
 import React from "react";
 import Banner from "../components/organisms/Banner";
 import Layout from "../components/Layout/Layout";
-import SubBanner from "../components/organisms/SubBanner";
 
 const Contribution = () => {
   return (
@@ -16,7 +15,6 @@ const Contribution = () => {
           img="https://images.unsplash.com/photo-1528162841823-9e55a8cc2f58?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=750&q=80"
         />
 
-        <SubBanner />
         <section className="relative py-20">
           <div
             className="bottom-auto top-0 left-0 right-0 w-full absolute pointer-events-none overflow-hidden -mt-20"
