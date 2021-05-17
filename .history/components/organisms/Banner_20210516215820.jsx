@@ -3,7 +3,7 @@ import classnames from "classnames";
 
 const Banner = ({ title, subtitle, img, description }) => (
   <div
-    className="relative pt-16 pb-32 flex content-center items-center justify-center h-screen"
+    className="relative pt-16 pb-32 flex content-center items-center justify-center"
     style={{
       minHeight: "75vh",
     }}

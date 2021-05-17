@@ -6,7 +6,7 @@ import Layout from "../components/Layout/Layout";
 const About = () => {
   return (
     <Layout>
-      <div className="">
+      <div className=" bg-green-200 h-screen">
         {/* {/*<!-- main post -->*/}
         <Banner
           title="¡Buscamos personas como tú!. Que amen el Fútbol Fémenino."

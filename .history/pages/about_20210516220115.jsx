@@ -6,15 +6,16 @@ import Layout from "../components/Layout/Layout";
 const About = () => {
   return (
     <Layout>
-      <div className="">
+      <div className=" bg-green-200 h-screen">
         {/* {/*<!-- main post -->*/}
         <Banner
           title="¡Buscamos personas como tú!. Que amen el Fútbol Fémenino."
-          description="En de Area a Area puedes crear, compartir, leer, aprender y sobre todo diviertirte 
+          subtitle="En de Area a Area puedes crear, compartir, leer, aprender y sobre todo diviertirte 
             a traves tu propio espacio para 
             hablar acerca de 
             fútbol fémenino."
           img="https://images.unsplash.com/photo-1528162841823-9e55a8cc2f58?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=750&q=80"
+          descripcion=""
         />
       </div>
       <section class="bg-white">
