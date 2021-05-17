@@ -317,7 +317,7 @@ const Contribution = () => {
                 <div className="px-6">
                   <img
                     alt="..."
-                    src="https://www.google.com/search?q=img+futbol+femenino&tbm=isch&source=iu&ictx=1&fir=KVbriCU75QgD7M%252CIIn4XEEhda_tWM%252C_&vet=1&usg=AI4_-kQEVSk2QxQ3l-7eCOFA82oNQ-Wl8Q&sa=X&ved=2ahUKEwiMxuPr1s_wAhVNMlkFHexED3YQ9QF6BAgLEAE#imgrc=KVbriCU75QgD7M"
+                    src={require("assets/img/team-2-800x800.jpg").default}
                     className="shadow-lg rounded-full max-w-full mx-auto"
                     style={{ maxWidth: "120px" }}
                   />
@@ -347,7 +347,7 @@ const Contribution = () => {
                 <div className="px-6">
                   <img
                     alt="..."
-                    src="https://www.google.com/search?q=img+futbol+femenino&tbm=isch&source=iu&ictx=1&fir=KVbriCU75QgD7M%252CIIn4XEEhda_tWM%252C_&vet=1&usg=AI4_-kQEVSk2QxQ3l-7eCOFA82oNQ-Wl8Q&sa=X&ved=2ahUKEwiMxuPr1s_wAhVNMlkFHexED3YQ9QF6BAgLEAE#imgrc=KVbriCU75QgD7M"
+                    src={require("assets/img/team-3-800x800.jpg").default}
                     className="shadow-lg rounded-full max-w-full mx-auto"
                     style={{ maxWidth: "120px" }}
                   />
@@ -383,7 +383,7 @@ const Contribution = () => {
                 <div className="px-6">
                   <img
                     alt="..."
-                    src="https://www.google.com/search?q=img+futbol+femenino&tbm=isch&source=iu&ictx=1&fir=KVbriCU75QgD7M%252CIIn4XEEhda_tWM%252C_&vet=1&usg=AI4_-kQEVSk2QxQ3l-7eCOFA82oNQ-Wl8Q&sa=X&ved=2ahUKEwiMxuPr1s_wAhVNMlkFHexED3YQ9QF6BAgLEAE#imgrc=KVbriCU75QgD7M"
+                    src={require("assets/img/team-4-470x470.png").default}
                     className="shadow-lg rounded-full max-w-full mx-auto"
                     style={{ maxWidth: "120px" }}
                   />
