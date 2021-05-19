@@ -17,22 +17,11 @@ const About = () => {
         img="https://instagram.fbog2-4.fna.fbcdn.net/v/t51.2885-15/e35/186783740_388884022289196_7854956855436723058_n.jpg?tp=1&_nc_ht=instagram.fbog2-4.fna.fbcdn.net&_nc_cat=100&_nc_ohc=bb7kvL2rupkAX-r1Yoh&edm=AABBvjUBAAAA&ccb=7-4&oh=25d0729ff03b1ff1380a679d1b417be0&oe=60C84A64&_nc_sid=83d603"
       />
       <SubBanner
-        leftCardTitle="Fútbol Urbano"
-        leftCardParagraph="Hinchadas, Historia,forma, modas, desempeño actual,etc."
-        centerCardTitle="Fútbol Aficionado"
-        centerCardParagraph="Fútbol universitario, Fútbol Formativo."
-        rightCardTitle="Fútbol profesional"
-        rightCardParagraph="Hinchadas, Historia,forma, modas, desempeño actual,etc."
-        titleDescription="Proyecto de integración para el fútbol femenino"
-        paragraphDescription="Estamos aquí para promover que las mujeres y el fútbol se acerquen cada día más.
-          Queremos proporcionar... el mejor contenido futbolístico."
         img="https://instagram.fbog2-3.fna.fbcdn.net/v/t51.2885-15/sh0.08/e35/s750x750/185785761_770269707009674_6549249304482597348_n.jpg?tp=1&_nc_ht=instagram.fbog2-3.fna.fbcdn.net&_nc_cat=102&_nc_ohc=BPFBRchYvFYAX--pf8v&edm=AABBvjUBAAAA&ccb=7-4&oh=f49a81995b6bdbd25f2cf4ac333d6649&oe=60C96787&_nc_sid=83d603"
-        altImg=""
-        titleCard="Somos como tu!"
-        paragraphCard="Hinchas, amigas, personas, amantes del fútbol femenino, 
-        y queremos dar nuestro granito de arena para potenciar la practica del deporte rey por 
-        parte de las mujeres en el mundo 
-        "
+        title3="Proyecto de integración para el fútbol femenino"
+        p4="Estamos aquí para promover que las mujeres y el fútbol se acerquen cada día más.  Queremos proporcionar... el mejor contenido futbolístico. 
+Empoderar, fortalecer y motivar a cada futbolista es nuestra misión. ¡Anímate a hacer parte del cambio!
+"
       />
 
       <section className="bg-white">
@@ -95,16 +84,8 @@ const About = () => {
               title="Lala Lopez"
               paragraph="CEO Co-Founder"
             />
-            <CardsUser
-              img="https://scontent-bog1-1.cdninstagram.com/v/t51.2885-19/s150x150/92187206_2476017875993304_285885031950319616_n.jpg?tp=1&_nc_ht=scontent-bog1-1.cdninstagram.com&_nc_ohc=JjY9LUvp5GMAX-P4V1N&edm=ABfd0MgBAAAA&ccb=7-4&oh=959903f89e7a14406dc319cdc23df8b0&oe=60C8CA3C&_nc_sid=7bff83"
-              title="Rafa Román"
-              paragraph="CEO Co-Founder"
-            />
-            <CardsUser
-              img="https://scontent-bog1-1.cdninstagram.com/v/t51.2885-19/s150x150/94945309_222672422514384_447152133268045824_n.jpg?tp=1&_nc_ht=scontent-bog1-1.cdninstagram.com&_nc_ohc=OqX5E16-PZsAX9gBKM0&edm=ABfd0MgBAAAA&ccb=7-4&oh=9ff63ad18b83be653303c5830f401382&oe=60C903AF&_nc_sid=7bff83"
-              title="Steven Moreno"
-              paragraph="CEO Co-Founder"
-            />
+            <CardsUser />
+            <CardsUser />
           </div>
         </div>
       </section>

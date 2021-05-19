@@ -25,7 +25,7 @@ const About = () => {
         rightCardParagraph="Hinchadas, Historia,forma, modas, desempeño actual,etc."
         titleDescription="Proyecto de integración para el fútbol femenino"
         paragraphDescription="Estamos aquí para promover que las mujeres y el fútbol se acerquen cada día más.
-          Queremos proporcionar... el mejor contenido futbolístico."
+          Queremos proporcionar... el mejor contenido futbolístico. Empoderar, fortalecer y motivar a cada futbolista es nuestra misión. ¡Anímate a hacer parte del cambio!"
         img="https://instagram.fbog2-3.fna.fbcdn.net/v/t51.2885-15/sh0.08/e35/s750x750/185785761_770269707009674_6549249304482597348_n.jpg?tp=1&_nc_ht=instagram.fbog2-3.fna.fbcdn.net&_nc_cat=102&_nc_ohc=BPFBRchYvFYAX--pf8v&edm=AABBvjUBAAAA&ccb=7-4&oh=f49a81995b6bdbd25f2cf4ac333d6649&oe=60C96787&_nc_sid=83d603"
         altImg=""
         titleCard="Somos como tu!"

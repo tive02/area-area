@@ -1,8 +1,8 @@
 import React from "react";
 
-const Cards = ({ img, altImg, title, paragraph }) => {
+const Cards = ({ img, altImg }) => {
   return (
-    <div className="relative flex flex-col min-w-0 break-words bg-white w-full mb-6 shadow-lg rounded-lg bg-green-400">
+    <div className="relative flex flex-col min-w-0 break-words bg-white w-full mb-6 shadow-lg rounded-lg bg-purple-700">
       <img
         alt={altImg}
         src={img}
@@ -21,7 +21,7 @@ const Cards = ({ img, altImg, title, paragraph }) => {
         >
           <polygon
             points="-30,95 583,95 583,65"
-            className="text-green-400 fill-current"
+            className="text-purple-700 fill-current"
           ></polygon>
         </svg>
         <h4 className="text-xl font-bold text-white">{title}</h4>

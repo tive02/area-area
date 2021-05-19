@@ -17,22 +17,11 @@ const About = () => {
         img="https://instagram.fbog2-4.fna.fbcdn.net/v/t51.2885-15/e35/186783740_388884022289196_7854956855436723058_n.jpg?tp=1&_nc_ht=instagram.fbog2-4.fna.fbcdn.net&_nc_cat=100&_nc_ohc=bb7kvL2rupkAX-r1Yoh&edm=AABBvjUBAAAA&ccb=7-4&oh=25d0729ff03b1ff1380a679d1b417be0&oe=60C84A64&_nc_sid=83d603"
       />
       <SubBanner
-        leftCardTitle="Fútbol Urbano"
-        leftCardParagraph="Hinchadas, Historia,forma, modas, desempeño actual,etc."
-        centerCardTitle="Fútbol Aficionado"
-        centerCardParagraph="Fútbol universitario, Fútbol Formativo."
-        rightCardTitle="Fútbol profesional"
-        rightCardParagraph="Hinchadas, Historia,forma, modas, desempeño actual,etc."
-        titleDescription="Proyecto de integración para el fútbol femenino"
-        paragraphDescription="Estamos aquí para promover que las mujeres y el fútbol se acerquen cada día más.
-          Queremos proporcionar... el mejor contenido futbolístico."
         img="https://instagram.fbog2-3.fna.fbcdn.net/v/t51.2885-15/sh0.08/e35/s750x750/185785761_770269707009674_6549249304482597348_n.jpg?tp=1&_nc_ht=instagram.fbog2-3.fna.fbcdn.net&_nc_cat=102&_nc_ohc=BPFBRchYvFYAX--pf8v&edm=AABBvjUBAAAA&ccb=7-4&oh=f49a81995b6bdbd25f2cf4ac333d6649&oe=60C96787&_nc_sid=83d603"
-        altImg=""
-        titleCard="Somos como tu!"
-        paragraphCard="Hinchas, amigas, personas, amantes del fútbol femenino, 
-        y queremos dar nuestro granito de arena para potenciar la practica del deporte rey por 
-        parte de las mujeres en el mundo 
-        "
+        title3="Proyecto de integración para el fútbol femenino"
+        p4="Estamos aquí para promover que las mujeres y el fútbol se acerquen cada día más.  Queremos proporcionar... el mejor contenido futbolístico. 
+Empoderar, fortalecer y motivar a cada futbolista es nuestra misión. ¡Anímate a hacer parte del cambio!
+"
       />
 
       <section className="bg-white">
