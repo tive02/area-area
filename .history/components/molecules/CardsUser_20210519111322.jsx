@@ -2,12 +2,7 @@ import React from "react";
 
 const Cards = ({ img, altImg, title, paragraph }) => {
   return (
-    <div
-      className="
-    w-2/3  md:w-4/6
-    relative flex flex-col min-w-min break-words 
-    lg:w-full mb-6 shadow-lg rounded-lg bg-green-400"
-    >
+    <div className="md:h-3 relative flex flex-col min-w-0 break-words bg-white w-full mb-6 shadow-lg rounded-lg bg-green-400">
       <img
         alt={altImg}
         src={img}

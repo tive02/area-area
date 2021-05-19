@@ -96,9 +96,9 @@ const About = () => {
           <h2 className="text-3xl font-semibold text-gray-800">
             Nuestro Equipo
           </h2>
-          <div className="grid gap-8 mt-6 justify-items-center grid-cols-1 md:grid-cols-2  lg:grid-cols-3">
+          <div className="grid gap-8 mt-6 md:grid-cols-2 lg:grid-cols-3">
             <CardsUser
-              img="/about/Lala.jpg"
+              img="/public/about/Lala.jpg"
               title="Lala Lopez"
               paragraph="CEO Co-Founder"
             />

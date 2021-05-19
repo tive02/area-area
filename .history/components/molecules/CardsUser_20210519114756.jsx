@@ -4,8 +4,7 @@ const Cards = ({ img, altImg, title, paragraph }) => {
   return (
     <div
       className="
-    w-2/3  md:w-4/6
-    relative flex flex-col min-w-min break-words 
+        relative flex flex-col min-w-min break-words 
     lg:w-full mb-6 shadow-lg rounded-lg bg-green-400"
     >
       <img
