@@ -31,7 +31,7 @@ const Banner = ({ title, img, altImg, description, paragraphDescription }) => (
             <p className="mt-4 text-sm md:text-lg text-gray-100">
               {description}
             </p>
-            <p className="italic font-black mt-4 text-lg md:text-xl text-gray-100">
+            <p className="italic font-black mt-4 text-lg text-gray-100">
               {paragraphDescription}
             </p>
           </div>

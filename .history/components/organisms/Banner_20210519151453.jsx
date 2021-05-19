@@ -2,7 +2,7 @@ import React from "react";
 import classnames from "classnames";
 import Image from "next/image";
 
-const Banner = ({ title, img, altImg, description, paragraphDescription }) => (
+const Banner = ({ title, img, altImg, description, spanDescription }) => (
   <div
     className="relative pt-16 pb-32 flex content-center items-center justify-center h-screen"
     style={{
@@ -23,16 +23,14 @@ const Banner = ({ title, img, altImg, description, paragraphDescription }) => (
     </div>
     <div className="container relative mx-auto z-10">
       <div className="items-center flex flex-wrap">
-        <div className="w-full lg:w-6/12 px-4 ml-auto mr-auto text-center break-words">
+        <div className="w-full lg:w-6/12 px-4 ml-auto mr-auto text-center">
           <div className="pr-12">
             <h1 className="text-white font-semibold text-lg md:text-5xl">
               {title}
             </h1>
             <p className="mt-4 text-sm md:text-lg text-gray-100">
               {description}
-            </p>
-            <p className="italic font-black mt-4 text-lg md:text-xl text-gray-100">
-              {paragraphDescription}
+              <span className="italic font-black">{spanDescription}</span>
             </p>
           </div>
         </div>

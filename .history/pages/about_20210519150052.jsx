@@ -11,13 +11,8 @@ const About = () => {
       {/* {/*<!-- Banners principals  -->*/}
       <Banner
         title="¿Quiénes somos?"
-        description="Somos una proyecto que cree firmemente en el fútbol femenino, en que el Deporte y 
-        el ejercicio físico son pilares fundamentales en el desarrollo de cualquier país,
-        de cualquier sociedad.
-        Es por lo anterior que creamos este espacio para tí y para nosotros 
-        para poder compartir información, experiencias, etc.
-        "
-        paragraphDescription="! En fin ¡ ... compartir nuestra pasión por este estilo de vida."
+        description="Somos una organización sin ánimo de lucro que cree firmemente que el Deporte y el ejercicio físico son herramientas útiles para promover valores,
+         hacer uso adecuado del tiempo libre y generar hábitos de vida saludable."
         img="/about/Equipo_camisa_Blanca.jpg"
       />
       <SubBanner

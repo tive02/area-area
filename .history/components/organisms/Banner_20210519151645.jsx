@@ -2,7 +2,7 @@ import React from "react";
 import classnames from "classnames";
 import Image from "next/image";
 
-const Banner = ({ title, img, altImg, description, paragraphDescription }) => (
+const Banner = ({ title, img, altImg, description, spanDescription }) => (
   <div
     className="relative pt-16 pb-32 flex content-center items-center justify-center h-screen"
     style={{
@@ -30,9 +30,7 @@ const Banner = ({ title, img, altImg, description, paragraphDescription }) => (
             </h1>
             <p className="mt-4 text-sm md:text-lg text-gray-100">
               {description}
-            </p>
-            <p className="italic font-black mt-4 text-lg md:text-xl text-gray-100">
-              {paragraphDescription}
+              <span className="italic font-black">{spanDescription}</span>
             </p>
           </div>
         </div>

@@ -17,7 +17,8 @@ const About = () => {
         Es por lo anterior que creamos este espacio para tí y para nosotros 
         para poder compartir información, experiencias, etc.
         "
-        paragraphDescription="! En fin ¡ ... compartir nuestra pasión por este estilo de vida."
+        paragraphDescription="!En fin¡, 
+        compartir nuestra pasión por este estilo de vida."
         img="/about/Equipo_camisa_Blanca.jpg"
       />
       <SubBanner
