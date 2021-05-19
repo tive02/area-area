@@ -1,25 +1,22 @@
 import React from "react";
 import classnames from "classnames";
-import Image from "next/image";
 
-const Banner = ({ title, subtitle, img, altImg, description }) => (
+const Banner = ({ title, subtitle, img, description }) => (
   <div
     className="relative pt-16 pb-32 flex content-center items-center justify-center h-screen"
     style={{
       minHeight: "75vh",
     }}
   >
-    <div className="absolute top-0 w-full h-full bg-center bg-cover overflow-hidden object-contain">
-      <Image
-        alt={altImg}
-        src={img}
-        layout="fill"
-        objectFit="cover"
-        quality={100}
-      />
+    <div
+      className="absolute top-0 w-full h-full bg-center bg-cover"
+      style={{
+        backgroundImage: { img },
+      }}
+    >
       <span
         id="blackOverlay"
-        className="w-full h-full absolute opacity-75 bg-black "
+        className="w-full h-full absolute opacity-75 bg-black"
       ></span>
     </div>
     <div className="container relative mx-auto">

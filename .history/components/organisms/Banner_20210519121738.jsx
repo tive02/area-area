@@ -2,16 +2,16 @@ import React from "react";
 import classnames from "classnames";
 import Image from "next/image";
 
-const Banner = ({ title, subtitle, img, altImg, description }) => (
+const Banner = ({ title, subtitle, img, description }) => (
   <div
     className="relative pt-16 pb-32 flex content-center items-center justify-center h-screen"
     style={{
       minHeight: "75vh",
     }}
   >
-    <div className="absolute top-0 w-full h-full bg-center bg-cover overflow-hidden object-contain">
+    <div className="absolute top-0 w-full h-full bg-center bg-cover overflow-hidden">
       <Image
-        alt={altImg}
+        alt="Mountains"
         src={img}
         layout="fill"
         objectFit="cover"
