@@ -15,7 +15,9 @@ const Banner = ({ title, subtitle, img, altImg, description }) => (
         <Image
           alt={altImg}
           src={img}
-          layout="fill"
+          layout="responsive"
+          height={403}
+          width={732}
           objectFit="cover"
           quality={75}
         />
@@ -25,12 +27,8 @@ const Banner = ({ title, subtitle, img, altImg, description }) => (
       <div className="items-center flex flex-wrap">
         <div className="w-full lg:w-6/12 px-4 ml-auto mr-auto text-center">
           <div className="pr-12">
-            <h1 className="text-white font-semibold text-lg md:text-5xl">
-              {title}
-            </h1>
-            <p className="mt-4 text-sm md:text-lg text-gray-100">
-              {description}
-            </p>
+            <h1 className="text-white font-semibold text-5xl">{title}</h1>
+            <p className="mt-4 text-lg text-gray-100">{description}</p>
           </div>
         </div>
       </div>

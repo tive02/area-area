@@ -10,27 +10,25 @@ const Banner = ({ title, subtitle, img, altImg, description }) => (
     }}
   >
     <div className=" absolute top-0 w-full h-full bg-center bg-cover overflow-hidden object-contain">
-      <span className="w-full h-full absolute opacity-70 bg-black z-10"></span>
-      <div clasName="w-full h-full opacity-90">
+      <span className="w-full h-full absolute opacity-60 bg-black z-10"></span>
+      <div clasName="w-full h-full">
         <Image
           alt={altImg}
           src={img}
-          layout="fill"
+          layout="responsive"
+          height={403}
+          width={732}
           objectFit="cover"
-          quality={75}
+          quality={100}
         />
       </div>
     </div>
-    <div className="container relative mx-auto z-10">
+    <div className="container relative mx-auto">
       <div className="items-center flex flex-wrap">
         <div className="w-full lg:w-6/12 px-4 ml-auto mr-auto text-center">
           <div className="pr-12">
-            <h1 className="text-white font-semibold text-lg md:text-5xl">
-              {title}
-            </h1>
-            <p className="mt-4 text-sm md:text-lg text-gray-100">
-              {description}
-            </p>
+            <h1 className="text-white font-semibold text-5xl">{title}</h1>
+            <p className="mt-4 text-lg text-gray-300">{description}</p>
           </div>
         </div>
       </div>
