@@ -11,7 +11,7 @@ const Banner = ({ title, img, altImg, description, paragraphDescription }) => (
   >
     <div className=" absolute top-0 w-full h-full bg-center bg-cover overflow-hidden object-contain">
       <span className="w-full h-full absolute opacity-70 bg-black z-10"></span>
-      <div className="w-full h-full opacity-90">
+      <div clasName="w-full h-full opacity-90">
         <Image
           alt={altImg}
           src={img}

@@ -15,22 +15,36 @@ const Contribution = () => {
             fútbol fémenino."
           img="/contribution/Equipo_femenino_futbol.jpg"
         />
-
+        Las mejores ideas pueden cambiar quiénes somos. El medio es donde esas
+        ideas toman forma, despegan y provocan poderosas conversaciones. Somos
+        una plataforma abierta donde 170 millones de lectores vienen a encontrar
+        un pensamiento dinámico y perspicaz. Aquí, tanto las voces expertas como
+        las desconocidas se sumergen en el corazón de cualquier tema y hacen
+        surgir nuevas ideas. Nuestro propósito es difundir estas ideas y
+        profundizar la comprensión del mundo. Estamos creando un nuevo modelo de
+        publicación digital. Uno que apoye los matices, la complejidad y la
+        narración vital sin ceder a los incentivos de la publicidad. Es un
+        entorno abierto a todos, pero que promueve la sustancia y la
+        autenticidad. Y es donde las conexiones más profundas forjadas entre
+        lectores y escritores pueden conducir al descubrimiento y al
+        crecimiento. Junto con millones de colaboradores, estamos construyendo
+        un ecosistema vibrante y confiable impulsado por ideas importantes y las
+        personas que piensan en ellas.
         <SubBanner
-          leftCardTitle="Aprende de lo que mas te gusta."
+          leftCardTitle="Aprende."
           leftCardParagraph="Puedes leer en cualquier momento la mejor información 
           creado por personas como tú, cada uno con su propia autenticidad, 
           en este ecosistema vibrante de fanaticos y apasionados por el Futbol Femenino."
-          centerCardTitle="Crea tu propio contenido."
+          centerCardTitle="Crea."
           centerCardParagraph="Registrate y comienza ya mismo a subir tu contenido. 
           Somos una plataforma abierta que permite desarrollar conversaciones entre voces expertas y 
           desconocidas todo centrado en difundir las ideas que se desarrollan respecto al fútbol fémenino"
-          rightCardTitle="Comparte con personas."
+          rightCardTitle="Comparte."
           rightCardParagraph="El pilar mas importante de nuestro proyecto, 
           la comunidad de fanaticos y apasionados que queremos que cada dia existá mayor información que nos permita defender, 
           y amar nuestro deporte favorito"
           titleDescription="¿Qué puedes escribir?"
-          paragraphDescription="Cuentanos las historias del equipo de tú barrio, o en donden te encuentras jugando, o las anécdotas 
+          paragraphDescription="Cuentanos las historias del equipo de tú barrio, o en donden te encuentras jugando, o las anectotas de 
           del equipo de tus amores, o tus sueños, o deseos, o datos curiosos de la mejor jugadora de futbol. ! En Fin !, 
           Todos los temas son bienvenidos."
           img="/contribution/Futbol_femenino_futbol_sala.jpg"

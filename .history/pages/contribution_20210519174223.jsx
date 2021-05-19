@@ -17,20 +17,20 @@ const Contribution = () => {
         />
 
         <SubBanner
-          leftCardTitle="Aprende de lo que mas te gusta."
+          leftCardTitle="Aprende."
           leftCardParagraph="Puedes leer en cualquier momento la mejor información 
           creado por personas como tú, cada uno con su propia autenticidad, 
           en este ecosistema vibrante de fanaticos y apasionados por el Futbol Femenino."
-          centerCardTitle="Crea tu propio contenido."
+          centerCardTitle="Crea."
           centerCardParagraph="Registrate y comienza ya mismo a subir tu contenido. 
           Somos una plataforma abierta que permite desarrollar conversaciones entre voces expertas y 
           desconocidas todo centrado en difundir las ideas que se desarrollan respecto al fútbol fémenino"
-          rightCardTitle="Comparte con personas."
+          rightCardTitle="Comparte."
           rightCardParagraph="El pilar mas importante de nuestro proyecto, 
           la comunidad de fanaticos y apasionados que queremos que cada dia existá mayor información que nos permita defender, 
           y amar nuestro deporte favorito"
           titleDescription="¿Qué puedes escribir?"
-          paragraphDescription="Cuentanos las historias del equipo de tú barrio, o en donden te encuentras jugando, o las anécdotas 
+          paragraphDescription="Cuentanos las historias del equipo de tú barrio, o en donden te encuentras jugando, o las anectotas de 
           del equipo de tus amores, o tus sueños, o deseos, o datos curiosos de la mejor jugadora de futbol. ! En Fin !, 
           Todos los temas son bienvenidos."
           img="/contribution/Futbol_femenino_futbol_sala.jpg"

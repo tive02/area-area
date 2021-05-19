@@ -11,7 +11,7 @@ const Banner = ({ title, img, altImg, description, paragraphDescription }) => (
   >
     <div className=" absolute top-0 w-full h-full bg-center bg-cover overflow-hidden object-contain">
       <span className="w-full h-full absolute opacity-70 bg-black z-10"></span>
-      <div className="w-full h-full opacity-90">
+      <div clasName="w-full h-full opacity-90">
         <Image
           alt={altImg}
           src={img}
@@ -23,7 +23,7 @@ const Banner = ({ title, img, altImg, description, paragraphDescription }) => (
     </div>
     <div className="container relative mx-auto z-10">
       <div className="items-center flex flex-wrap">
-        <div className="w-full ml-auto mr-auto text-center break-words p-4 md:p-8 lg:pd-12 lg:w-3/5">
+        <div className="w-full ml-auto mr-auto text-center break-words p-4 md:p-8 lg:pd-12 lg:w-1/2">
           <h1 className="text-white font-semibold text-lg md:text-5xl">
             {title}
           </h1>

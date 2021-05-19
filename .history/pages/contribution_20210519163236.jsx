@@ -9,36 +9,14 @@ const Contribution = () => {
       <main>
         <Banner
           title="¡Buscamos personas como tú!. Que amen el Fútbol Fémenino."
-          description="En de Area a Area puedes crear, compartir, leer, aprender y sobre todo divertirte 
+          description="En de Area a Area puedes crear, compartir, leer, aprender y sobre todo diviertirte 
             a traves tu propio espacio para 
             hablar acerca de 
             fútbol fémenino."
           img="/contribution/Equipo_femenino_futbol.jpg"
         />
 
-        <SubBanner
-          leftCardTitle="Aprende de lo que mas te gusta."
-          leftCardParagraph="Puedes leer en cualquier momento la mejor información 
-          creado por personas como tú, cada uno con su propia autenticidad, 
-          en este ecosistema vibrante de fanaticos y apasionados por el Futbol Femenino."
-          centerCardTitle="Crea tu propio contenido."
-          centerCardParagraph="Registrate y comienza ya mismo a subir tu contenido. 
-          Somos una plataforma abierta que permite desarrollar conversaciones entre voces expertas y 
-          desconocidas todo centrado en difundir las ideas que se desarrollan respecto al fútbol fémenino"
-          rightCardTitle="Comparte con personas."
-          rightCardParagraph="El pilar mas importante de nuestro proyecto, 
-          la comunidad de fanaticos y apasionados que queremos que cada dia existá mayor información que nos permita defender, 
-          y amar nuestro deporte favorito"
-          titleDescription="¿Qué puedes escribir?"
-          paragraphDescription="Cuentanos las historias del equipo de tú barrio, o en donden te encuentras jugando, o las anécdotas 
-          del equipo de tus amores, o tus sueños, o deseos, o datos curiosos de la mejor jugadora de futbol. ! En Fin !, 
-          Todos los temas son bienvenidos."
-          img="/contribution/Futbol_femenino_futbol_sala.jpg"
-          altImg="Equipo de futbol futbol de salon"
-          titleCard="Ayudanos!"
-          paragraphCard="Tus ideas pueden cambiar el mundo, compartelas con nosotros y juntos construyamos el fúturo del deporte.
-        "
-        />
+        <SubBanner />
         <section className="relative py-20">
           <div
             className="bottom-auto top-0 left-0 right-0 w-full absolute pointer-events-none overflow-hidden -mt-20"
@@ -127,6 +105,7 @@ const Contribution = () => {
             </div>
           </div>
         </section>
+
         <section className="pb-20 relative block bg-gray-900">
           <div
             className="bottom-auto top-0 left-0 right-0 w-full absolute pointer-events-none overflow-hidden -mt-20"
@@ -339,6 +318,7 @@ const Contribution = () => {
             </div>
           </div>
         </section>
+
         <section className="bg-white">
           <div className="max-w-5xl px-6 py-16 mx-auto">
             <div className="md:flex md:justify-between">
