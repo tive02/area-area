@@ -23,7 +23,7 @@ const Banner = ({ title, img, altImg, description, paragraphDescription }) => (
     </div>
     <div className="container relative mx-auto z-10">
       <div className="items-center flex flex-wrap">
-        <div className="w-full ml-auto mr-auto text-center break-words p-4 md:p-8 lg:pd-12">
+        <div className="w-full ml-auto mr-auto text-center break-words p-2 md:-p4 lg:pd-12">
           <h1 className="text-white font-semibold text-lg md:text-5xl">
             {title}
           </h1>
