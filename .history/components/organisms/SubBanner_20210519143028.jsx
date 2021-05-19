@@ -31,7 +31,7 @@ const SubBanner = ({
           </div>
         </div>
 
-        <div className="w-full md:w-4/12 px-4 text-center z-20">
+        <div className="w-full md:w-4/12 px-4 text-center">
           <div className="relative flex flex-col min-w-0 break-words bg-white w-full mb-8 shadow-lg rounded-lg">
             <div className="px-4 py-5 flex-auto">
               <div className="text-white p-3 text-center inline-flex items-center justify-center w-12 h-12 mb-5 shadow-lg rounded-full bg-gray-700">
@@ -43,7 +43,7 @@ const SubBanner = ({
           </div>
         </div>
 
-        <div className="pt-6 w-full md:w-4/12 px-4 text-center z-20">
+        <div className="pt-6 w-full md:w-4/12 px-4 text-center">
           <div className="relative flex flex-col min-w-0 break-words bg-white w-full mb-8 shadow-lg rounded-lg">
             <div className="px-4 py-5 flex-auto">
               <div className="text-white p-3 text-center inline-flex items-center justify-center w-12 h-12 mb-5 shadow-lg rounded-full bg-green-400">
@@ -70,17 +70,10 @@ const SubBanner = ({
         </div>
 
         <div className="w-full md:w-4/12 px-4 mr-auto ml-auto">
-          <div
-            className="
-    
-    relative flex flex-col min-w-min break-words 
-    w-full mb-6 shadow-lg rounded-lg bg-purple-700"
-          >
-            <img
-              alt={altImg}
-              src={img}
-              className="w-full align-middle rounded-t-lg"
-            />
+          <div className="relative flex flex-col min-w-0 break-words bg-white w-full mb-6 shadow-lg rounded-lg bg-purple-700">
+            <div>
+              <Image alt={altImg} src={img} layout="fill" quality={100} />
+            </div>
             <blockquote className="relative p-8 mb-4">
               <svg
                 preserveAspectRatio="none"

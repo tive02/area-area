@@ -72,9 +72,9 @@ const SubBanner = ({
         <div className="w-full md:w-4/12 px-4 mr-auto ml-auto">
           <div
             className="
-    
+    w-2/3  md:w-4/6
     relative flex flex-col min-w-min break-words 
-    w-full mb-6 shadow-lg rounded-lg bg-purple-700"
+    lg:w-full mb-6 shadow-lg rounded-lg bg-green-400"
           >
             <img
               alt={altImg}
@@ -94,7 +94,7 @@ const SubBanner = ({
               >
                 <polygon
                   points="-30,95 583,95 583,65"
-                  className="text-purple-700 fill-current"
+                  className="text-green-400 fill-current"
                 ></polygon>
               </svg>
               <h4 className="text-xl font-bold text-white">{titleCard}</h4>

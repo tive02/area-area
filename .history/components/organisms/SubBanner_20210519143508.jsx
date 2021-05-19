@@ -94,7 +94,7 @@ const SubBanner = ({
               >
                 <polygon
                   points="-30,95 583,95 583,65"
-                  className="text-purple-700 fill-current"
+                  className="text-green-400 fill-current"
                 ></polygon>
               </svg>
               <h4 className="text-xl font-bold text-white">{titleCard}</h4>
