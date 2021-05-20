@@ -129,6 +129,7 @@ const Contribution = () => {
                 Aqui algunas opiniones de nuestros usuarios
               </h6>
             </div>
+
             <div className="grid gap-8 mt-10 md:grid-cols-2 lg:grid-cols-3">
               <Testimonials
                 title="Jorge Steven"

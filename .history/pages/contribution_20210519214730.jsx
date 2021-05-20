@@ -2,9 +2,6 @@ import React from "react";
 import Banner from "../components/organisms/Banner";
 import Layout from "../components/Layout/Layout";
 import SubBanner from "../components/organisms/SubBanner";
-import Testimonials from "../components/molecules/Testimonials";
-import InfoProject from "../components/molecules/InfoProject";
-import FormContact from "../components/organisms/FormContact";
 
 const Contribution = () => {
   return (
@@ -18,6 +15,7 @@ const Contribution = () => {
             fútbol fémenino."
           img="/contribution/Equipo_femenino_futbol.jpg"
         />
+
         <SubBanner
           leftCardTitle="Aprende de lo que mas te gusta."
           leftCardParagraph="Puedes leer en cualquier momento la mejor información 
@@ -41,21 +39,94 @@ const Contribution = () => {
           paragraphCard="Tus ideas pueden cambiar el mundo, compartelas con nosotros y juntos construyamos el fúturo del deporte.
         "
         />
-        {/* informacion del proyecto imagen izquierda */}
-        <section className="bg-white">
-          <InfoProject
-            img="/contribution/Entrenamiento_primer_perfil.jpg"
-            altImg="Entrenamiento de pateo de una mujer"
-            title="Tambien puedes colaborarnos"
-            description="Promover el empoderamiento y la participación de la mujer en la
-        práctica del fútbol resaltando su valiosa labor y reconociendo
-        el avance histórico que ha tenido dentro de este deporte, esto,
-        a través de la generación de contenido futbolístico en la web,
-        que permita fortalecer los espacios de reflexión y participación
-        deportiva."
-          />
+        <section className="relative py-20">
+          <div
+            className="bottom-auto top-0 left-0 right-0 w-full absolute pointer-events-none overflow-hidden -mt-20"
+            style={{ height: "80px" }}
+          >
+            <svg
+              className="absolute bottom-0 overflow-hidden"
+              xmlns="http://www.w3.org/2000/svg"
+              preserveAspectRatio="none"
+              version="1.1"
+              viewBox="0 0 2560 100"
+              x="0"
+              y="0"
+            >
+              <polygon
+                className="text-white fill-current"
+                points="2560 0 2560 100 0 100"
+              ></polygon>
+            </svg>
+          </div>
+
+          <div className="container mx-auto px-4">
+            <div className="items-center flex flex-wrap">
+              <div className="w-full md:w-4/12 ml-auto mr-auto px-4">
+                <img
+                  alt="..."
+                  className="max-w-full rounded-lg shadow-lg"
+                  src="/contribution/Entrenamiento_primer_perfil.jpg"
+                />
+              </div>
+              <div className="w-full md:w-5/12 ml-auto mr-auto px-4">
+                <div className="md:pr-12">
+                  <div className="text-pink-600 p-3 text-center inline-flex items-center justify-center w-16 h-16 mb-6 shadow-lg rounded-full bg-pink-300">
+                    <i className="fas fa-rocket text-xl"></i>
+                  </div>
+                  <h3 className="text-3xl font-semibold">A growing company</h3>
+                  <p className="mt-4 text-lg leading-relaxed text-gray-600">
+                    The extension comes with three pre-built pages to help you
+                    get started faster. You can change the text and images and
+                    you're good to go.
+                  </p>
+                  <ul className="list-none mt-6">
+                    <li className="py-2">
+                      <div className="flex items-center">
+                        <div>
+                          <span className="text-xs font-semibold inline-block py-1 px-2 uppercase rounded-full text-pink-600 bg-pink-200 mr-3">
+                            <i className="fas fa-fingerprint"></i>
+                          </span>
+                        </div>
+                        <div>
+                          <h4 className="text-gray-600">
+                            Carefully crafted components
+                          </h4>
+                        </div>
+                      </div>
+                    </li>
+                    <li className="py-2">
+                      <div className="flex items-center">
+                        <div>
+                          <span className="text-xs font-semibold inline-block py-1 px-2 uppercase rounded-full text-pink-600 bg-pink-200 mr-3">
+                            <i className="fab fa-html5"></i>
+                          </span>
+                        </div>
+                        <div>
+                          <h4 className="text-gray-600">
+                            Amazing page examples
+                          </h4>
+                        </div>
+                      </div>
+                    </li>
+                    <li className="py-2">
+                      <div className="flex items-center">
+                        <div>
+                          <span className="text-xs font-semibold inline-block py-1 px-2 uppercase rounded-full text-pink-600 bg-pink-200 mr-3">
+                            <i className="far fa-paper-plane"></i>
+                          </span>
+                        </div>
+                        <div>
+                          <h4 className="text-gray-600">Dynamic components</h4>
+                        </div>
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
         </section>
-        {/* Seccion de obtener recursos */}
         <section className="bg-white">
           <div className="max-w-5xl px-6 py-16 mx-auto">
             <h2 className="text-3xl font-semibold text-gray-800">
@@ -119,8 +190,6 @@ const Contribution = () => {
             </div>
           </div>
         </section>
-        {/* formulario de contacto */}
-        <FormContact />
         {/* testimonios */}
         <section className="bg-white">
           <div className="max-w-5xl px-6 py-16 mx-auto">
@@ -129,20 +198,8 @@ const Contribution = () => {
                 Aqui algunas opiniones de nuestros usuarios
               </h6>
             </div>
-            <div className="grid gap-8 mt-10 md:grid-cols-2 lg:grid-cols-3">
-              <Testimonials
-                title="Jorge Steven"
-                description="Es un Excelente servicio y me siento tan feliz de hacer parte de esta comunidad"
-              />
-              <Testimonials
-                title="Jorge Steven"
-                description="Es un Excelente servicio y me siento tan feliz de hacer parte de esta comunidad"
-              />
-              <Testimonials
-                title="Jorge Steven"
-                description="Es un Excelente servicio y me siento tan feliz de hacer parte de esta comunidad"
-              />
-            </div>
+
+            <div className="grid gap-8 mt-10 md:grid-cols-2 lg:grid-cols-3"></div>
           </div>
         </section>
       </main>

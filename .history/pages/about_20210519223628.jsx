@@ -4,7 +4,6 @@ import Banner from "../components/organisms/Banner";
 import Layout from "../components/Layout/Layout";
 import SubBanner from "../components/organisms/SubBanner";
 import CardsUser from "../components/molecules/CardsUser";
-import InfoProject from "../components/molecules/InfoProject";
 
 const About = () => {
   return (
@@ -41,17 +40,36 @@ const About = () => {
       />
 
       <section className="bg-white">
-        <InfoProject
-          img="/about/Pateo_Femenino.jpg"
-          altImg="Entrenamiento de pateo de una mujer"
-          title="Nuestra Misión"
-          description="Promover el empoderamiento y la participación de la mujer en la
-        práctica del fútbol resaltando su valiosa labor y reconociendo
-        el avance histórico que ha tenido dentro de este deporte, esto,
-        a través de la generación de contenido futbolístico en la web,
-        que permita fortalecer los espacios de reflexión y participación
-        deportiva."
-        />
+        <div className="max-w-5xl px-6 py-16 mx-auto">
+          <div className="items-center md:flex md:space-x-6">
+            <div className="md:w-1/2">
+              <div className="flex items-center justify-center">
+                <div className="max-w-md">
+                  <Image
+                    src="/about/Pateo_Femenino.jpg"
+                    alt="Picture of the author"
+                    width={500}
+                    height={500}
+                  />
+                </div>
+              </div>
+            </div>
+
+            <div className="mt-8 md:mt-0 md:w-1/2">
+              <h3 className="text-2xl font-semibold text-gray-800">
+                Nuestra Misión
+              </h3>
+              <p className="max-w-md mt-4 text-gray-600">
+                “Promover el empoderamiento y la participación de la mujer en la
+                práctica del fútbol; resaltando su valiosa labor y reconociendo
+                el avance histórico que ha tenido dentro de este deporte, esto,
+                a través de la generación de contenido futbolístico en la web,
+                que permita fortalecer los espacios de reflexión y participación
+                deportiva".
+              </p>
+            </div>
+          </div>
+        </div>
       </section>
 
       <section className="bg-white">

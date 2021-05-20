@@ -18,6 +18,7 @@ const Contribution = () => {
             fútbol fémenino."
           img="/contribution/Equipo_femenino_futbol.jpg"
         />
+
         <SubBanner
           leftCardTitle="Aprende de lo que mas te gusta."
           leftCardParagraph="Puedes leer en cualquier momento la mejor información 
@@ -129,6 +130,7 @@ const Contribution = () => {
                 Aqui algunas opiniones de nuestros usuarios
               </h6>
             </div>
+
             <div className="grid gap-8 mt-10 md:grid-cols-2 lg:grid-cols-3">
               <Testimonials
                 title="Jorge Steven"

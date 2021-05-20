@@ -41,17 +41,30 @@ const About = () => {
       />
 
       <section className="bg-white">
-        <InfoProject
-          img="/about/Pateo_Femenino.jpg"
-          altImg="Entrenamiento de pateo de una mujer"
-          title="Nuestra Misión"
-          description="Promover el empoderamiento y la participación de la mujer en la
-        práctica del fútbol resaltando su valiosa labor y reconociendo
-        el avance histórico que ha tenido dentro de este deporte, esto,
-        a través de la generación de contenido futbolístico en la web,
-        que permita fortalecer los espacios de reflexión y participación
-        deportiva."
-        />
+        <div className="max-w-5xl px-6 py-16 mx-auto">
+          <div className="items-center md:flex md:space-x-6">
+            <div className="md:w-1/2">
+              <div className="flex items-center justify-center">
+                <div className="max-w-md">
+                  <Image
+                    src="/about/Pateo_Femenino.jpg"
+                    alt="Picture of the author"
+                    width={500}
+                    height={500}
+                  />
+                </div>
+              </div>
+            </div>
+            <InfoProject
+              title="Nuestra Misión"
+              description="Promover el empoderamiento y la participación de la mujer en la
+            práctica del fútbol; resaltando su valiosa labor y reconociendo el
+            avance histórico que ha tenido dentro de este deporte, esto, a través de
+            la generación de contenido futbolístico en la web, que permita
+            fortalecer los espacios de reflexión y participación deportiva."
+            />
+          </div>
+        </div>
       </section>
 
       <section className="bg-white">

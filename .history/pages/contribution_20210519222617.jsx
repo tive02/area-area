@@ -3,8 +3,6 @@ import Banner from "../components/organisms/Banner";
 import Layout from "../components/Layout/Layout";
 import SubBanner from "../components/organisms/SubBanner";
 import Testimonials from "../components/molecules/Testimonials";
-import InfoProject from "../components/molecules/InfoProject";
-import FormContact from "../components/organisms/FormContact";
 
 const Contribution = () => {
   return (
@@ -18,6 +16,7 @@ const Contribution = () => {
             fútbol fémenino."
           img="/contribution/Equipo_femenino_futbol.jpg"
         />
+
         <SubBanner
           leftCardTitle="Aprende de lo que mas te gusta."
           leftCardParagraph="Puedes leer en cualquier momento la mejor información 
@@ -41,21 +40,7 @@ const Contribution = () => {
           paragraphCard="Tus ideas pueden cambiar el mundo, compartelas con nosotros y juntos construyamos el fúturo del deporte.
         "
         />
-        {/* informacion del proyecto imagen izquierda */}
-        <section className="bg-white">
-          <InfoProject
-            img="/contribution/Entrenamiento_primer_perfil.jpg"
-            altImg="Entrenamiento de pateo de una mujer"
-            title="Tambien puedes colaborarnos"
-            description="Promover el empoderamiento y la participación de la mujer en la
-        práctica del fútbol resaltando su valiosa labor y reconociendo
-        el avance histórico que ha tenido dentro de este deporte, esto,
-        a través de la generación de contenido futbolístico en la web,
-        que permita fortalecer los espacios de reflexión y participación
-        deportiva."
-          />
-        </section>
-        {/* Seccion de obtener recursos */}
+
         <section className="bg-white">
           <div className="max-w-5xl px-6 py-16 mx-auto">
             <h2 className="text-3xl font-semibold text-gray-800">
@@ -119,8 +104,6 @@ const Contribution = () => {
             </div>
           </div>
         </section>
-        {/* formulario de contacto */}
-        <FormContact />
         {/* testimonios */}
         <section className="bg-white">
           <div className="max-w-5xl px-6 py-16 mx-auto">
@@ -129,6 +112,7 @@ const Contribution = () => {
                 Aqui algunas opiniones de nuestros usuarios
               </h6>
             </div>
+
             <div className="grid gap-8 mt-10 md:grid-cols-2 lg:grid-cols-3">
               <Testimonials
                 title="Jorge Steven"
