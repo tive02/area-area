@@ -8,7 +8,6 @@ import LogoResponsive from "../atoms/LogoResponsive";
 import Seeker from "../molecules/Seeker";
 import { FirebaseContext } from "../../firebase";
 import ModalLogin from "../molecules/ModalLogin";
-import ModalCreateAccount from "../molecules/ModalCreateAccount";
 
 const Header = () => {
   const { user, firebase } = useContext(FirebaseContext);
@@ -60,7 +59,6 @@ const Header = () => {
           <>
             <div className="flex justify-end">
               <ModalLogin />
-              <ModalCreateAccount />
             </div>
           </>
         )}
