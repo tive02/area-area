@@ -16,7 +16,6 @@ const Header = () => {
       className="
       flex
       flex-row
-      justify-evenly
       w-full
       bg-purple-700 
       border-black
@@ -30,19 +29,19 @@ const Header = () => {
       z-50
             "
     >
-      <div className=" w-auto items-center justify-center  md:hidden ">
+      <div className=" w-auto items-center justify-center  md:hidden bg-blue-500">
         <LogoResponsive />
       </div>
       <div className=" hidden md:block md:w-2/6 lg:w-1/6 ">
         <Logo />
       </div>
-      <div className="pl-4 w-2/12 lg:hidden absolute right-0 top-4 ">
+      <div className="pl-4 w-2/12 lg:hidden absolute right-0 top-4">
         <ButtonHamburguer />
       </div>
       <div className="hidden md:flex md:w-full lg:w-2/5">
         <MenuPublic />
       </div>
-      <div className="flex items-center justify-center lg:hidden ">
+      <div className="flex w-auto items-center justify-center lg:hidden ">
         <Seeker />
       </div>
       <div className="hidden md:flex md:justify-evenly md:items-center md:flex-row md:w-4/6">

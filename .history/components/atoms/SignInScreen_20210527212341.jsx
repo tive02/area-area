@@ -12,12 +12,13 @@ const uiConfig = {
   // We will display Google and Facebook as auth providers.
   signInOptions: [
     firebase.auth.GoogleAuthProvider.PROVIDER_ID,
-    firebase.auth.EmailAuthProvider.PROVIDER_ID,
+    {provider: firebase.auth.EmailAuthProvider.PROVIDER_ID,
+    handleVerifyEmail(actionCode="'oobCode'", continueUrl="continueUrl", lang="es");
+    
+    }
+    
   ],
-  callbacks: {
-    // Avoid redirects after sign-in.
-    sendEmailVerification: () => true,
-  },
+  
 };
 
 function SignInScreen() {

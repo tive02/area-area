@@ -15,8 +15,21 @@ const uiConfig = {
     firebase.auth.EmailAuthProvider.PROVIDER_ID,
   ],
   callbacks: {
-    // Avoid redirects after sign-in.
-    sendEmailVerification: () => true,
+    handleVerifyEmail(auth, actionCode, continueUrl, lang) {
+      var actionCode = getParameterByName("oobCode");
+      // (Optional) Get the continue URL from the query parameter if available.
+      var continueUrl = getParameterByName("continueUrl");
+      // (Optional) Get the language code if available.
+      var lang = getParameterByName("lang") || "en";
+      // Try to apply the email verification code.
+      auth
+        .applyActionCode(actionCode)
+        .then((resp) => {
+          // Email address has been verified.
+          // additional state determined from that URL's parameters.
+        })
+        .catch((error) => {});
+    },
   },
 };
 

@@ -14,10 +14,6 @@ const uiConfig = {
     firebase.auth.GoogleAuthProvider.PROVIDER_ID,
     firebase.auth.EmailAuthProvider.PROVIDER_ID,
   ],
-  callbacks: {
-    // Avoid redirects after sign-in.
-    sendEmailVerification: () => true,
-  },
 };
 
 function SignInScreen() {
