@@ -22,6 +22,14 @@ export default function ModalLogin() {
                 {/*header*/}
                 <div className="flex items-start justify-between p-5 border-b border-solid border-blueGray-200 rounded-t">
                   <h3 className="text-3xl font-semibold">Inicia Sesión</h3>
+                  <button
+                    className="p-1 ml-auto bg-transparent border-0 text-black opacity-5 float-right text-3xl leading-none font-semibold outline-none focus:outline-none"
+                    onClick={() => setShowModal(false)}
+                  >
+                    <span className="bg-vlue-500 text-black opacity-5 h-auto w-auto text-3xl block outline-none focus:outline-none">
+                      ×
+                    </span>
+                  </button>
                 </div>
                 {/*body*/}
                 <div className="relative p-6 flex-auto">

@@ -2,7 +2,6 @@ import React, { Fragment, useContext, useState } from "react";
 import Link from "next/link";
 import classNames from "classnames";
 import { FirebaseContext } from "../../firebase";
-import ModalLogin from "./ModalLogin";
 
 const MenuMobile = () => {
   //Estado para manejar cerrar el menu en mobile
@@ -226,11 +225,29 @@ const MenuMobile = () => {
                   <>
                     <li>
                       <div
-                        className="relative flex justify-center items-center h-11 focus:outline-none
+                        className="relative flex flex-row items-center h-11 focus:outline-none hover:bg-green-500
                   text-gray-800 hover:text-gray-800 border-l-4 border-transparent 
-                  pr-6"
+                  hover:border-indigo-500 pr-6"
                       >
-                        <ModalLogin />
+                        <span className="inline-flex justify-center items-center ml-4">
+                          <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            class="h-6 w-6"
+                            fill="none"
+                            viewBox="0 0 24 24"
+                            stroke="currentColor"
+                          >
+                            <path
+                              stroke-linecap="round"
+                              stroke-linejoin="round"
+                              stroke-width="2"
+                              d="M11 16l-4-4m0 0l4-4m-4 4h14m-5 4v1a3 3 0 01-3 3H6a3 3 0 01-3-3V7a3 3 0 013-3h7a3 3 0 013 3v1"
+                            />
+                          </svg>
+                        </span>
+                        <span className="ml-2 text-sm tracking-wide truncate">
+                          Iniciar Sesión
+                        </span>
                       </div>
                     </li>
                   </>

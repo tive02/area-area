@@ -228,7 +228,7 @@ const MenuMobile = () => {
                       <div
                         className="relative flex justify-center items-center h-11 focus:outline-none
                   text-gray-800 hover:text-gray-800 border-l-4 border-transparent 
-                  pr-6"
+                  hover:border-indigo-500 pr-6"
                       >
                         <ModalLogin />
                       </div>
