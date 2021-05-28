@@ -29,19 +29,19 @@ const Header = () => {
       z-50
             "
     >
-      <div className=" w-auto  md:hidden ">
+      <div className=" bg-red-500 w-auto  md:hidden ">
         <LogoResponsive />
       </div>
       <div className=" hidden md:block md:w-2/6 lg:w-1/6 ">
         <Logo />
       </div>
-      <div className="pl-4 w-2/12 lg:hidden absolute right-0 top-4">
+      <div className="pl-4 w-2/12 lg:hidden absolute inset-y-0 ">
         <ButtonHamburguer />
       </div>
       <div className="hidden md:flex md:w-full lg:w-2/5">
         <MenuPublic />
       </div>
-      <div className="flex w-auto items-center justify-center lg:hidden ">
+      <div className="flex w-auto lg:hidden bg-red-500">
         <Seeker />
       </div>
       <div className="hidden md:flex md:justify-evenly md:items-center md:flex-row md:w-4/6">

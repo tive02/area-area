@@ -1,5 +1,6 @@
 import React from "react";
 import ButtonSubmit from "../atoms/ButtonSubmit";
+import SignInScreen from "../atoms/SignInScreen";
 
 export default function ModalLogin() {
   const [showModal, setShowModal] = React.useState(false);
@@ -32,13 +33,9 @@ export default function ModalLogin() {
                 </div>
                 {/*body*/}
                 <div className="relative p-6 flex-auto">
-                  <p className="my-4 text-blueGray-500 text-lg leading-relaxed">
-                    I always felt like I could do anything. That’s the main
-                    thing people are controlled by! Thoughts- their perception
-                    of themselves! They're slowed down by their perception of
-                    themselves. If you're taught you can’t do anything, you
-                    won’t do anything. I was taught I could do everything.
-                  </p>
+                  <div className="my-4 text-blueGray-500 text-lg leading-relaxed">
+                    <SignInScreen />
+                  </div>
                 </div>
                 {/*footer*/}
                 <div className="flex items-center justify-end p-6 border-t border-solid border-blueGray-200 rounded-b">

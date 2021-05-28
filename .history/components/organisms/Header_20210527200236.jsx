@@ -35,7 +35,7 @@ const Header = () => {
       <div className=" hidden md:block md:w-2/6 lg:w-1/6 ">
         <Logo />
       </div>
-      <div className="pl-4 w-2/12 lg:hidden absolute right-0 top-4">
+      <div className="pl-4 w-2/12 lg:hidden absolute right-0 top-4 md:inset-x-2">
         <ButtonHamburguer />
       </div>
       <div className="hidden md:flex md:w-full lg:w-2/5">
