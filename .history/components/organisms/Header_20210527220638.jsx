@@ -42,7 +42,7 @@ const Header = () => {
       <div className="hidden md:flex md:w-full lg:w-2/5">
         <MenuPublic />
       </div>
-      <div className="flex items-center justify-center lg:hidden bg-red-500 ">
+      <div className="flex items-center justify-center lg:hidden ">
         <Seeker />
       </div>
       <div className="hidden md:flex md:justify-evenly md:items-center md:flex-row md:w-4/6">
