@@ -16,7 +16,6 @@ import "megadraft/dist/css/megadraft.css";
 import Header from "../components/organisms/Header";
 import ButtonSubmit from "../components/atoms/ButtonSubmit";
 
-//Clase para que tenga el componente para el editor
 export default class NewPublication extends React.Component {
   constructor(props) {
     super(props);
@@ -27,10 +26,6 @@ export default class NewPublication extends React.Component {
     this.setState({ editorState });
   };
   onSaveClick = () => {
-    // de los inputs del formulario
-
-    //Del editor de megadraft
-
     const { editorState } = this.state;
     const content = editorStateToJSON(editorState);
     // Your function to save the content

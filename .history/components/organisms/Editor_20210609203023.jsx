@@ -31,8 +31,6 @@ class Editor extends React.Component {
           editorState={this.state.editorState}
           onChange={this.onChange}
           placeholder="Agrega tu texto en este espacio."
-          language="es-ES"
-          hideSidebarOnBlur={true}
         />
       </div>
     );
