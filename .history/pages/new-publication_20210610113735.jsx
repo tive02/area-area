@@ -21,7 +21,7 @@ const newPublication = () => {
             <form method="POST" onSubmit={handleSubmit(onSubmit)}>
               <div>
                 <label className="text-xl text-gray-600">
-                  Titulo <span className="text-red-500">*</span>
+                  Titulo <span class="text-red-500">*</span>
                 </label>
                 <input
                   type="text"
@@ -35,17 +35,17 @@ const newPublication = () => {
                 />
                 {errors.title && <p>{errors.title.message}</p>}
               </div>
-              <div className="mb-2">
-                <label className="text-xl text-gray-600">
-                  Resumen <span className="text-red-500">*</span>
+              <div class="mb-2">
+                <label class="text-xl text-gray-600">
+                  Resumen <span class="text-red-500">*</span>
                 </label>
                 <input
                   type="textarea"
-                  className="form-textarea border-2 border-gray-300 w-full h-32"
+                  className="form-textarea border-2 border-gray-300 w-full"
                   name="description"
                   id="description"
                   required
-                  placeholder="Coloca una descripción pequeña de tu artículo"
+                  placeholder="Resumen"
                   {...register("description", {
                     required: true,
                   })}

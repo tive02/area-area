@@ -45,7 +45,7 @@ const newPublication = () => {
                   name="description"
                   id="description"
                   required
-                  placeholder="Coloca una descripción pequeña de tu artículo"
+                  placeholder="Coloca una descripcion pequeña de tu artículo"
                   {...register("description", {
                     required: true,
                   })}

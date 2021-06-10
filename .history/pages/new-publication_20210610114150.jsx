@@ -41,11 +41,11 @@ const newPublication = () => {
                 </label>
                 <input
                   type="textarea"
-                  className="form-textarea border-2 border-gray-300 w-full h-32"
+                  className="form-textarea border-2 border-gray-300 w-full h-10"
                   name="description"
                   id="description"
                   required
-                  placeholder="Coloca una descripción pequeña de tu artículo"
+                  placeholder="Resumen"
                   {...register("description", {
                     required: true,
                   })}

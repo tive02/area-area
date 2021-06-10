@@ -32,7 +32,7 @@ class Editor extends React.Component {
   render() {
     return (
       //Add some margin left to show plugins sidebar
-      <div style={{ marginLeft: 80 }} className="space-y-14">
+      <div style={{ marginLeft: 80 }} className="space-y-6">
         <MegadraftEditor
           editorState={this.state.editorState}
           onChange={this.onChange}

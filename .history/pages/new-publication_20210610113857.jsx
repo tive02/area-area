@@ -40,12 +40,12 @@ const newPublication = () => {
                   Resumen <span className="text-red-500">*</span>
                 </label>
                 <input
-                  type="textarea"
-                  className="form-textarea border-2 border-gray-300 w-full h-32"
+                  type="text"
+                  className="form-textarea border-2 border-gray-300 w-full"
                   name="description"
                   id="description"
                   required
-                  placeholder="Coloca una descripción pequeña de tu artículo"
+                  placeholder="Resumen"
                   {...register("description", {
                     required: true,
                   })}

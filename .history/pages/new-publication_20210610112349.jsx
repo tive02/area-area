@@ -15,18 +15,18 @@ const newPublication = () => {
   return (
     <>
       <Header />
-      <div className="max-w-7xl mx-auto sm:px-6 lg:px-8">
-        <div className="bg-white overflow-hidden shadow-sm sm:rounded-lg">
-          <div className="p-2 bg-white border-b border-gray-200">
+      <div class="max-w-7xl mx-auto sm:px-6 lg:px-8">
+        <div class="bg-white overflow-hidden shadow-sm sm:rounded-lg">
+          <div class="p-6 bg-white border-b border-gray-200">
             <form method="POST" onSubmit={handleSubmit(onSubmit)}>
-              <div>
-                <label className="text-xl text-gray-600">
-                  Titulo <span className="text-red-500">*</span>
+              <div class="mb-4">
+                <label class="text-xl text-gray-600">
+                  Titulo <span class="text-red-500">*</span>
                 </label>
                 <input
                   type="text"
                   name="title"
-                  className="form-text border-2 border-gray-300 w-full"
+                  className="form-text border-2 border-gray-300 p-2 w-full"
                   id="title"
                   required
                   {...register("title", {
@@ -35,32 +35,27 @@ const newPublication = () => {
                 />
                 {errors.title && <p>{errors.title.message}</p>}
               </div>
-              <div className="mb-2">
-                <label className="text-xl text-gray-600">
-                  Resumen <span className="text-red-500">*</span>
-                </label>
+              <div class="mb-4">
+                <label class="text-xl text-gray-600">Resumen</label>
                 <input
                   type="textarea"
-                  className="form-textarea border-2 border-gray-300 w-full h-32"
+                  className="form-textarea border-2 border-gray-300 p-2 w-full"
                   name="description"
                   id="description"
                   required
-                  placeholder="Coloca una descripción pequeña de tu artículo"
+                  placeholder="Resumen"
                   {...register("description", {
                     required: true,
                   })}
                 />
                 {errors.description && <p>{errors.description.message}</p>}
               </div>
-              <div className="mb-4">
-                <label className="text-xl text-gray-600">
-                  Imagen principal <span className="text-red-500">*</span>
-                </label>
+              <div class="mb-4">
+                <label class="text-xl text-gray-600">Imagen principal</label>
                 <input
                   type="file"
                   accept="image/*"
                   randomizeFilename
-                  className=" border-2 border-gray-300 p-2 w-full"
                   name="img"
                   id="img"
                   required
@@ -70,10 +65,6 @@ const newPublication = () => {
                   })}
                 />
                 {errors.img && <p>{errors.img.message}</p>}
-              </div>
-              <div className=" mx-auto relative ">
-                {/* {/*<!-- main post -->*/}
-                <Editor />
               </div>
               <div className="max-w-7xl mx-auto bg-red-500">
                 <ButtonSubmit
@@ -105,6 +96,11 @@ const newPublication = () => {
               </div>
             </form>
           </div>
+        </div>
+        <div className="container mx-auto px-4 space-y-6">
+          {/* {/*<!-- main post -->*/}
+
+          <Editor />
         </div>
       </div>
     </>
