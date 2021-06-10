@@ -37,23 +37,22 @@ class newPublication extends React.Component {
       //Add some margin left to show plugins sidebar
       <>
         <Header />
-        <div class="py-16">
+        <div class="py-12">
           <div class="max-w-7xl mx-auto sm:px-6 lg:px-8">
-            <div style={{ marginLeft: 80 }}>
-              <MegadraftEditor
-                editorState={this.state.editorState}
-                onChange={this.onChange}
-                placeholder="Agrega tu Articulo en este espacio."
-              />
-            </div>
-            <div>
-              <ButtonSubmit
-                value="Publicar"
-                bgColor="bg-purple-700"
-                hoverColor="bg-green-400"
-                onClick={this.onSaveClick}
-              />
-            </div>
+            <form method="POST" className="bg-blue-500">
+              <div style={{ marginLeft: 80 }} className="bg-red-500">
+                <MegadraftEditor
+                  editorState={this.state.editorState}
+                  onChange={this.onChange}
+                  placeholder="Agrega tu Articulo en este espacio."
+                />
+              </div>
+              <div>
+                <ButtonSubmit value="Publicar"  bgColor="bg-purple-700"
+  hoverColor=""
+  borderColor="",onClick={this.onSaveClick} />
+              </div>
+            </form>
           </div>
         </div>
       </>

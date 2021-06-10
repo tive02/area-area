@@ -37,7 +37,7 @@ class newPublication extends React.Component {
       //Add some margin left to show plugins sidebar
       <>
         <Header />
-        <div class="py-16">
+        <div class="py-12">
           <div class="max-w-7xl mx-auto sm:px-6 lg:px-8">
             <div style={{ marginLeft: 80 }}>
               <MegadraftEditor

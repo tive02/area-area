@@ -11,9 +11,6 @@ const MegadraftEditor = dynamic(
 );
 //Import megadraft.css
 import "megadraft/dist/css/megadraft.css";
-import { Fragment } from "react";
-import Header from "../components/organisms/Header";
-import ButtonSubmit from "../components/atoms/ButtonSubmit";
 
 class newPublication extends React.Component {
   constructor(props) {
@@ -35,28 +32,17 @@ class newPublication extends React.Component {
   render() {
     return (
       //Add some margin left to show plugins sidebar
-      <>
-        <Header />
-        <div class="py-16">
-          <div class="max-w-7xl mx-auto sm:px-6 lg:px-8">
-            <div style={{ marginLeft: 80 }}>
-              <MegadraftEditor
-                editorState={this.state.editorState}
-                onChange={this.onChange}
-                placeholder="Agrega tu Articulo en este espacio."
-              />
-            </div>
-            <div>
-              <ButtonSubmit
-                value="Publicar"
-                bgColor="bg-purple-700"
-                hoverColor="bg-green-400"
-                onClick={this.onSaveClick}
-              />
-            </div>
-          </div>
-        </div>
-      </>
+      <div
+        style={{ marginLeft: 80 }}
+        className="max-w-7xl mx-auto sm:px-6 lg:px-8"
+      >
+        <MegadraftEditor
+          editorState={this.state.editorState}
+          onChange={this.onChange}
+          placeholder="Agrega tu Articulo en este espacio."
+        />
+        <button onClick={this.onSaveClick}>Guardar</button>
+      </div>
     );
   }
 }
