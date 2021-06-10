@@ -56,14 +56,15 @@ const newPublication = () => {
                   <input
                     type="file"
                     accept="image/*"
-                    randomizeFilename
                     class="border-2 border-gray-300 p-2 w-full"
                     name="img"
                     id="img"
                     required
-                    placeholder="Link de la imagen"
                     {...register("img", {
-                      required: true,
+                      pattern: {
+                        value: /.(gif|jpeg|jpg|png)$/,
+                        message: "error message", // JS only: <p>error message</p> TS only support string
+                      },
                     })}
                   />
                   {errors.img && <p>{errors.img.message}</p>}
@@ -93,7 +94,8 @@ const newPublication = () => {
                         {
                           type: "manual",
                           name: "img",
-                          message: "La Imagen es obligatoria.",
+                          message:
+                            "No es una imagen, prueba con archivos jpg or jpeg or png or gif",
                         },
                       ].forEach(({ name, type, message }) =>
                         setError(name, { type, message })

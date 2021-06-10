@@ -6,9 +6,7 @@ import Header from "../components/organisms/Header";
 import ButtonSubmit from "../components/atoms/ButtonSubmit";
 
 const newPublication = () => {
-  const { register, handleSubmit, formState, setError } = useForm({
-    mode: "all",
-  });
+  const { register, handleSubmit, formState, setError } = useForm();
   const { errors } = formState;
 
   const onSubmit = (data) => console.log(data);
@@ -55,13 +53,10 @@ const newPublication = () => {
                   <label class="text-xl text-gray-600">Imagen principal</label>
                   <input
                     type="file"
-                    accept="image/*"
-                    randomizeFilename
                     class="border-2 border-gray-300 p-2 w-full"
                     name="img"
                     id="img"
                     required
-                    placeholder="Link de la imagen"
                     {...register("img", {
                       required: true,
                     })}
@@ -93,7 +88,7 @@ const newPublication = () => {
                         {
                           type: "manual",
                           name: "img",
-                          message: "La Imagen es obligatoria.",
+                          message: "la imagen es obligatorio",
                         },
                       ].forEach(({ name, type, message }) =>
                         setError(name, { type, message })

@@ -52,9 +52,11 @@ const newPublication = () => {
                   {errors.description && <p>{errors.description.message}</p>}
                 </div>
                 <div class="mb-4">
-                  <label class="text-xl text-gray-600">Imagen principal</label>
+                  <label class="text-xl text-gray-600">
+                    Link de la Imagen principal
+                  </label>
                   <input
-                    type="file"
+                    type="url"
                     accept="image/*"
                     randomizeFilename
                     class="border-2 border-gray-300 p-2 w-full"
@@ -63,7 +65,11 @@ const newPublication = () => {
                     required
                     placeholder="Link de la imagen"
                     {...register("img", {
-                      required: true,
+                      required: "La imagen es obligatoria",
+                      pattern: {
+                        value: !/^(ftp|http|https):\/\/[^ "]+$/,
+                        message: "El link es invalido",
+                      },
                     })}
                   />
                   {errors.img && <p>{errors.img.message}</p>}
@@ -89,11 +95,6 @@ const newPublication = () => {
                           type: "manual",
                           name: "description",
                           message: "El Resumen es obligatorio",
-                        },
-                        {
-                          type: "manual",
-                          name: "img",
-                          message: "La Imagen es obligatoria.",
                         },
                       ].forEach(({ name, type, message }) =>
                         setError(name, { type, message })

@@ -66,7 +66,7 @@ const newPublication = () => {
                       required: true,
                     })}
                   />
-                  {errors.img && <p>{errors.img.message}</p>}
+                  {errors.url && <p>{errors.url.message}</p>}
                 </div>
                 <div className="container mx-auto px-4">
                   {/* {/*<!-- main post -->*/}

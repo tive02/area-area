@@ -61,9 +61,8 @@ const newPublication = () => {
                     name="img"
                     id="img"
                     required
-                    placeholder="Link de la imagen"
                     {...register("img", {
-                      required: true,
+                      pattern: !/^(ftp|http|https):\/\/[^ "]+$/,
                     })}
                   />
                   {errors.img && <p>{errors.img.message}</p>}
@@ -93,7 +92,7 @@ const newPublication = () => {
                         {
                           type: "manual",
                           name: "img",
-                          message: "La Imagen es obligatoria.",
+                          message: "URL mal formateada o no válida",
                         },
                       ].forEach(({ name, type, message }) =>
                         setError(name, { type, message })

@@ -6,11 +6,7 @@ import Header from "../components/organisms/Header";
 import ButtonSubmit from "../components/atoms/ButtonSubmit";
 
 const newPublication = () => {
-  const { register, handleSubmit, formState, setError } = useForm({
-    mode: "all",
-  });
-  const { errors } = formState;
-
+  const { register, handleSubmit } = useForm();
   const onSubmit = (data) => console.log(data);
   return (
     <>
@@ -34,7 +30,6 @@ const newPublication = () => {
                       required: true,
                     })}
                   />
-                  {errors.title && <p>{errors.title.message}</p>}
                 </div>
                 <div class="mb-4">
                   <label class="text-xl text-gray-600">Resumen</label>
@@ -49,24 +44,19 @@ const newPublication = () => {
                       required: true,
                     })}
                   />
-                  {errors.description && <p>{errors.description.message}</p>}
                 </div>
                 <div class="mb-4">
                   <label class="text-xl text-gray-600">Imagen principal</label>
                   <input
                     type="file"
-                    accept="image/*"
-                    randomizeFilename
                     class="border-2 border-gray-300 p-2 w-full"
                     name="img"
                     id="img"
                     required
-                    placeholder="Link de la imagen"
                     {...register("img", {
                       required: true,
                     })}
                   />
-                  {errors.img && <p>{errors.img.message}</p>}
                 </div>
                 <div className="container mx-auto px-4">
                   {/* {/*<!-- main post -->*/}
@@ -78,27 +68,6 @@ const newPublication = () => {
                     bgColor="bg-purple-700"
                     borderColor="border-gray-700"
                     value="Publicar"
-                    onClick={() => {
-                      [
-                        {
-                          type: "manual",
-                          name: "title",
-                          message: "El titulo es obligatorio",
-                        },
-                        {
-                          type: "manual",
-                          name: "description",
-                          message: "El Resumen es obligatorio",
-                        },
-                        {
-                          type: "manual",
-                          name: "img",
-                          message: "La Imagen es obligatoria.",
-                        },
-                      ].forEach(({ name, type, message }) =>
-                        setError(name, { type, message })
-                      );
-                    }}
                   />
                 </div>
               </form>
