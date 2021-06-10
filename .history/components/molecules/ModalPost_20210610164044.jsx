@@ -32,9 +32,21 @@ export default function ModalPost() {
                       </label>
                       <input
                         type="text"
-                        className="border-2 border-gray-300 p-2 w-full resize"
+                        className="border-2 border-gray-300 p-2 w-full"
                         name="title"
                         id="title"
+                        required
+                      />
+                    </div>
+                    <div className="mb-4">
+                      <label className="text-xl text-gray-600">
+                        Resumen <span className="text-red-500">*</span>
+                      </label>
+                      <input
+                        type="text"
+                        className="border-2 border-gray-300 p-2 w-full"
+                        name="resume"
+                        id="resume"
                         required
                       />
                     </div>
@@ -47,18 +59,6 @@ export default function ModalPost() {
                         className="border-2 border-gray-300 p-2 w-full"
                         name="tags"
                         id="tags"
-                        required
-                      />
-                    </div>
-                    <div className="mb-4">
-                      <label className="text-xl text-gray-600">
-                        Resumen <span className="text-red-500">*</span>
-                      </label>
-                      <input
-                        type="textarea"
-                        className="resize border-2 border-gray-300 p-2 w-full"
-                        name="resume"
-                        id="resume"
                         required
                       />
                     </div>

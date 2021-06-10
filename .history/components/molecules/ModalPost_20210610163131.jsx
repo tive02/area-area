@@ -24,53 +24,19 @@ export default function ModalPost() {
                   </h3>
                 </div>
                 {/*body*/}
-                <div className="relative p-6 flex-auto ">
-                  <form className="grid space-x-4 grid-cols-1 lg:grid-cols-2">
-                    <div className="mb-4">
-                      <label className="text-xl text-gray-600">
-                        Titulo <span className="text-red-500">*</span>
+                <div className="relative p-6 flex-auto">
+                  <form>
+                    <div class="mb-4">
+                      <label class="text-xl text-gray-600">
+                        Title <span class="text-red-500">*</span>
                       </label>
+
                       <input
                         type="text"
-                        className="border-2 border-gray-300 p-2 w-full resize"
+                        class="border-2 border-gray-300 p-2 w-full"
                         name="title"
                         id="title"
-                        required
-                      />
-                    </div>
-                    <div className="mb-4">
-                      <label className="text-xl text-gray-600">
-                        Categorias <span className="text-red-500">*</span>
-                      </label>
-                      <input
-                        type="text"
-                        className="border-2 border-gray-300 p-2 w-full"
-                        name="tags"
-                        id="tags"
-                        required
-                      />
-                    </div>
-                    <div className="mb-4">
-                      <label className="text-xl text-gray-600">
-                        Resumen <span className="text-red-500">*</span>
-                      </label>
-                      <input
-                        type="textarea"
-                        className="resize border-2 border-gray-300 p-2 w-full"
-                        name="resume"
-                        id="resume"
-                        required
-                      />
-                    </div>
-                    <div className="mb-4">
-                      <label className="text-xl text-gray-600">
-                        Imagen Principal <span className="text-red-500">*</span>
-                      </label>
-                      <input
-                        type="file"
-                        className="border-2 border-gray-300 p-2 w-full"
-                        name="img"
-                        id="img"
+                        value=""
                         required
                       />
                     </div>

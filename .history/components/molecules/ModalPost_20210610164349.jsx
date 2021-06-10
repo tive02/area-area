@@ -55,8 +55,8 @@ export default function ModalPost() {
                         Resumen <span className="text-red-500">*</span>
                       </label>
                       <input
-                        type="textarea"
-                        className="resize border-2 border-gray-300 p-2 w-full"
+                        type="text"
+                        className="border-2 border-gray-300 p-2 w-full"
                         name="resume"
                         id="resume"
                         required

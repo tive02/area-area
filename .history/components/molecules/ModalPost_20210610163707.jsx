@@ -24,29 +24,17 @@ export default function ModalPost() {
                   </h3>
                 </div>
                 {/*body*/}
-                <div className="relative p-6 flex-auto ">
-                  <form className="grid space-x-4 grid-cols-1 lg:grid-cols-2">
+                <div className="grid-col-1 lg:grid-cols-2 p-6">
+                  <form>
                     <div className="mb-4">
                       <label className="text-xl text-gray-600">
                         Titulo <span className="text-red-500">*</span>
                       </label>
                       <input
                         type="text"
-                        className="border-2 border-gray-300 p-2 w-full resize"
+                        className="border-2 border-gray-300 p-2 w-full"
                         name="title"
                         id="title"
-                        required
-                      />
-                    </div>
-                    <div className="mb-4">
-                      <label className="text-xl text-gray-600">
-                        Categorias <span className="text-red-500">*</span>
-                      </label>
-                      <input
-                        type="text"
-                        className="border-2 border-gray-300 p-2 w-full"
-                        name="tags"
-                        id="tags"
                         required
                       />
                     </div>
@@ -55,10 +43,22 @@ export default function ModalPost() {
                         Resumen <span className="text-red-500">*</span>
                       </label>
                       <input
-                        type="textarea"
-                        className="resize border-2 border-gray-300 p-2 w-full"
+                        type="text"
+                        className="border-2 border-gray-300 p-2 w-full"
                         name="resume"
                         id="resume"
+                        required
+                      />
+                    </div>
+                    <div className="mb-4">
+                      <label className="text-xl text-gray-600">
+                        categorias <span className="text-red-500">*</span>
+                      </label>
+                      <input
+                        type="text"
+                        className="border-2 border-gray-300 p-2 w-full"
+                        name="tags"
+                        id="tags"
                         required
                       />
                     </div>
