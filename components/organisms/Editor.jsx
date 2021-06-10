@@ -1,15 +1,14 @@
 import React, { useEffect, useState } from "react";
-import ReactDOM from "react-dom";
-import { editorStateFromRaw } from "megadraft";
+import { editorStateFromRaw, editorStateToJSON } from "megadraft";
 
 import dynamic from "next/dynamic";
+
 const MegadraftEditor = dynamic(
   () => {
     return import("megadraft").then((mod) => mod.MegadraftEditor);
   },
   { loading: () => null, ssr: false }
 );
-
 //Import megadraft.css
 import "megadraft/dist/css/megadraft.css";
 
@@ -22,6 +21,13 @@ class Editor extends React.Component {
   onChange = (editorState) => {
     this.setState({ editorState });
   };
+  onSaveClick = () => {
+    const { editorState } = this.state;
+    const content = editorStateToJSON(editorState);
+    // Your function to save the content
+    // save_my_content(content);
+    console.log(content);
+  };
 
   render() {
     return (
@@ -32,6 +38,7 @@ class Editor extends React.Component {
           onChange={this.onChange}
           placeholder="Agrega tu texto en este espacio."
         />
+        <button onClick={this.onSaveClick}>Guardar</button>
       </div>
     );
   }

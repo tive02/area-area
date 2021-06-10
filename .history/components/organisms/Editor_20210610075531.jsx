@@ -1,15 +1,15 @@
 import React, { useEffect, useState } from "react";
-import ReactDOM from "react-dom";
-import { editorStateFromRaw } from "megadraft";
+import ReactDOM from "react-do";
+import { , editorStateFromRaw,  editorStateToJSON } from "megadraft";
 
-import dynamic from "next/dynamic";
+import dynamic from 'next/dynamic'
+
 const MegadraftEditor = dynamic(
   () => {
-    return import("megadraft").then((mod) => mod.MegadraftEditor);
-  },
-  { loading: () => null, ssr: false }
+      return import("megadraft")
+         .then((mod) =>mod.MegadraftEditor);
+   },{ loading: () => null, ssr: false }
 );
-
 //Import megadraft.css
 import "megadraft/dist/css/megadraft.css";
 
@@ -22,6 +22,14 @@ class Editor extends React.Component {
   onChange = (editorState) => {
     this.setState({ editorState });
   };
+  onSaveClick = () => {
+    const {editorState} = this.state;
+    const content = editorStateToJSON(editorState);
+    // Your function to save the content
+    // save_my_content(content);
+    console.log(content);
+  }
+
 
   render() {
     return (
@@ -31,23 +39,14 @@ class Editor extends React.Component {
           editorState={this.state.editorState}
           onChange={this.onChange}
           placeholder="Agrega tu texto en este espacio."
-          language="es-ES"
-          i18n={
-            ({
-              "Type the link and press enter": "Type the link and press enter",
-            },
-            { "Invalid Link": "Invalid Link" },
-            {
-              "Can't show plugin, component {{type}} not found.":
-                "Can't show plugin, component {{type}} not found.",
-            },
-            { "Block List": "Block List" })
-          }
-          hideSidebarOnBlur={true}
-        />
+                 />
       </div>
     );
   }
+}
+
+if (typeof window === "object") {
+  <Editor />;
 }
 
 export default Editor;
