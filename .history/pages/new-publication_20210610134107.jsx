@@ -1,6 +1,8 @@
 import React, { useEffect, useState } from "react";
 import { editorStateFromRaw, editorStateToJSON } from "megadraft";
 import dynamic from "next/dynamic";
+import actions from "megadraft/lib/actions/default";
+
 const MegadraftEditor = dynamic(
   () => {
     return import("megadraft").then((mod) => mod.MegadraftEditor);
@@ -12,7 +14,6 @@ import "megadraft/dist/css/megadraft.css";
 
 import Header from "../components/organisms/Header";
 import ButtonSubmit from "../components/atoms/ButtonSubmit";
-import ModalPost from "../components/molecules/ModalPost";
 
 class newPublication extends React.Component {
   constructor(props) {
@@ -32,6 +33,15 @@ class newPublication extends React.Component {
   };
 
   render() {
+    const customActions = actions.concat([
+      { type: "block", label: "H2", style: "header-two", icon: HeaderTwoIcon },
+      {
+        type: "block",
+        label: "H3",
+        style: "header-three",
+        icon: HeaderThreeIcon,
+      },
+    ]);
     return (
       //Add some margin left to show plugins sidebar
       <>
@@ -43,10 +53,8 @@ class newPublication extends React.Component {
                 editorState={this.state.editorState}
                 onChange={this.onChange}
                 placeholder="Agrega tu Articulo en este espacio."
+                actions={customActions}
               />
-            </div>
-            <div>
-              <ModalPost />
             </div>
             <div>
               <ButtonSubmit
@@ -63,4 +71,15 @@ class newPublication extends React.Component {
   }
 }
 
+class HeaderTwoIcon extends React.Component {
+  render() {
+    return <p>T</p>;
+  }
+}
+
+class HeaderThreeIcon extends React.Component {
+  render() {
+    return <p>T2</p>;
+  }
+}
 export default newPublication;

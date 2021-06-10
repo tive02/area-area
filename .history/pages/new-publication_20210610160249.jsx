@@ -12,7 +12,6 @@ import "megadraft/dist/css/megadraft.css";
 
 import Header from "../components/organisms/Header";
 import ButtonSubmit from "../components/atoms/ButtonSubmit";
-import ModalPost from "../components/molecules/ModalPost";
 
 class newPublication extends React.Component {
   constructor(props) {
@@ -46,7 +45,7 @@ class newPublication extends React.Component {
               />
             </div>
             <div>
-              <ModalPost />
+              <
             </div>
             <div>
               <ButtonSubmit

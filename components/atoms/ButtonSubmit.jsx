@@ -16,7 +16,7 @@ export const ButtonSubmit = ({
       className={classnames(`${bgColor} hover:${hoverColor} ${borderColor}
       hover:border-black mr-8  text-black font-bold py-2 px-4 border-b-4 rounded cursor-pointer
       font-serif w-auto
-      float-right leading-none outline-none focus:outline-none"
+      float-right leading-none outline-none focus:outline-none animate-bounce"
       `)}
       type="submit"
       onClick={onClick}

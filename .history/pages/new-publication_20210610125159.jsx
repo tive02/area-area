@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { editorStateFromRaw, editorStateToJSON } from "megadraft";
 import dynamic from "next/dynamic";
+
 const MegadraftEditor = dynamic(
   () => {
     return import("megadraft").then((mod) => mod.MegadraftEditor);
@@ -12,7 +13,6 @@ import "megadraft/dist/css/megadraft.css";
 
 import Header from "../components/organisms/Header";
 import ButtonSubmit from "../components/atoms/ButtonSubmit";
-import ModalPost from "../components/molecules/ModalPost";
 
 class newPublication extends React.Component {
   constructor(props) {
@@ -44,9 +44,6 @@ class newPublication extends React.Component {
                 onChange={this.onChange}
                 placeholder="Agrega tu Articulo en este espacio."
               />
-            </div>
-            <div>
-              <ModalPost />
             </div>
             <div>
               <ButtonSubmit

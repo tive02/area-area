@@ -1,6 +1,9 @@
 import React, { useEffect, useState } from "react";
 import { editorStateFromRaw, editorStateToJSON } from "megadraft";
+import actions from "megadraft/lib/actions/default";
+
 import dynamic from "next/dynamic";
+
 const MegadraftEditor = dynamic(
   () => {
     return import("megadraft").then((mod) => mod.MegadraftEditor);
@@ -9,10 +12,9 @@ const MegadraftEditor = dynamic(
 );
 //Import megadraft.css
 import "megadraft/dist/css/megadraft.css";
-
+import { Fragment } from "react";
 import Header from "../components/organisms/Header";
 import ButtonSubmit from "../components/atoms/ButtonSubmit";
-import ModalPost from "../components/molecules/ModalPost";
 
 class newPublication extends React.Component {
   constructor(props) {
@@ -32,6 +34,9 @@ class newPublication extends React.Component {
   };
 
   render() {
+    const customActions = actions.concat([
+      { type: "inline", label: "T1", style: "UNDERLINE", icon: UnderlineIcon },
+    ]);
     return (
       //Add some margin left to show plugins sidebar
       <>
@@ -42,11 +47,9 @@ class newPublication extends React.Component {
               <MegadraftEditor
                 editorState={this.state.editorState}
                 onChange={this.onChange}
+                actions={customActions}
                 placeholder="Agrega tu Articulo en este espacio."
               />
-            </div>
-            <div>
-              <ModalPost />
             </div>
             <div>
               <ButtonSubmit
@@ -59,6 +62,14 @@ class newPublication extends React.Component {
           </div>
         </div>
       </>
+    );
+  }
+}
+
+class UnderlineIcon extends React.Component {
+  render() {
+    return (
+      <svg {...this.props} height="24" viewBox="0 0 24 24" width="24"></svg>
     );
   }
 }

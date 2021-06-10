@@ -12,7 +12,6 @@ import "megadraft/dist/css/megadraft.css";
 
 import Header from "../components/organisms/Header";
 import ButtonSubmit from "../components/atoms/ButtonSubmit";
-import ModalPost from "../components/molecules/ModalPost";
 
 class newPublication extends React.Component {
   constructor(props) {
@@ -44,9 +43,6 @@ class newPublication extends React.Component {
                 onChange={this.onChange}
                 placeholder="Agrega tu Articulo en este espacio."
               />
-            </div>
-            <div>
-              <ModalPost />
             </div>
             <div>
               <ButtonSubmit
