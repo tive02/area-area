@@ -39,4 +39,8 @@ class Editor extends React.Component {
   }
 }
 
+if (typeof window === "object") {
+  <Editor />;
+}
+
 export default Editor;
