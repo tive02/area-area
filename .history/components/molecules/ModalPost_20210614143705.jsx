@@ -1,21 +1,25 @@
-import React, { Fragment, useContext } from "react";
+import React, { Fragment } from "react";
 import { useForm } from "react-hook-form";
-import { useRouter } from "next/router";
-import dynamic from "next/dynamic";
-//validaciones
-import validateCreatePost from "../../validation/validateCreatePost";
-import useValidation from "../../hooks/useValidation";
-
+import Router, { useRouter } from "next/router";
 //Firebase
 import { FirebaseContext } from "../../firebase";
+//validaciones
+import useValidation from "../../hooks/useValidation";
+import validateCreatePost from "../../validation/validateCreatePost";
+
+//Hook de routing
+const router = useRouter();
 
 const STATE_INITIAL = {
   title: "",
   tags: "",
-  img: "",
+  imagen: "",
   url: "",
   resume: "",
 };
+
+//Context de las operaciones CRUD de Firebase
+const { usuario, firebase } = useContext(FirebaseContext);
 
 export default function ModalPost() {
   const {
@@ -25,13 +29,6 @@ export default function ModalPost() {
     handleSubmit,
     handleBlur,
   } = useValidation(STATE_INITIAL, validateCreatePost, CreatePost);
-
-  const { title, tags, img, url, resume } = values;
-
-  //Hook de routing para redireccionar
-  const router = useRouter();
-  //Context de las operaciones CRUD de Firebase
-  const { usuario, firebase } = useContext(FirebaseContext);
 
   //Funcion para rear los Post
   async function CreatePost() {
@@ -43,24 +40,24 @@ export default function ModalPost() {
     //Crear el objeto de nuevo producto
     const post = {
       title,
-      tags,
       url,
       img,
       resume,
+      tags,
       votos: 0,
       comentarios: [],
       creado: Date.now(),
-      creador: {
-        id: usuario.uid,
-        nombre: usuario.displayName,
-      },
     };
+
     //Insertarlo en la base de datos
-    console.log(post);
     firebase.db.collection("posts").add(post);
+    //Redireccionar al inicio
+    return router.push("/");
   }
 
   const [showModal, setShowModal] = React.useState(true);
+
+  const onSubmit = (data) => console.log(data);
 
   return (
     <>
@@ -87,8 +84,7 @@ export default function ModalPost() {
                 <div className="relative p-6 flex-auto ">
                   <form
                     className="grid space-x-2 grid-cols-1 lg:grid-cols-2"
-                    onSubmit={handleSubmit}
-                    noValidate
+                    onSubmit={handleSubmit(onSubmit)}
                   >
                     <div className="mb-4">
                       <label className="text-xl text-gray-600">
@@ -105,7 +101,6 @@ export default function ModalPost() {
                         required
                       ></textarea>
                     </div>
-                    {errors.title && <p>{errors.title}</p>}
                     <div className="mb-4">
                       <label className="text-xl text-gray-600">
                         Categorias <span className="text-red-500">*</span>
@@ -121,7 +116,6 @@ export default function ModalPost() {
                         required
                       ></textarea>
                     </div>
-                    {errors.tags && <p>{errors.tags}</p>}
                     <div className="mb-4">
                       <label className="text-xl text-gray-600">
                         Resumen <span className="text-red-500">*</span>
@@ -137,47 +131,46 @@ export default function ModalPost() {
                         required
                       ></textarea>
                     </div>
-                    {errors.resume && <p>{errors.resume}</p>}
                     <div className="mb-4">
                       <label className="text-xl text-gray-600">
                         Imagen Principal <span className="text-red-500">*</span>
                       </label>
                       <input
-                        type="text"
+                        type="file"
                         className="border-2 border-gray-300 w-full"
-                        name="url"
-                        id="url"
+                        name="img"
+                        id="img"
                         value={url}
                         onChange={handleChange}
                         onBlur={handleBlur}
                         required
                       />
                     </div>
-                    {errors.url && <p>{errors.url}</p>}
-                    <div className="flex items-center justify-end p-6 border-t border-solid border-blueGray-200 rounded-b">
-                      <input
-                        className="text-red-500 background-transparent font-bold uppercase px-6 py-2 text-sm outline-none focus:outline-none mr-1 mb-1 ease-linear transition-all duration-150"
-                        type="submit"
-                        value="Crear"
-                      />
-                    </div>
                   </form>
                 </div>
                 {/*footer*/}
-
                 <div className="flex items-center justify-end p-6 border-t border-solid border-blueGray-200 rounded-b">
-                  <button
+                  <input
                     className="text-red-500 background-transparent font-bold uppercase px-6 py-2 text-sm outline-none focus:outline-none mr-1 mb-1 ease-linear transition-all duration-150"
-                    type="button"
-                    onClick={() => setShowModal(false)}
+                    type="submit"
+                    value="Crear post"
                   >
-                    Close
-                  </button>
+                    submit
+                  </input>
+                  <div className="flex items-center justify-end p-6 border-t border-solid border-blueGray-200 rounded-b">
+                    <button
+                      className="text-red-500 background-transparent font-bold uppercase px-6 py-2 text-sm outline-none focus:outline-none mr-1 mb-1 ease-linear transition-all duration-150"
+                      type="button"
+                      onClick={() => setShowModal(false)}
+                    >
+                      Close
+                    </button>
+                  </div>
                 </div>
               </div>
             </div>
+            <div className="opacity-25 fixed inset-0 z-40 bg-black"></div>
           </div>
-          <div className="opacity-25 fixed inset-0 z-40 bg-black"></div>
         </>
       ) : null}
     </>

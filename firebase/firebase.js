@@ -15,9 +15,6 @@ class Firebase {
     this.storage = app.storage();
   }
 
-  async registerGoogle() {
-    const newUser = await this.auth.GoogleAuthProvider();
-  }
   //Registra un Usuario con email y contraseña.
 
   async register(name, email, password) {

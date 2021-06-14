@@ -1,67 +1,7 @@
-import React, { Fragment, useContext } from "react";
-import { useForm } from "react-hook-form";
-import { useRouter } from "next/router";
-import dynamic from "next/dynamic";
-//validaciones
-import validateCreatePost from "../../validation/validateCreatePost";
-import useValidation from "../../hooks/useValidation";
-
-//Firebase
-import { FirebaseContext } from "../../firebase";
-
-const STATE_INITIAL = {
-  title: "",
-  tags: "",
-  img: "",
-  url: "",
-  resume: "",
-};
+import React from "react";
 
 export default function ModalPost() {
-  const {
-    values,
-    errors,
-    handleChange,
-    handleSubmit,
-    handleBlur,
-  } = useValidation(STATE_INITIAL, validateCreatePost, CreatePost);
-
-  const { title, tags, img, url, resume } = values;
-
-  //Hook de routing para redireccionar
-  const router = useRouter();
-  //Context de las operaciones CRUD de Firebase
-  const { usuario, firebase } = useContext(FirebaseContext);
-
-  //Funcion para rear los Post
-  async function CreatePost() {
-    //Si el usuario no esta autenticado llevar al login
-    if (!usuario) {
-      return router.push("/");
-    }
-
-    //Crear el objeto de nuevo producto
-    const post = {
-      title,
-      tags,
-      url,
-      img,
-      resume,
-      votos: 0,
-      comentarios: [],
-      creado: Date.now(),
-      creador: {
-        id: usuario.uid,
-        nombre: usuario.displayName,
-      },
-    };
-    //Insertarlo en la base de datos
-    console.log(post);
-    firebase.db.collection("posts").add(post);
-  }
-
   const [showModal, setShowModal] = React.useState(true);
-
   return (
     <>
       <button
@@ -85,11 +25,7 @@ export default function ModalPost() {
                 </div>
                 {/*body*/}
                 <div className="relative p-6 flex-auto ">
-                  <form
-                    className="grid space-x-2 grid-cols-1 lg:grid-cols-2"
-                    onSubmit={handleSubmit}
-                    noValidate
-                  >
+                  <form className="grid space-x-4 grid-cols-1 lg:grid-cols-2">
                     <div className="mb-4">
                       <label className="text-xl text-gray-600">
                         Titulo <span className="text-red-500">*</span>
@@ -99,13 +35,9 @@ export default function ModalPost() {
                         className="resize-y border-2 border-gray-300  w-full"
                         name="title"
                         id="title"
-                        value={title}
-                        onChange={handleChange}
-                        onBlur={handleBlur}
                         required
                       ></textarea>
                     </div>
-                    {errors.title && <p>{errors.title}</p>}
                     <div className="mb-4">
                       <label className="text-xl text-gray-600">
                         Categorias <span className="text-red-500">*</span>
@@ -115,56 +47,36 @@ export default function ModalPost() {
                         className="resize-y border-2 border-gray-300  w-full"
                         name="tags"
                         id="tags"
-                        value={tags}
-                        onChange={handleChange}
-                        onBlur={handleBlur}
                         required
                       ></textarea>
                     </div>
-                    {errors.tags && <p>{errors.tags}</p>}
                     <div className="mb-4">
                       <label className="text-xl text-gray-600">
                         Resumen <span className="text-red-500">*</span>
                       </label>
                       <textarea
                         type="textarea"
-                        className="resize-y border-2 border-gray-300  w-full"
+                        className="resize-y border-gray-300  w-full"
                         name="resume"
                         id="resume"
-                        value={resume}
-                        onChange={handleChange}
-                        onBlur={handleBlur}
                         required
                       ></textarea>
                     </div>
-                    {errors.resume && <p>{errors.resume}</p>}
                     <div className="mb-4">
                       <label className="text-xl text-gray-600">
                         Imagen Principal <span className="text-red-500">*</span>
                       </label>
                       <input
-                        type="text"
+                        type="file"
                         className="border-2 border-gray-300 w-full"
-                        name="url"
-                        id="url"
-                        value={url}
-                        onChange={handleChange}
-                        onBlur={handleBlur}
+                        name="img"
+                        id="img"
                         required
-                      />
-                    </div>
-                    {errors.url && <p>{errors.url}</p>}
-                    <div className="flex items-center justify-end p-6 border-t border-solid border-blueGray-200 rounded-b">
-                      <input
-                        className="text-red-500 background-transparent font-bold uppercase px-6 py-2 text-sm outline-none focus:outline-none mr-1 mb-1 ease-linear transition-all duration-150"
-                        type="submit"
-                        value="Crear"
                       />
                     </div>
                   </form>
                 </div>
                 {/*footer*/}
-
                 <div className="flex items-center justify-end p-6 border-t border-solid border-blueGray-200 rounded-b">
                   <button
                     className="text-red-500 background-transparent font-bold uppercase px-6 py-2 text-sm outline-none focus:outline-none mr-1 mb-1 ease-linear transition-all duration-150"

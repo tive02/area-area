@@ -55,6 +55,7 @@ export default function ModalPost() {
         nombre: usuario.displayName,
       },
     };
+
     //Insertarlo en la base de datos
     console.log(post);
     firebase.db.collection("posts").add(post);
@@ -105,7 +106,6 @@ export default function ModalPost() {
                         required
                       ></textarea>
                     </div>
-                    {errors.title && <p>{errors.title}</p>}
                     <div className="mb-4">
                       <label className="text-xl text-gray-600">
                         Categorias <span className="text-red-500">*</span>
@@ -121,7 +121,6 @@ export default function ModalPost() {
                         required
                       ></textarea>
                     </div>
-                    {errors.tags && <p>{errors.tags}</p>}
                     <div className="mb-4">
                       <label className="text-xl text-gray-600">
                         Resumen <span className="text-red-500">*</span>
@@ -137,7 +136,6 @@ export default function ModalPost() {
                         required
                       ></textarea>
                     </div>
-                    {errors.resume && <p>{errors.resume}</p>}
                     <div className="mb-4">
                       <label className="text-xl text-gray-600">
                         Imagen Principal <span className="text-red-500">*</span>
@@ -153,13 +151,14 @@ export default function ModalPost() {
                         required
                       />
                     </div>
-                    {errors.url && <p>{errors.url}</p>}
                     <div className="flex items-center justify-end p-6 border-t border-solid border-blueGray-200 rounded-b">
                       <input
                         className="text-red-500 background-transparent font-bold uppercase px-6 py-2 text-sm outline-none focus:outline-none mr-1 mb-1 ease-linear transition-all duration-150"
                         type="submit"
-                        value="Crear"
-                      />
+                        value="Crear post"
+                      >
+                        submit
+                      </input>
                     </div>
                   </form>
                 </div>

@@ -4,7 +4,12 @@ import { useRouter } from "next/router";
 import dynamic from "next/dynamic";
 //validaciones
 import validateCreatePost from "../../validation/validateCreatePost";
-import useValidation from "../../hooks/useValidation";
+const useValidation = dynamic(
+  () => {
+    return import("../../validation/useValidation");
+  },
+  { loading: () => null, ssr: false }
+);
 
 //Firebase
 import { FirebaseContext } from "../../firebase";
@@ -12,7 +17,7 @@ import { FirebaseContext } from "../../firebase";
 const STATE_INITIAL = {
   title: "",
   tags: "",
-  img: "",
+  imagen: "",
   url: "",
   resume: "",
 };
@@ -43,24 +48,24 @@ export default function ModalPost() {
     //Crear el objeto de nuevo producto
     const post = {
       title,
-      tags,
       url,
       img,
       resume,
+      tags,
       votos: 0,
       comentarios: [],
       creado: Date.now(),
-      creador: {
-        id: usuario.uid,
-        nombre: usuario.displayName,
-      },
     };
+
     //Insertarlo en la base de datos
-    console.log(post);
     firebase.db.collection("posts").add(post);
+    //Redireccionar al inicio
+    return router.push("/");
   }
 
   const [showModal, setShowModal] = React.useState(true);
+
+  const onSubmit = (data) => console.log(data);
 
   return (
     <>
@@ -87,8 +92,7 @@ export default function ModalPost() {
                 <div className="relative p-6 flex-auto ">
                   <form
                     className="grid space-x-2 grid-cols-1 lg:grid-cols-2"
-                    onSubmit={handleSubmit}
-                    noValidate
+                    onSubmit={handleSubmit(onSubmit)}
                   >
                     <div className="mb-4">
                       <label className="text-xl text-gray-600">
@@ -105,7 +109,6 @@ export default function ModalPost() {
                         required
                       ></textarea>
                     </div>
-                    {errors.title && <p>{errors.title}</p>}
                     <div className="mb-4">
                       <label className="text-xl text-gray-600">
                         Categorias <span className="text-red-500">*</span>
@@ -121,7 +124,6 @@ export default function ModalPost() {
                         required
                       ></textarea>
                     </div>
-                    {errors.tags && <p>{errors.tags}</p>}
                     <div className="mb-4">
                       <label className="text-xl text-gray-600">
                         Resumen <span className="text-red-500">*</span>
@@ -137,34 +139,34 @@ export default function ModalPost() {
                         required
                       ></textarea>
                     </div>
-                    {errors.resume && <p>{errors.resume}</p>}
                     <div className="mb-4">
                       <label className="text-xl text-gray-600">
                         Imagen Principal <span className="text-red-500">*</span>
                       </label>
                       <input
-                        type="text"
+                        type="file"
                         className="border-2 border-gray-300 w-full"
-                        name="url"
-                        id="url"
+                        name="img"
+                        id="img"
                         value={url}
                         onChange={handleChange}
                         onBlur={handleBlur}
                         required
                       />
                     </div>
-                    {errors.url && <p>{errors.url}</p>}
+
+                    {/*footer*/}
                     <div className="flex items-center justify-end p-6 border-t border-solid border-blueGray-200 rounded-b">
                       <input
                         className="text-red-500 background-transparent font-bold uppercase px-6 py-2 text-sm outline-none focus:outline-none mr-1 mb-1 ease-linear transition-all duration-150"
                         type="submit"
-                        value="Crear"
-                      />
+                        value="Crear post"
+                      >
+                        submit
+                      </input>
                     </div>
                   </form>
                 </div>
-                {/*footer*/}
-
                 <div className="flex items-center justify-end p-6 border-t border-solid border-blueGray-200 rounded-b">
                   <button
                     className="text-red-500 background-transparent font-bold uppercase px-6 py-2 text-sm outline-none focus:outline-none mr-1 mb-1 ease-linear transition-all duration-150"

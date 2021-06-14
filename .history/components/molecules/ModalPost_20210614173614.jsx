@@ -105,7 +105,7 @@ export default function ModalPost() {
                         required
                       ></textarea>
                     </div>
-                    {errors.title && <p>{errors.title}</p>}
+                    {errors.title && <p>{errores.title}</p>}
                     <div className="mb-4">
                       <label className="text-xl text-gray-600">
                         Categorias <span className="text-red-500">*</span>
