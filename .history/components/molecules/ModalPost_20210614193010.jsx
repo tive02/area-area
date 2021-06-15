@@ -50,7 +50,7 @@ export default function ModalPost() {
     };
     //Insertarlo en la base de datos
     console.log(post);
-    firebase.db.collection("posts").add(post);
+    //firebase.db.collection("posts").add(post);
   }
 
   const [showModal, setShowModal] = React.useState(true);

@@ -1,6 +1,7 @@
 import React, { Fragment, useContext } from "react";
+import { useForm } from "react-hook-form";
 import { useRouter } from "next/router";
-
+import dynamic from "next/dynamic";
 //validaciones
 import validateCreatePost from "../../validation/validateCreatePost";
 import useValidation from "../../hooks/useValidation";
@@ -11,6 +12,7 @@ import firebase, { FirebaseContext } from "../../firebase";
 const STATE_INITIAL = {
   title: "",
   tags: "",
+
   url: "",
   resume: "",
 };
@@ -29,10 +31,15 @@ export default function ModalPost() {
   //Hook de routing para redireccionar
   const router = useRouter();
   //Context de las operaciones CRUD de Firebase
-  const { user, firebase } = useContext(FirebaseContext);
+  const { usuario, firebase } = useContext(FirebaseContext);
 
   //Funcion para rear los Post
   async function CreatePost() {
+    //Si el usuario no esta autenticado llevar al login
+    if (!usuario) {
+      return router.push("/");
+    }
+
     //Crear el objeto de nuevo producto
     const post = {
       title,
@@ -43,10 +50,9 @@ export default function ModalPost() {
       comentarios: [],
       creado: Date.now(),
       creador: {
-        id: user.uid,
-        nombre: user.displayName,
+        id: usuario.uid,
+        nombre: usuario.displayName,
       },
-      haVotado: [],
     };
     //Insertarlo en la base de datos
     console.log(post);

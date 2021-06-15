@@ -20,7 +20,7 @@ class newPublication extends React.Component {
     super(props);
     this.state = { editorState: editorStateFromRaw(null) };
   }
-
+  
   onChange = (editorState) => {
     this.setState({ editorState });
   };
@@ -31,8 +31,15 @@ class newPublication extends React.Component {
     // save_my_content(content);
     console.log(content);
   };
-
-  render() {
+  
+  render() 
+  //Context de las operaciones CRUD de Firebase
+  const { usuario, firebase } = useContext(FirebaseContext);
+  if (!usuario) {
+    return router.push("/");
+  }
+  {
+    
     return (
       //Add some margin left to show plugins sidebar
       <>

@@ -16,6 +16,7 @@ import ModalPost from "../components/molecules/ModalPost";
 import { FirebaseContext } from "../firebase";
 
 class newPublication extends React.Component {
+  const { usuario, firebase } = useContext(FirebaseContext);
   constructor(props) {
     super(props);
     this.state = { editorState: editorStateFromRaw(null) };
@@ -33,6 +34,10 @@ class newPublication extends React.Component {
   };
 
   render() {
+    //Context de las operaciones CRUD de Firebase
+    if (!usuario) {
+      return router.push("/");
+    }
     return (
       //Add some margin left to show plugins sidebar
       <>

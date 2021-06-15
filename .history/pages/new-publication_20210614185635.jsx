@@ -1,4 +1,4 @@
-import React, { useEffect, useState, useContext } from "react";
+import React, { useEffect, useState } from "react";
 import { editorStateFromRaw, editorStateToJSON } from "megadraft";
 import dynamic from "next/dynamic";
 const MegadraftEditor = dynamic(
@@ -33,6 +33,11 @@ class newPublication extends React.Component {
   };
 
   render() {
+    //Context de las operaciones CRUD de Firebase
+    const { usuario, firebase } = useContext(FirebaseContext);
+    if (!usuario) {
+      return router.push("/");
+    }
     return (
       //Add some margin left to show plugins sidebar
       <>

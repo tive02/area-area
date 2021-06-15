@@ -18,7 +18,7 @@ export default function validateCreatePost(values) {
     errors.url = "URL mal formateada o no válida";
   }
 
-  //Validar la resumen
+  //Validar la resumen y descripcion de
   if (!values.resume) {
     errors.resume = "El resumen es obligatorio";
   }

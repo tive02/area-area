@@ -33,6 +33,11 @@ class newPublication extends React.Component {
   };
 
   render() {
+    //Context de las operaciones CRUD de Firebase
+    const { usuario, firebase } = useContext(FirebaseContext);
+    if (!usuario) {
+      return router.push("/");
+    }
     return (
       //Add some margin left to show plugins sidebar
       <>

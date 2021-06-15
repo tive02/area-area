@@ -1,4 +1,4 @@
-import React, { useEffect, useState, useContext } from "react";
+import React, { useEffect, useState } from "react";
 import { editorStateFromRaw, editorStateToJSON } from "megadraft";
 import dynamic from "next/dynamic";
 const MegadraftEditor = dynamic(
@@ -13,7 +13,6 @@ import "megadraft/dist/css/megadraft.css";
 import Header from "../components/organisms/Header";
 import ButtonSubmit from "../components/atoms/ButtonSubmit";
 import ModalPost from "../components/molecules/ModalPost";
-import { FirebaseContext } from "../firebase";
 
 class newPublication extends React.Component {
   constructor(props) {

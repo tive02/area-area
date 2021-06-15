@@ -29,7 +29,7 @@ export default function ModalPost() {
   //Hook de routing para redireccionar
   const router = useRouter();
   //Context de las operaciones CRUD de Firebase
-  const { user, firebase } = useContext(FirebaseContext);
+  const { usuario, firebase } = useContext(FirebaseContext);
 
   //Funcion para rear los Post
   async function CreatePost() {
@@ -43,14 +43,13 @@ export default function ModalPost() {
       comentarios: [],
       creado: Date.now(),
       creador: {
-        id: user.uid,
-        nombre: user.displayName,
+        id: usuario.uid,
+        nombre: usuario.displayName,
       },
-      haVotado: [],
     };
     //Insertarlo en la base de datos
     console.log(post);
-    firebase.db.collection("posts").add(post);
+    //firebase.db.collection("posts").add(post);
   }
 
   const [showModal, setShowModal] = React.useState(true);
