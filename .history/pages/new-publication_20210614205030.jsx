@@ -13,8 +13,7 @@ import "megadraft/dist/css/megadraft.css";
 import Header from "../components/organisms/Header";
 import ButtonSubmit from "../components/atoms/ButtonSubmit";
 import ModalPost from "../components/molecules/ModalPost";
-//Firebase
-import firebase from "../firebase";
+import { FirebaseContext } from "../firebase";
 
 class newPublication extends React.Component {
   constructor(props) {
@@ -25,20 +24,13 @@ class newPublication extends React.Component {
   onChange = (editorState) => {
     this.setState({ editorState });
   };
-
   onSaveClick = async () => {
     const { editorState } = this.state;
     const content = editorStateToJSON(editorState);
     // Your function to save the content
     // save_my_content(content);
-    //Insertarlo en la base de datos
-    //firebase.db.collection("posts").doc("la").add(content);
-    try {
-      firebase.db.collection("post").add(JSON.parse(content));
-      console.log(content);
-    } catch (error) {
-      console.log(error);
-    }
+
+    console.log(content);
   };
 
   render() {

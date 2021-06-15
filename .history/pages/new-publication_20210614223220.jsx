@@ -34,7 +34,7 @@ class newPublication extends React.Component {
     //Insertarlo en la base de datos
     //firebase.db.collection("posts").doc("la").add(content);
     try {
-      firebase.db.collection("post").add(JSON.parse(content));
+      firebase.db.collection("post").doc("colection").set(JSON.parse(content));
       console.log(content);
     } catch (error) {
       console.log(error);

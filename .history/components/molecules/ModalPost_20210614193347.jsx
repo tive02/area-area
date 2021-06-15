@@ -44,6 +44,7 @@ export default function ModalPost() {
       creado: Date.now(),
       creador: {
         id: user.uid,
+        nombre: user.displayName,
       },
       haVotado: [],
     };

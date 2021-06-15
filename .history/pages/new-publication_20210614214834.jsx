@@ -31,14 +31,10 @@ class newPublication extends React.Component {
     const content = editorStateToJSON(editorState);
     // Your function to save the content
     // save_my_content(content);
+
+    console.log(content);
     //Insertarlo en la base de datos
-    //firebase.db.collection("posts").doc("la").add(content);
-    try {
-      firebase.db.collection("post").add(JSON.parse(content));
-      console.log(content);
-    } catch (error) {
-      console.log(error);
-    }
+    firebase.db.collection("posts").set(content);
   };
 
   render() {
