@@ -11,12 +11,11 @@ import firebase, { FirebaseContext } from "../../firebase";
 const STATE_INITIAL = {
   title: "",
   tags: "",
+  UrlImg: "",
   resume: "",
 };
 
 export default function ModalPost() {
-  //State para la ventana modal.
-  const [showModal, setShowModal] = useState(true);
   //State de las imagenes
   const [nameImg, setNameImg] = useState("");
   const [submitImg, setSubmitImg] = useState(false);
@@ -83,6 +82,8 @@ export default function ModalPost() {
 
     firebase.db.collection("posts").add(post);
   }
+
+  const [showModal, setShowModal] = React.useState(true);
 
   return (
     <>

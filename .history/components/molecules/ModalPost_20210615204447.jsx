@@ -15,8 +15,6 @@ const STATE_INITIAL = {
 };
 
 export default function ModalPost() {
-  //State para la ventana modal.
-  const [showModal, setShowModal] = useState(true);
   //State de las imagenes
   const [nameImg, setNameImg] = useState("");
   const [submitImg, setSubmitImg] = useState(false);
@@ -83,6 +81,8 @@ export default function ModalPost() {
 
     firebase.db.collection("posts").add(post);
   }
+
+  const [showModal, setShowModal] = React.useState(true);
 
   return (
     <>

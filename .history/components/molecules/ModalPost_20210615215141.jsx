@@ -15,8 +15,6 @@ const STATE_INITIAL = {
 };
 
 export default function ModalPost() {
-  //State para la ventana modal.
-  const [showModal, setShowModal] = useState(true);
   //State de las imagenes
   const [nameImg, setNameImg] = useState("");
   const [submitImg, setSubmitImg] = useState(false);
@@ -83,6 +81,8 @@ export default function ModalPost() {
 
     firebase.db.collection("posts").add(post);
   }
+
+  const [showModal, setShowModal] = React.useState(true);
 
   return (
     <>
@@ -182,6 +182,7 @@ export default function ModalPost() {
                         className="text-red-500 background-transparent font-bold uppercase px-6 py-2 text-sm outline-none focus:outline-none mr-1 mb-1 ease-linear transition-all duration-150"
                         type="submit"
                         value="Crea tu post"
+                        onClick={() => setShowModal(false)}
                       />
                     </div>
                   </form>
