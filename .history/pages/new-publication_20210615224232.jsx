@@ -42,7 +42,7 @@ const newPublication = () => {
           <div style={{ marginLeft: 80 }}>
             <MegadraftEditor
               editorState={editorState}
-              onChange={setEditorState}
+              onChange={seteditorState}
               placeholder="Agrega tu Articulo en este espacio."
             />
           </div>

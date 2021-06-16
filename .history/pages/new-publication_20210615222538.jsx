@@ -17,7 +17,14 @@ import ModalPost from "../components/molecules/ModalPost";
 import firebase from "../firebase";
 
 const newPublication = () => {
-  const [editorState, setEditorState] = useState(editorStateFromRaw(null));
+  const [state, setState] = useState(null);
+
+  const editorState = editorStateFromRaw(null);
+
+  const onChange = () => {
+    {...state,
+    setState(editorState)}
+  };
 
   const onSaveClick = async () => {
     const content = editorStateToJSON(editorState);
@@ -42,7 +49,7 @@ const newPublication = () => {
           <div style={{ marginLeft: 80 }}>
             <MegadraftEditor
               editorState={editorState}
-              onChange={setEditorState}
+              onChange={onChange}
               placeholder="Agrega tu Articulo en este espacio."
             />
           </div>

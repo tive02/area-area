@@ -1,5 +1,9 @@
 import React, { useEffect, useState, useContext } from "react";
-import { editorStateFromRaw, editorStateToJSON } from "megadraft";
+import {
+  editorStateFromRaw,
+  editorStateToJSON,
+  MegadraftEditor,
+} from "megadraft";
 import dynamic from "next/dynamic";
 const MegadraftEditor = dynamic(
   () => {

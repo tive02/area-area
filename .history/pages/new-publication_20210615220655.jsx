@@ -16,10 +16,18 @@ import ModalPost from "../components/molecules/ModalPost";
 //Firebase
 import firebase from "../firebase";
 
-const newPublication = () => {
-  const [editorState, setEditorState] = useState(editorStateFromRaw(null));
+const  newPublication = () => {
+  
 
-  const onSaveClick = async () => {
+   const editorState= editorStateFromRaw(null) ;
+  
+
+  onChange = (editorState) => {
+    this.setState({ editorState });
+  };
+
+  onSaveClick = async () => {
+  
     const content = editorStateToJSON(editorState);
     // Your function to save the content
     // save_my_content(content);
@@ -33,34 +41,36 @@ const newPublication = () => {
     }
   };
 
-  return (
-    //Add some margin left to show plugins sidebar
-    <>
-      <Header />
-      <div className="py-16">
-        <div className="max-w-7xl mx-auto sm:px-6 lg:px-8">
-          <div style={{ marginLeft: 80 }}>
-            <MegadraftEditor
-              editorState={editorState}
-              onChange={setEditorState}
-              placeholder="Agrega tu Articulo en este espacio."
-            />
-          </div>
-          <div>
-            <ModalPost />
-          </div>
-          <div>
-            <ButtonSubmit
-              value="Publicar"
-              bgColor="bg-purple-700"
-              hoverColor="bg-green-400"
-              onClick={onSaveClick}
-            />
+ 
+    return (
+      //Add some margin left to show plugins sidebar
+      <>
+        <Header />
+        <div className="py-16">
+          <div className="max-w-7xl mx-auto sm:px-6 lg:px-8">
+            <div style={{ marginLeft: 80 }}>
+              <MegadraftEditor
+                editorState={this.state.editorState}
+                onChange={this.onChange}
+                placeholder="Agrega tu Articulo en este espacio."
+              />
+            </div>
+            <div>
+              <ModalPost />
+            </div>
+            <div>
+              <ButtonSubmit
+                value="Publicar"
+                bgColor="bg-purple-700"
+                hoverColor="bg-green-400"
+                onClick={this.onSaveClick}
+              />
+            </div>
           </div>
         </div>
-      </div>
-    </>
-  );
-};
+      </>
+    )
+  
+
 
 export default newPublication;

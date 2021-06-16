@@ -1,12 +1,10 @@
 import React, { useEffect, useState, useContext } from "react";
-import { editorStateFromRaw, editorStateToJSON } from "megadraft";
-import dynamic from "next/dynamic";
-const MegadraftEditor = dynamic(
-  () => {
-    return import("megadraft").then((mod) => mod.MegadraftEditor);
-  },
-  { loading: () => null, ssr: false }
-);
+import {
+  editorStateFromRaw,
+  editorStateToJSON,
+  MegadraftEditor,
+} from "megadraft";
+
 //Import megadraft.css
 import "megadraft/dist/css/megadraft.css";
 

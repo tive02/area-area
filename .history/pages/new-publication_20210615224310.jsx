@@ -1,12 +1,11 @@
 import React, { useEffect, useState, useContext } from "react";
-import { editorStateFromRaw, editorStateToJSON } from "megadraft";
+import {
+  editorStateFromRaw,
+  editorStateToJSON,
+  MegadraftEditor,
+} from "megadraft";
 import dynamic from "next/dynamic";
-const MegadraftEditor = dynamic(
-  () => {
-    return import("megadraft").then((mod) => mod.MegadraftEditor);
-  },
-  { loading: () => null, ssr: false }
-);
+
 //Import megadraft.css
 import "megadraft/dist/css/megadraft.css";
 
@@ -42,7 +41,7 @@ const newPublication = () => {
           <div style={{ marginLeft: 80 }}>
             <MegadraftEditor
               editorState={editorState}
-              onChange={setEditorState}
+              onChange={seteditorState}
               placeholder="Agrega tu Articulo en este espacio."
             />
           </div>
