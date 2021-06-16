@@ -17,14 +17,14 @@ const STATE_INITIAL = {
 
 export default function ModalPost() {
   //State de las imagenes
-  const [nameImg, setNameImg] = useState("");
-  const [submitImg, setSubmitImg] = useState(false);
-  const [progress, setProgress] = useState(0);
-  const [urlImg, setUrlImg] = useState("");
+  const [NameImg, setNameImg] = useState("");
+  const [SubmitImg, setSubmitImg] = useState(false);
+  const [Progress, setProgress] = useState(0);
+  const [UrlImg, setUrlImg] = useState("");
 
   //Metodos para las imagenesImagenes
   const handleUploadStart = () => {
-    setProgress(0);
+    setProccess(0);
     setSubmitImg(true);
   };
 
@@ -40,7 +40,7 @@ export default function ModalPost() {
     setSubmitImg(false);
     setNameImg(name);
     firebase.storage
-      .ref("posts")
+      .ref("productos")
       .child(name)
       .getDownloadURL()
       .then((url) => {
@@ -68,7 +68,7 @@ export default function ModalPost() {
     const post = {
       title,
       tags,
-      urlImg,
+      url,
       resume,
       votos: 0,
       comentarios: [],
@@ -177,12 +177,12 @@ export default function ModalPost() {
                         onProgress={handleProgress}
                       />
                     </div>
-
+                    {errors.url && <p>{errors.url}</p>}
                     <div className="flex items-center justify-end p-6 border-t border-solid border-blueGray-200 rounded-b">
                       <input
                         className="text-red-500 background-transparent font-bold uppercase px-6 py-2 text-sm outline-none focus:outline-none mr-1 mb-1 ease-linear transition-all duration-150"
                         type="submit"
-                        value="Crea tu post"
+                        value="Crear"
                       />
                     </div>
                   </form>

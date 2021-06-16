@@ -17,10 +17,10 @@ const STATE_INITIAL = {
 
 export default function ModalPost() {
   //State de las imagenes
-  const [nameImg, setNameImg] = useState("");
-  const [submitImg, setSubmitImg] = useState(false);
-  const [progress, setProgress] = useState(0);
-  const [urlImg, setUrlImg] = useState("");
+  const [NameImg, setNameImg] = useState("");
+  const [SubmitImg, setSubmitImg] = useState(false);
+  const [Progress, setProgress] = useState(0);
+  const [UrlImg, setUrlImg] = useState("");
 
   //Metodos para las imagenesImagenes
   const handleUploadStart = () => {
@@ -40,7 +40,7 @@ export default function ModalPost() {
     setSubmitImg(false);
     setNameImg(name);
     firebase.storage
-      .ref("posts")
+      .ref("productos")
       .child(name)
       .getDownloadURL()
       .then((url) => {
@@ -68,7 +68,7 @@ export default function ModalPost() {
     const post = {
       title,
       tags,
-      urlImg,
+      url,
       resume,
       votos: 0,
       comentarios: [],

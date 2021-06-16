@@ -17,6 +17,7 @@
     "next": "latest",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
+    "react-firebase-file-uploader": "^2.4.4",
     "react-firebaseui": "^5.0.2",
     "react-hook-form": "^7.3.3"
   },

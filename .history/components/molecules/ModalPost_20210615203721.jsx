@@ -40,7 +40,7 @@ export default function ModalPost() {
     setSubmitImg(false);
     setNameImg(name);
     firebase.storage
-      .ref("posts")
+      .ref("productos")
       .child(name)
       .getDownloadURL()
       .then((url) => {

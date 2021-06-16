@@ -11,7 +11,7 @@ export default function validateCreatePost(values) {
     errors.tags = "Las categorias son obligatorias";
   }
 
-  //Validar el resumen
+  //Validar la resumen
   if (!values.resume) {
     errors.resume = "El resumen es obligatorio";
   }
