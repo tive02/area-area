@@ -46,7 +46,7 @@ const newPublication = () => {
             />
           </div>
           <div>
-            <ModalPost content={content} />
+            <ModalPost />
           </div>
           <div>
             <ButtonSubmit

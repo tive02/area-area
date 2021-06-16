@@ -16,7 +16,7 @@ const STATE_INITIAL = {
 
 export default function ModalPost({ content }) {
   //State para la ventana modal.
-  const [showModal, setShowModal] = useState(false);
+  const [showModal, setShowModal] = useState(true);
   //State de las imagenes
   const [nameImg, setNameImg] = useState("");
   const [submitImg, setSubmitImg] = useState(false);
@@ -78,7 +78,6 @@ export default function ModalPost({ content }) {
         id: user.uid,
       },
       haVotado: [],
-      content,
     };
     //Insertarlo en la base de datos
 
