@@ -1,6 +1,6 @@
 import React from "react";
 
-const CardsPost = () => {
+const CardsPost = ({ title, author, likes, comments, time }) => {
   return (
     <div
       className="bg-gray-100 w-auto h-64 mt-5"
@@ -15,12 +15,10 @@ const CardsPost = () => {
     >
       <div className="flex flex-row items-end h-full w-full">
         <div className="flex flex-col w-full pb-3 pt-10 px-3 bg-gradient-to-t from-black text-gray-200">
-          <h3 className="text-base font-bold leading-5 uppercase">
-            Lorem, ipsum dolor sit amet elit foure consectetur adipisicing.
-          </h3>
+          <h3 className="text-base font-bold leading-5 uppercase">{title}</h3>
           <div className="inline-flex items-center">
             <span className="capitalize font-base text-xs my-1 mr-1">
-              Agnezmo Tuginem
+              {author}
             </span>
             <svg
               className="stroke-current stroke-1 text-blue-600 w-4"
@@ -52,7 +50,7 @@ const CardsPost = () => {
                     d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"
                   />
                 </svg>
-                <span className="text-xs ml-1 antialiased">0</span>
+                <span className="text-xs ml-1 antialiased">{likes}</span>
               </div>
               <div className="w-max inline-flex ml-4 items-center">
                 <svg
@@ -69,7 +67,7 @@ const CardsPost = () => {
                     d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z"
                   />
                 </svg>
-                <span className="text-xs ml-1 antialiased">1</span>
+                <span className="text-xs ml-1 antialiased">{comments}</span>
               </div>
               <div className="w-max inline-flex ml-4 items-center">
                 <svg
@@ -86,7 +84,7 @@ const CardsPost = () => {
                     d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"
                   />
                 </svg>
-                <span className="text-xs ml-1 antialiased">1 Hours ago</span>
+                <span className="text-xs ml-1 antialiased">{time}</span>
               </div>
             </div>
             <div className="w-max">
