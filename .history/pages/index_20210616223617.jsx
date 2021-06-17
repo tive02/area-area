@@ -18,9 +18,9 @@ export default function Home() {
           <CardMain />
           <CardSecundary />
         </div>
-        <div className="block lg:flex lg:space-x-2 px-2 lg:p-0 mt-10 mb-10">
+        <div className="block container lg:flex lg:space-x-2 px-2 lg:p-0 mt-10 mb-10">
           {/*<!-- post cards -->*/}
-          <div className="m-4 container w-auto">
+          <div className="m-4  w-auto">
             <div
               className="bg-white rounded grid grid-cols-1 md:grid-cols-2 
               gap-2 place-items-stretch leading-normal space-x-4"

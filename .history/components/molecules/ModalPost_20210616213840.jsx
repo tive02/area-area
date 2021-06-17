@@ -71,14 +71,13 @@ export default function ModalPost({ content, onFocus }) {
       tags,
       urlImg,
       resume,
-      votes: 0,
-      comments: [],
-      created: Date.now(),
-      creator: {
+      votos: 0,
+      comentarios: [],
+      creado: Date.now(),
+      creador: {
         id: user.uid,
-        name: user.displayName,
       },
-      voted: [],
+      haVotado: [],
       content,
     };
     //Insertarlo en la base de datos

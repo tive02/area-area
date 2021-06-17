@@ -14,7 +14,7 @@ const CardsPost = ({ post }) => {
   } = post;
   return (
     <div
-      className="bg-gray-100 w-96 h-64 mt-5"
+      className="bg-gray-100 w-auto h-64 mt-5"
       style={{
         backgroundImage: `url(
           ${urlImg}

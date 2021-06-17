@@ -5,8 +5,6 @@ import CardMain from "../components/molecules/CardMain";
 import PopularTopics from "../components/molecules/PopularTopics";
 import Subscribe from "../components/molecules/Subscribe";
 import CardSecundary from "../components/molecules/CardSecundary";
-//hooks
-import usePosts from "../hooks/usePosts";
 
 export default function Home() {
   const { posts } = usePosts("created");
@@ -20,7 +18,7 @@ export default function Home() {
         </div>
         <div className="block lg:flex lg:space-x-2 px-2 lg:p-0 mt-10 mb-10">
           {/*<!-- post cards -->*/}
-          <div className="m-4 container w-auto">
+          <div className="w-full lg:w-2/3">
             <div
               className="bg-white rounded grid grid-cols-1 md:grid-cols-2 
               gap-2 place-items-stretch leading-normal space-x-4"

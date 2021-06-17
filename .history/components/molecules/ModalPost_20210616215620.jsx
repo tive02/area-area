@@ -76,7 +76,7 @@ export default function ModalPost({ content, onFocus }) {
       created: Date.now(),
       creator: {
         id: user.uid,
-        name: user.displayName,
+        id: user.displayName,
       },
       voted: [],
       content,

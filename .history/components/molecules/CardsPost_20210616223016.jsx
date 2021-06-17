@@ -14,7 +14,7 @@ const CardsPost = ({ post }) => {
   } = post;
   return (
     <div
-      className="bg-gray-100 w-96 h-64 mt-5"
+      className="bg-gray-100 w-auto h-64 mt-5"
       style={{
         backgroundImage: `url(
           ${urlImg}
@@ -24,8 +24,8 @@ const CardsPost = ({ post }) => {
         backgroundSize: "cover",
       }}
     >
-      <div className="flex flex-row items-end h-full w-full">
-        <div className="flex flex-col w-full pb-3 pt-10 px-3 bg-gradient-to-t from-black text-gray-200">
+      <div className="flex flex-row items-end">
+        <div className="flex flex-col w-full pb-3 pt-10 px-3 from-black text-gray-200">
           <h3 className="text-base font-bold leading-5 uppercase">{title}</h3>
           <div className="inline-flex items-center">
             <span className="capitalize font-base text-xs my-1 mr-1">

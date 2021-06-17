@@ -14,7 +14,7 @@ const CardsPost = ({ post }) => {
   } = post;
   return (
     <div
-      className="bg-gray-100 w-96 h-64 mt-5"
+      className="bg-gray-100 w-auto h-64 mt-5"
       style={{
         backgroundImage: `url(
           ${urlImg}
@@ -98,7 +98,7 @@ const CardsPost = ({ post }) => {
                   />
                 </svg>
                 <span className="text-xs ml-1 antialiased">
-                  Publicado hace: {created}
+                  Publicado hace: {time}
                 </span>
               </div>
             </div>

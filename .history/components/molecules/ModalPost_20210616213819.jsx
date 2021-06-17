@@ -58,7 +58,7 @@ export default function ModalPost({ content, onFocus }) {
     handleBlur,
   } = useValidation(STATE_INITIAL, validateCreatePost, CreatePost);
 
-  const { title, tags, resume } = values;
+  const { title, tags, url, resume } = values;
 
   //Context de las operaciones CRUD de Firebase
   const { user, firebase } = useContext(FirebaseContext);
@@ -71,14 +71,13 @@ export default function ModalPost({ content, onFocus }) {
       tags,
       urlImg,
       resume,
-      votes: 0,
-      comments: [],
-      created: Date.now(),
-      creator: {
+      votos: 0,
+      comentarios: [],
+      creado: Date.now(),
+      creador: {
         id: user.uid,
-        name: user.displayName,
       },
-      voted: [],
+      haVotado: [],
       content,
     };
     //Insertarlo en la base de datos

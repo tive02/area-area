@@ -4,17 +4,18 @@ const CardsPost = ({ post }) => {
   const {
     id,
     title,
-
+    tags,
     urlImg,
     resume,
     votes,
     comments,
     created,
     creator,
+    voted,
   } = post;
   return (
     <div
-      className="bg-gray-100 w-96 h-64 mt-5"
+      className="bg-gray-100 w-auto h-64 mt-5"
       style={{
         backgroundImage: `url(
           ${urlImg}
@@ -29,7 +30,7 @@ const CardsPost = ({ post }) => {
           <h3 className="text-base font-bold leading-5 uppercase">{title}</h3>
           <div className="inline-flex items-center">
             <span className="capitalize font-base text-xs my-1 mr-1">
-              {creator.name}
+              {author}
             </span>
             <svg
               className="stroke-current stroke-1 text-blue-600 w-4"
@@ -78,9 +79,7 @@ const CardsPost = ({ post }) => {
                     d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z"
                   />
                 </svg>
-                <span className="text-xs ml-1 antialiased">
-                  {comments.length}
-                </span>
+                <span className="text-xs ml-1 antialiased">{comments}</span>
               </div>
               <div className="w-max inline-flex ml-4 items-center">
                 <svg
@@ -98,7 +97,7 @@ const CardsPost = ({ post }) => {
                   />
                 </svg>
                 <span className="text-xs ml-1 antialiased">
-                  Publicado hace: {created}
+                  Publicado hace: {time}
                 </span>
               </div>
             </div>

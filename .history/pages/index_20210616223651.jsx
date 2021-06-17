@@ -18,7 +18,7 @@ export default function Home() {
           <CardMain />
           <CardSecundary />
         </div>
-        <div className="block lg:flex lg:space-x-2 px-2 lg:p-0 mt-10 mb-10">
+        <div className="block  lg:flex lg:space-x-2 px-2 lg:p-0 ">
           {/*<!-- post cards -->*/}
           <div className="m-4 container w-auto">
             <div
