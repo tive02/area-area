@@ -27,7 +27,6 @@ const newPublication = () => {
     const content = editorStateToJSON(editorState);
     //cambio de estado para pasar al props content
     setContent(content);
-    console.log(content);
   };
 
   return (

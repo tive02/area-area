@@ -27,7 +27,6 @@ const newPublication = () => {
     const content = editorStateToJSON(editorState);
     //cambio de estado para pasar al props content
     setContent(content);
-    console.log(content);
   };
 
   return (
@@ -44,7 +43,7 @@ const newPublication = () => {
             />
           </div>
           <div>
-            <ModalPost content={content} onFocus={onSaveClick} />
+            <ModalPost content={content} onClick={onSaveClick} />
           </div>
         </div>
       </div>

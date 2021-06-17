@@ -14,7 +14,7 @@ const STATE_INITIAL = {
   resume: "",
 };
 
-export default function ModalPost({ content, onFocus }) {
+export default function ModalPost({ content }) {
   //State para la ventana modal.
   const [showModal, setShowModal] = useState(false);
   //State de las imagenes
@@ -87,7 +87,7 @@ export default function ModalPost({ content, onFocus }) {
   return (
     <>
       <button
-        className="bg-purple-700 text-white font-bold uppercase text-sm px-6 py-3 rounded shadow hover:shadow-lg outline-none focus:outline-none mr-1 mb-1 ease-linear transition-all duration-150 w-full"
+        className="bg-purple-700 text-white active:bg-pink-600 font-bold uppercase text-sm px-6 py-3 rounded shadow hover:shadow-lg outline-none focus:outline-none mr-1 mb-1 ease-linear transition-all duration-150"
         type="button"
         onClick={() => setShowModal(true)}
         onFocus={onFocus}
