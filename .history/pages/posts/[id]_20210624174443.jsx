@@ -64,12 +64,13 @@ const Post = () => {
         ) : (
           <div className="flex justify-center ">
             <main className="container max-w-screen-md lg:w-2/4 space-y-6 py-10">
-              <div className="mb-4 md:mb-0 w-full mx-auto relative space-y-5 ">
+              <div className="mb-4 md:mb-0 w-full mx-auto relative space-y-3 ">
                 <div className="px-4 lg:px-0">
                   <h2 className="text-4xl font-semibold text-gray-800 leading-tight">
                     {title}
                   </h2>
                 </div>
+
                 <img src={urlImg} className="w-full object-cover lg:rounded" />
               </div>
 

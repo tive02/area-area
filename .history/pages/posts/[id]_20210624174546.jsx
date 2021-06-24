@@ -70,6 +70,7 @@ const Post = () => {
                     {title}
                   </h2>
                 </div>
+
                 <img src={urlImg} className="w-full object-cover lg:rounded" />
               </div>
 
