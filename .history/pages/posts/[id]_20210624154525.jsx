@@ -37,24 +37,20 @@ const Post = () => {
     }
   }, [id]);
 
-  if (Object.keys(post).length === 0 && !error) return "Cargando...";
+  if (Object.keys(producto).length === 0 && !error) return "Cargando...";
 
   const {
-    title,
-    tags,
-    urlImg,
-    resume,
-    content,
-    votes,
-    comments,
-    created,
-    creator,
-    voted,
-  } = post;
-
-  const contents = JSON.parse(content);
-
-  console.log(contents);
+    comentarios,
+    creado,
+    descripcion,
+    empresa,
+    nombre,
+    url,
+    urlimagen,
+    votos,
+    creador,
+    haVotado,
+  } = producto;
 
   return (
     <Layout>

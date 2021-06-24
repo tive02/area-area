@@ -37,24 +37,24 @@ const Post = () => {
     }
   }, [id]);
 
-  if (Object.keys(post).length === 0 && !error) return "Cargando...";
+  if (Object.keys(producto).length === 0 && !error) return "Cargando...";
 
   const {
+
     title,
-    tags,
-    urlImg,
-    resume,
-    content,
-    votes,
-    comments,
-    created,
-    creator,
-    voted,
-  } = post;
-
-  const contents = JSON.parse(content);
-
-  console.log(contents);
+      tags,
+      urlImg,
+      resume,
+      content,
+      votes: 0,
+      comments: [],
+      created: Date.now(),
+      creator: {
+        id: user.uid,
+        name: user.displayName,
+      },
+      voted: [],
+  } = posts;
 
   return (
     <Layout>

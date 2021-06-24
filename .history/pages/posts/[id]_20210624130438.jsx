@@ -27,8 +27,9 @@ const Post = () => {
       const getPost = async () => {
         const postQuery = await firebase.db.collection("posts").doc(id);
         const post = await postQuery.get();
+        console.log(post.data());
         if (post.exists) {
-          setPost(post.data());
+          setPost(post.data()));
         } else {
           setError(true);
         }
@@ -36,25 +37,6 @@ const Post = () => {
       getPost();
     }
   }, [id]);
-
-  if (Object.keys(post).length === 0 && !error) return "Cargando...";
-
-  const {
-    title,
-    tags,
-    urlImg,
-    resume,
-    content,
-    votes,
-    comments,
-    created,
-    creator,
-    voted,
-  } = post;
-
-  const contents = JSON.parse(content);
-
-  console.log(contents);
 
   return (
     <Layout>

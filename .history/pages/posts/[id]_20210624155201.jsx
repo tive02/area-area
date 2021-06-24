@@ -37,7 +37,7 @@ const Post = () => {
     }
   }, [id]);
 
-  if (Object.keys(post).length === 0 && !error) return "Cargando...";
+  if (Object.keys(posts).length === 0 && !error) return "Cargando...";
 
   const {
     title,
@@ -50,7 +50,7 @@ const Post = () => {
     created,
     creator,
     voted,
-  } = post;
+  } = posts;
 
   const contents = JSON.parse(content);
 

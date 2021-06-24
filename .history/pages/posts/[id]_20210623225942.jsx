@@ -37,25 +37,6 @@ const Post = () => {
     }
   }, [id]);
 
-  if (Object.keys(post).length === 0 && !error) return "Cargando...";
-
-  const {
-    title,
-    tags,
-    urlImg,
-    resume,
-    content,
-    votes,
-    comments,
-    created,
-    creator,
-    voted,
-  } = post;
-
-  const contents = JSON.parse(content);
-
-  console.log(contents);
-
   return (
     <Layout>
       <Fragment>{error ? <Error404 /> : <h1>desde {id}</h1>}</Fragment>
