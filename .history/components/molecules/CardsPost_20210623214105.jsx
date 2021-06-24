@@ -1,8 +1,7 @@
 import React from "react";
-import Link from "next/link";
 
 const CardsPost = ({ post }) => {
-  const { id, title, urlImg, votes, comments, created, creator } = post;
+  const { id, title, urlImg, resume, votes, comments, created, creator } = post;
   return (
     <Link href="/posts/[id]" as={`/posts/${id}`}>
       <div
