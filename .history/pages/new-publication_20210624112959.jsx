@@ -19,10 +19,9 @@ import firebase from "../firebase";
 const newPublication = () => {
   //State del contenido
   const [content, setContent] = useState({});
-  //objeto para que el contenido
 
   //State del editor
-  const [editorState, setEditorState] = useState(editorStateFromRaw(null));
+  const [editorState, setEditorState] = useState(editorStateFromRaw(content));
 
   const onSaveClick = async () => {
     const content = editorStateToJSON(editorState);

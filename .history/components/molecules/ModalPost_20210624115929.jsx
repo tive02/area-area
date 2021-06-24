@@ -28,7 +28,6 @@ export default function ModalPost({ content, onFocus }) {
   const router = useRouter();
 
   //Metodos para las imagenesImagenes
-
   const handleUploadStart = () => {
     setProgress(0);
     setSubmitImg(true);
@@ -65,17 +64,13 @@ export default function ModalPost({ content, onFocus }) {
 
   //Funcion para rear los Post
   async function CreatePost() {
-    // si el usuario no esta autenticado llevar al login
-    if (!user) {
-      return router.push("/login");
-    }
     //Crear el objeto de nuevo producto
     const post = {
       title,
       tags,
       urlImg,
       resume,
-      content,
+      content: {},
       votes: 0,
       comments: [],
       created: Date.now(),
@@ -89,6 +84,11 @@ export default function ModalPost({ content, onFocus }) {
     firebase.db.collection("posts").add(post);
     //redirigir al inicio
     return router.push("/");
+  }
+
+  // si el usuario no esta autenticado llevar al login
+  if (!user) {
+    return router.push("/login");
   }
 
   return (

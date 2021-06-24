@@ -75,7 +75,7 @@ export default function ModalPost({ content, onFocus }) {
       tags,
       urlImg,
       resume,
-      content,
+      content: {},
       votes: 0,
       comments: [],
       created: Date.now(),
