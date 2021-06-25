@@ -81,20 +81,15 @@ const Post = () => {
 
               <div className="flex flex-col lg:flex-row lg:space-x-12">
                 <div className="px-4 lg:px-0 text-gray-700 text-lg leading-relaxed w-full">
-                  {blocks.map((block) =>
-                    block.type == "header-two" ? (
-                      <h2
-                        className="text-2xl text-gray-800 font-semibold mb-4 mt-4"
-                        key={block.key}
-                      >
-                        {block.text}
-                      </h2>
-                    ) : (
-                      <p className="pb-6" key={block.key}>
-                        {block.text}
-                      </p>
-                    )
-                  )}
+                  {blocks.map((block) => (
+                    (block.type && <h2 className="text-2xl text-gray-800 font-semibold mb-4 mt-4">
+                    Uneasy barton seeing remark happen his has
+                  </h2>)
+                    
+                    <p className="pb-6" key={block.key}>
+                      {block.text}
+                    </p>
+                  ))}
 
                   <div className="border-l-4 border-gray-500 pl-4 mb-6 italic rounded">
                     Sportsman do offending supported extremity breakfast by
@@ -113,6 +108,8 @@ const Post = () => {
                     sir met think hopes are marry among. Delightful remarkably
                     new assistance saw literature mrs favourable.
                   </p>
+
+                  
                 </div>
               </div>
             </main>

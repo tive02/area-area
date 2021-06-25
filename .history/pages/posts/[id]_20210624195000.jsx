@@ -83,16 +83,15 @@ const Post = () => {
                 <div className="px-4 lg:px-0 text-gray-700 text-lg leading-relaxed w-full">
                   {blocks.map((block) =>
                     block.type == "header-two" ? (
-                      <h2
-                        className="text-2xl text-gray-800 font-semibold mb-4 mt-4"
-                        key={block.key}
-                      >
+                      <h2 className="text-2xl text-gray-800 font-semibold mb-4 mt-4">
                         {block.text}
                       </h2>
                     ) : (
-                      <p className="pb-6" key={block.key}>
-                        {block.text}
-                      </p>
+                      block.type == "unstyled" && (
+                        <p className="pb-6" key={block.key}>
+                          {block.text}
+                        </p>
+                      )
                     )
                   )}
 

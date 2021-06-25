@@ -82,14 +82,13 @@ const Post = () => {
               <div className="flex flex-col lg:flex-row lg:space-x-12">
                 <div className="px-4 lg:px-0 text-gray-700 text-lg leading-relaxed w-full">
                   {blocks.map((block) =>
-                    block.type == "header-two" ? (
-                      <h2
-                        className="text-2xl text-gray-800 font-semibold mb-4 mt-4"
-                        key={block.key}
-                      >
-                        {block.text}
-                      </h2>
-                    ) : (
+                    (
+                      block.type && (
+                        <h2 className="text-2xl text-gray-800 font-semibold mb-4 mt-4">
+                          {block.text}
+                        </h2>
+                      )
+                    )(
                       <p className="pb-6" key={block.key}>
                         {block.text}
                       </p>
