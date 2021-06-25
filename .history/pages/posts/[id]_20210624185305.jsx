@@ -52,7 +52,9 @@ const Post = () => {
     voted,
   } = post;
 
-  const { blocks, entityMap } = JSON.parse(content);
+  const contents = JSON.parse(content);
+
+  console.log(contents);
 
   return (
     <Layout>
@@ -76,9 +78,34 @@ const Post = () => {
 
               <div className="flex flex-col lg:flex-row lg:space-x-12">
                 <div className="px-4 lg:px-0 text-gray-700 text-lg leading-relaxed w-full">
-                  {blocks.map((block) => (
-                    <p key={block.key}>{block.text} </p>
-                  ))}
+                  {Object.entries(contents).forEach(([key, value]) => {
+                    console.log(value);
+                  })}
+
+                  <p className="pb-6">
+                    Difficulty on insensible reasonable in. From as went he
+                    they. Preference themselves me as thoroughly partiality
+                    considered on in estimating. Middletons acceptance
+                    discovered projecting so is so or. In or attachment
+                    inquietude remarkably comparison at an. Is surrounded
+                    prosperous stimulated am me discretion expression. But truth
+                    being state can she china widow. Occasional preference fat
+                    remarkably now projecting uncommonly dissimilar. Sentiments
+                    projection particular companions interested do at my
+                    delightful. Listening newspaper in advantage frankness to
+                    concluded unwilling.
+                  </p>
+
+                  <p className="pb-6">
+                    Adieus except say barton put feebly favour him. Entreaties
+                    unpleasant sufficient few pianoforte discovered uncommonly
+                    ask. Morning cousins amongst in mr weather do neither.
+                    Warmth object matter course active law spring six. Pursuit
+                    showing tedious unknown winding see had man add. And park
+                    eyes too more him. Simple excuse active had son wholly
+                    coming number add. Though all excuse ladies rather regard
+                    assure yet. If feelings so prospect no as raptures quitting.
+                  </p>
 
                   <div className="border-l-4 border-gray-500 pl-4 mb-6 italic rounded">
                     Sportsman do offending supported extremity breakfast by
