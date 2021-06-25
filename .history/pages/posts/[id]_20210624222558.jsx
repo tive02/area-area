@@ -70,15 +70,11 @@ const Post = () => {
         return <p className="bg-blue-500">{text}</p>;
         break;
       case "atomic":
-        if (data.type == "image") {
-          return <img src={data.src} type={data.type} alt={data.caption} />;
-        } else {
-          return (
-            <a href={data.src} target="_blank" rel="noopener noreferrer">
-              pulsa aqui para ver tu video
-            </a>
-          );
-        }
+        return (
+          <a src={data.src} type={data.type} alt={data.caption}>
+            {" "}
+          </a>
+        );
         break;
       case "blockquote":
         return (
@@ -87,7 +83,6 @@ const Post = () => {
           </blockquote>
         );
         break;
-
       case "unordered-list-item":
         return (
           <ul className="bg-green-500">

@@ -70,15 +70,7 @@ const Post = () => {
         return <p className="bg-blue-500">{text}</p>;
         break;
       case "atomic":
-        if (data.type == "image") {
-          return <img src={data.src} type={data.type} alt={data.caption} />;
-        } else {
-          return (
-            <a href={data.src} target="_blank" rel="noopener noreferrer">
-              pulsa aqui para ver tu video
-            </a>
-          );
-        }
+        return <img src={data.src} type={data.type} alt={data.caption} />;
         break;
       case "blockquote":
         return (

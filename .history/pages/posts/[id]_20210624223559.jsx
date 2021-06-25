@@ -74,8 +74,8 @@ const Post = () => {
           return <img src={data.src} type={data.type} alt={data.caption} />;
         } else {
           return (
-            <a href={data.src} target="_blank" rel="noopener noreferrer">
-              pulsa aqui para ver tu video
+            <a src={data.src} controls>
+              pulsa aqui para ver tu video</code>.
             </a>
           );
         }

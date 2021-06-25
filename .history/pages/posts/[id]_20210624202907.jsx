@@ -54,58 +54,10 @@ const Post = () => {
 
   const { blocks, entityMap } = JSON.parse(content);
 
-  const { data, depth, entityRanges, inlineStyleRanges, key, text, type } =
-    blocks;
-
   console.log(blocks);
   console.log(entityMap);
 
-  //metodo para revisar cual es el tipo de contenido
-  const ChangeType = (text, type, data) => {
-    switch (type) {
-      case "header-two":
-        return <h2 className="bg-red-500">{text}</h2>;
-        break;
-      case "unstyled":
-        return <p className="bg-blue-500">{text}</p>;
-        break;
-      case "atomic":
-        if (data.type == "image") {
-          return <img src={data.src} type={data.type} alt={data.caption} />;
-        } else {
-          return (
-            <a href={data.src} target="_blank" rel="noopener noreferrer">
-              pulsa aqui para ver tu video
-            </a>
-          );
-        }
-        break;
-      case "blockquote":
-        return (
-          <blockquote className="border-l-4 border-gray-500 pl-4 mb-6 italic rounded">
-            {text}
-          </blockquote>
-        );
-        break;
-
-      case "unordered-list-item":
-        return (
-          <ul className="bg-green-500">
-            <li>{text}</li>
-          </ul>
-        );
-        break;
-      case "ordered-list-item":
-        return (
-          <ol className="bg-yellow-500">
-            <li>{text}</li>
-          </ol>
-        );
-        break;
-      default:
-        break;
-    }
-  };
+  //metodo para renderizar toda la informacion del content.
 
   return (
     <Layout>
@@ -129,11 +81,39 @@ const Post = () => {
 
               <div className="flex flex-col lg:flex-row lg:space-x-12">
                 <div className="px-4 lg:px-0 text-gray-700 text-lg leading-relaxed w-full">
-                  {blocks.map((block) => (
-                    <div className="pb-6" key={block.key}>
-                      {ChangeType(block.text, block.type, block.data)}
-                    </div>
-                  ))}
+                  {blocks.map((block) =>
+                    block.type == "header-two" ? (
+                      <h2
+                        className="text-2xl text-gray-800 font-semibold mb-4 mt-4"
+                        key={block.key}
+                      >
+                        {block.text}
+                      </h2>
+                    ) : (
+                      <p className="pb-6" key={block.key}>
+                        {block.text}
+                        <span>{block.inlineStyleRanges}</span>
+                      </p>
+                    )
+                  )}
+
+                  <div className="border-l-4 border-gray-500 pl-4 mb-6 italic rounded">
+                    Sportsman do offending supported extremity breakfast by
+                    listening. Decisively advantages nor expression unpleasing
+                    she led met. Estate was tended ten boy nearer seemed. As so
+                    seeing latter he should thirty whence. Steepest speaking up
+                    attended it as. Made neat an on be gave show snug tore.
+                  </div>
+
+                  <p className="pb-6">
+                    Exquisite cordially mr happiness of neglected distrusts.
+                    Boisterous impossible unaffected he me everything. Is fine
+                    loud deal an rent open give. Find upon and sent spot song
+                    son eyes. Do endeavor he differed carriage is learning my
+                    graceful. Feel plan know is he like on pure. See burst found
+                    sir met think hopes are marry among. Delightful remarkably
+                    new assistance saw literature mrs favourable.
+                  </p>
                 </div>
               </div>
             </main>

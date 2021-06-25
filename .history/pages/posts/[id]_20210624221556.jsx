@@ -70,21 +70,13 @@ const Post = () => {
         return <p className="bg-blue-500">{text}</p>;
         break;
       case "atomic":
-        if (data.type == "image") {
-          return <img src={data.src} type={data.type} alt={data.caption} />;
-        } else {
-          return (
-            <a href={data.src} target="_blank" rel="noopener noreferrer">
-              pulsa aqui para ver tu video
-            </a>
-          );
-        }
+        return <img src={data.src} type={data.type} alt={data.caption} />;
         break;
       case "blockquote":
         return (
-          <blockquote className="border-l-4 border-gray-500 pl-4 mb-6 italic rounded">
+          <div className="border-l-4 border-gray-500 pl-4 mb-6 italic rounded">
             {text}
-          </blockquote>
+          </div>
         );
         break;
 
@@ -134,6 +126,24 @@ const Post = () => {
                       {ChangeType(block.text, block.type, block.data)}
                     </div>
                   ))}
+
+                  <div className="border-l-4 border-gray-500 pl-4 mb-6 italic rounded">
+                    Sportsman do offending supported extremity breakfast by
+                    listening. Decisively advantages nor expression unpleasing
+                    she led met. Estate was tended ten boy nearer seemed. As so
+                    seeing latter he should thirty whence. Steepest speaking up
+                    attended it as. Made neat an on be gave show snug tore.
+                  </div>
+
+                  <p className="pb-6">
+                    Exquisite cordially mr happiness of neglected distrusts.
+                    Boisterous impossible unaffected he me everything. Is fine
+                    loud deal an rent open give. Find upon and sent spot song
+                    son eyes. Do endeavor he differed carriage is learning my
+                    graceful. Feel plan know is he like on pure. See burst found
+                    sir met think hopes are marry among. Delightful remarkably
+                    new assistance saw literature mrs favourable.
+                  </p>
                 </div>
               </div>
             </main>
