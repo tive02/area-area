@@ -60,7 +60,7 @@ const Post = () => {
   console.log(blocks);
   console.log(entityMap);
 
-  //metodo para revisar cual es el tipo de contenido. y renderizar los componentes correspondientes
+  //metodo para revisar cual es el tipo de contenido
   const ChangeType = (text, type, data) => {
     switch (type) {
       case "header-two":
@@ -107,22 +107,6 @@ const Post = () => {
     }
   };
 
-  const changeStyles = (text, inlineStyleRanges) => {
-    inlineStyleRanges.map((inlineStyle) => {
-      switch (inlineStyle.style) {
-        case "BOLD":
-          let offset = inlineStyle.offset;
-          let length = inlineStyle.length;
-          return console.log(offset), console.log(length);
-          break;
-        case "ITALIC":
-          return console.log(inlineStyle.offset);
-          break;
-        default:
-          break;
-      }
-    });
-  };
   return (
     <Layout>
       <Fragment>
@@ -148,7 +132,6 @@ const Post = () => {
                   {blocks.map((block) => (
                     <div className="pb-6" key={block.key}>
                       {ChangeType(block.text, block.type, block.data)}
-                      {changeStyles(block.text, block.inlineStyleRanges)}
                     </div>
                   ))}
                 </div>

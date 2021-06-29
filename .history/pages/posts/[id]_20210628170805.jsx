@@ -111,9 +111,8 @@ const Post = () => {
     inlineStyleRanges.map((inlineStyle) => {
       switch (inlineStyle.style) {
         case "BOLD":
-          let offset = inlineStyle.offset;
-          let length = inlineStyle.length;
-          return console.log(offset), console.log(length);
+          return console.log(inlineStyle.offset);
+
           break;
         case "ITALIC":
           return console.log(inlineStyle.offset);

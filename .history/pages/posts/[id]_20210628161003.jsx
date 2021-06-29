@@ -61,7 +61,7 @@ const Post = () => {
   console.log(entityMap);
 
   //metodo para revisar cual es el tipo de contenido. y renderizar los componentes correspondientes
-  const ChangeType = (text, type, data) => {
+  const ChangeType = (text, type, data, inlineStyleRanges) => {
     switch (type) {
       case "header-two":
         return <h2 className="bg-red-500">{text}</h2>;
@@ -105,24 +105,25 @@ const Post = () => {
       default:
         break;
     }
+
+    switch (inlineStyleRanges.style) {
+      case "BOLD":
+        for (const inlineStyle of inlineStylesRanges) {
+          console.log(inlineStyle.offset);
+          console.log(inlineStyle.length);
+        }
+        break;
+      case "ITALIC":
+        for (const inlineStyle of inlineStylesRanges) {
+          console.log(inlineStyle.offset);
+          console.log(inlineStyle.length);
+        }
+        break;
+      default:
+        break;
+    }
   };
 
-  const changeStyles = (text, inlineStyleRanges) => {
-    inlineStyleRanges.map((inlineStyle) => {
-      switch (inlineStyle.style) {
-        case "BOLD":
-          let offset = inlineStyle.offset;
-          let length = inlineStyle.length;
-          return console.log(offset), console.log(length);
-          break;
-        case "ITALIC":
-          return console.log(inlineStyle.offset);
-          break;
-        default:
-          break;
-      }
-    });
-  };
   return (
     <Layout>
       <Fragment>
@@ -147,8 +148,12 @@ const Post = () => {
                 <div className="px-4 lg:px-0 text-gray-700 text-lg leading-relaxed w-full">
                   {blocks.map((block) => (
                     <div className="pb-6" key={block.key}>
-                      {ChangeType(block.text, block.type, block.data)}
-                      {changeStyles(block.text, block.inlineStyleRanges)}
+                      {ChangeType(
+                        block.text,
+                        block.type,
+                        block.data,
+                        block.inlineStyleRanges
+                      )}
                     </div>
                   ))}
                 </div>

@@ -107,21 +107,22 @@ const Post = () => {
     }
   };
 
-  const changeStyles = (text, inlineStyleRanges) => {
-    inlineStyleRanges.map((inlineStyle) => {
-      switch (inlineStyle.style) {
-        case "BOLD":
-          let offset = inlineStyle.offset;
-          let length = inlineStyle.length;
-          return console.log(offset), console.log(length);
-          break;
-        case "ITALIC":
-          return console.log(inlineStyle.offset);
-          break;
-        default:
-          break;
-      }
-    });
+  //Metodo para determinar el diseño de bold o italica dentro del componente.
+
+  const changeInlineStyle = (inlineStylesRanges) => {
+    switch (inlineStylesRanges) {
+      case "BOLD":
+        for (const style of inlineStylesRanges) {
+          console.log(style.offset);
+          console.log(style.length);
+        }
+        break;
+      case "ITALIC":
+        return <i className="bg-pink-700"> </i>;
+        break;
+      default:
+        break;
+    }
   };
   return (
     <Layout>
@@ -148,7 +149,6 @@ const Post = () => {
                   {blocks.map((block) => (
                     <div className="pb-6" key={block.key}>
                       {ChangeType(block.text, block.type, block.data)}
-                      {changeStyles(block.text, block.inlineStyleRanges)}
                     </div>
                   ))}
                 </div>

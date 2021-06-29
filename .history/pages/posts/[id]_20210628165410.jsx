@@ -107,17 +107,13 @@ const Post = () => {
     }
   };
 
-  const changeStyles = (text, inlineStyleRanges) => {
-    inlineStyleRanges.map((inlineStyle) => {
-      switch (inlineStyle.style) {
-        case "BOLD":
-          let offset = inlineStyle.offset;
-          let length = inlineStyle.length;
-          return console.log(offset), console.log(length);
+  const changeStyles = (inlineStyleRanges) => {
+    console.log(inlineStyleRanges);
+    inlineStyleRanges.map((style) => {
+      switch (key) {
+        case value:
           break;
-        case "ITALIC":
-          return console.log(inlineStyle.offset);
-          break;
+
         default:
           break;
       }
@@ -148,7 +144,7 @@ const Post = () => {
                   {blocks.map((block) => (
                     <div className="pb-6" key={block.key}>
                       {ChangeType(block.text, block.type, block.data)}
-                      {changeStyles(block.text, block.inlineStyleRanges)}
+                      {changeStyles(block.inlineStyleRanges)}
                     </div>
                   ))}
                 </div>

@@ -111,12 +111,11 @@ const Post = () => {
     inlineStyleRanges.map((inlineStyle) => {
       switch (inlineStyle.style) {
         case "BOLD":
-          let offset = inlineStyle.offset;
-          let length = inlineStyle.length;
-          return console.log(offset), console.log(length);
+          return <strong className="bg-purple-700">{text}} </strong>;
+
           break;
         case "ITALIC":
-          return console.log(inlineStyle.offset);
+          return <i className="bg-purple-900">{inlineStyle.offset}</i>;
           break;
         default:
           break;
