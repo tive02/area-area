@@ -61,27 +61,7 @@ const Post = () => {
   console.log(entityMap);
 
   //metodo para revisar cual es el tipo de contenido. y renderizar los componentes correspondientes
-  const ChangeType = (text, type, data, inlineStyleRanges) => {
-    inlineStyleRanges.map((inlineStyle) => {
-      switch (inlineStyle.style) {
-        case "BOLD":
-          const offsetBold = inlineStyle.offset;
-          const lengthBold = inlineStyle.length;
-          const word = new String(
-            text.slice(offsetBold, offsetBold + lengthBold)
-          );
-          return console.log(word);
-          break;
-        case "ITALIC":
-          //const offsetItalic = inlineStyle.offset;
-          //const lengthItalic = inlineStyle.length;
-          //return console.log(text.slice(offset, length));
-          break;
-        default:
-          break;
-      }
-    });
-
+  const ChangeType = (text, type, data) => {
     switch (type) {
       case "header-two":
         return <h2 className="bg-red-500">{text}</h2>;
@@ -127,7 +107,32 @@ const Post = () => {
     }
   };
 
-  const changeStyles = (text, inlineStyleRanges) => {};
+  const changeStyles = (text, inlineStyleRanges) => {
+    inlineStyleRanges.map((inlineStyle) => {
+      switch (inlineStyle.style) {
+        case "BOLD":
+          const offsetBold = inlineStyle.offset;
+          const lengthBold = inlineStyle.length;
+          const word = word.push(
+            text.slice(offsetBold, offsetBold + lengthBold)
+          );
+
+          return (
+            <div>
+              <p>hola mundo</p>
+            </div>
+          );
+          break;
+        case "ITALIC":
+          //const offsetItalic = inlineStyle.offset;
+          //const lengthItalic = inlineStyle.length;
+          //return console.log(text.slice(offset, length));
+          break;
+        default:
+          break;
+      }
+    });
+  };
   return (
     <Layout>
       <Fragment>
@@ -152,12 +157,8 @@ const Post = () => {
                 <div className="px-4 lg:px-0 text-gray-700 text-lg leading-relaxed w-full">
                   {blocks.map((block) => (
                     <div className="pb-6" key={block.key}>
-                      {ChangeType(
-                        block.text,
-                        block.type,
-                        block.data,
-                        block.inlineStyleRanges
-                      )}
+                      {ChangeType(block.text, block.type, block.data)}
+                      {changeStyles(block.text, block.inlineStyleRanges)}
                     </div>
                   ))}
                 </div>

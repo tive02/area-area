@@ -70,7 +70,11 @@ const Post = () => {
           const word = new String(
             text.slice(offsetBold, offsetBold + lengthBold)
           );
-          return console.log(word);
+          const strong = React.createElement("strong", props: {
+            className: 'bg-red-100',
+            children: word
+          })
+          return console.log(word), strong;
           break;
         case "ITALIC":
           //const offsetItalic = inlineStyle.offset;

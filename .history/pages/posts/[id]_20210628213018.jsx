@@ -70,6 +70,7 @@ const Post = () => {
           const word = new String(
             text.slice(offsetBold, offsetBold + lengthBold)
           );
+
           return console.log(word);
           break;
         case "ITALIC":

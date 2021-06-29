@@ -70,7 +70,7 @@ const Post = () => {
           const word = new String(
             text.slice(offsetBold, offsetBold + lengthBold)
           );
-          return console.log(word);
+          return console.log(word), (<strong>{word}</strong>);
           break;
         case "ITALIC":
           //const offsetItalic = inlineStyle.offset;

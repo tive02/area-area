@@ -62,25 +62,27 @@ const Post = () => {
 
   //metodo para revisar cual es el tipo de contenido. y renderizar los componentes correspondientes
   const ChangeType = (text, type, data, inlineStyleRanges) => {
-    inlineStyleRanges.map((inlineStyle) => {
-      switch (inlineStyle.style) {
-        case "BOLD":
-          const offsetBold = inlineStyle.offset;
-          const lengthBold = inlineStyle.length;
-          const word = new String(
-            text.slice(offsetBold, offsetBold + lengthBold)
-          );
-          return console.log(word);
-          break;
-        case "ITALIC":
-          //const offsetItalic = inlineStyle.offset;
-          //const lengthItalic = inlineStyle.length;
-          //return console.log(text.slice(offset, length));
-          break;
-        default:
-          break;
-      }
-    });
+    const span = () => {
+      inlineStyleRanges.map((inlineStyle) => {
+        switch (inlineStyle.style) {
+          case "BOLD":
+            const offsetBold = inlineStyle.offset;
+            const lengthBold = inlineStyle.length;
+            const word = new String(
+              text.slice(offsetBold, offsetBold + lengthBold)
+            );
+            return console.log(word);
+            break;
+          case "ITALIC":
+            //const offsetItalic = inlineStyle.offset;
+            //const lengthItalic = inlineStyle.length;
+            //return console.log(text.slice(offset, length));
+            break;
+          default:
+            break;
+        }
+      });
+    };
 
     switch (type) {
       case "header-two":
@@ -158,6 +160,7 @@ const Post = () => {
                         block.data,
                         block.inlineStyleRanges
                       )}
+                      <span>{}</span>
                     </div>
                   ))}
                 </div>

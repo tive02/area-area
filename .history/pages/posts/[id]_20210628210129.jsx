@@ -61,16 +61,23 @@ const Post = () => {
   console.log(entityMap);
 
   //metodo para revisar cual es el tipo de contenido. y renderizar los componentes correspondientes
-  const ChangeType = (text, type, data, inlineStyleRanges) => {
-    inlineStyleRanges.map((inlineStyle) => {
+  const ChangeType = async(text, type, data, inlineStyleRanges) => {
+    await inlineStyleRanges.map((inlineStyle) => {
       switch (inlineStyle.style) {
         case "BOLD":
           const offsetBold = inlineStyle.offset;
           const lengthBold = inlineStyle.length;
-          const word = new String(
+          const word = new Object(
             text.slice(offsetBold, offsetBold + lengthBold)
           );
-          return console.log(word);
+          console.log(word),
+          return (
+            (
+              <div>
+                <p>hola mundo {word}</p>
+              </div>
+            )
+          );
           break;
         case "ITALIC":
           //const offsetItalic = inlineStyle.offset;
