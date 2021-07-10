@@ -77,11 +77,11 @@ const Post = () => {
           const word = text.slice(offsetBold, offsetBold + lengthBold);
           switch (styleBold) {
             case "BOLD":
-              let newText = text.replace(
+              const newText = text.replace(
                 word,
                 `<strong className="text-red font-black">${word}</strong>`
               );
-              return (text = newText.slice()), console.log(newText);
+              return console.log(newText.slice());
               break;
             case "ITALIC":
               //function replacerItalic(word) {
@@ -89,12 +89,17 @@ const Post = () => {
               //}
               //return (text = text.replace(word, replacerItalic(word)));
               break;
+
             default:
               break;
           }
         });
         return (
-          <p className="" id="new" dangerouslySetInnerHTML={{ __html: text }} />
+          <p
+            className=""
+            id="new"
+            dangerouslySetInnerHTML={{ __html: newText }}
+          />
         );
         break;
       case "atomic":

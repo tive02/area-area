@@ -77,11 +77,10 @@ const Post = () => {
           const word = text.slice(offsetBold, offsetBold + lengthBold);
           switch (styleBold) {
             case "BOLD":
-              let newText = text.replace(
+              return (text = text.replace(
                 word,
-                `<strong className="text-red font-black">${word}</strong>`
-              );
-              return (text = newText.slice()), console.log(newText);
+                `<strong className="text-red font-red">${word}</strong>`
+              ));
               break;
             case "ITALIC":
               //function replacerItalic(word) {
@@ -89,6 +88,7 @@ const Post = () => {
               //}
               //return (text = text.replace(word, replacerItalic(word)));
               break;
+
             default:
               break;
           }

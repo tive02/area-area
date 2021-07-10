@@ -81,7 +81,7 @@ const Post = () => {
                 word,
                 `<strong className="text-red font-black">${word}</strong>`
               );
-              return (text = newText.slice()), console.log(newText);
+              return (text = newText.slice());
               break;
             case "ITALIC":
               //function replacerItalic(word) {

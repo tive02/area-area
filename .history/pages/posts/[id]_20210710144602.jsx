@@ -75,13 +75,15 @@ const Post = () => {
           const lengthBold = inlineStyle.length;
           const styleBold = inlineStyle.style;
           const word = text.slice(offsetBold, offsetBold + lengthBold);
+          console.log(word);
           switch (styleBold) {
             case "BOLD":
-              let newText = text.replace(
-                word,
-                `<strong className="text-red font-black">${word}</strong>`
-              );
-              return (text = newText.slice()), console.log(newText);
+              let strong = document.createElement("span");
+              console.log(strong);
+              let newText = document.createTextNode(word);
+              strong.appendChild(newText);
+              console.log(strong);
+              return (text = text.replace(word, strong));
               break;
             case "ITALIC":
               //function replacerItalic(word) {
@@ -89,12 +91,16 @@ const Post = () => {
               //}
               //return (text = text.replace(word, replacerItalic(word)));
               break;
+
             default:
               break;
           }
         });
+
         return (
-          <p className="" id="new" dangerouslySetInnerHTML={{ __html: text }} />
+          <p className="" id="new">
+            {text}
+          </p>
         );
         break;
       case "atomic":
