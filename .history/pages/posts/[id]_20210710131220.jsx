@@ -74,34 +74,25 @@ const Post = () => {
           const offsetBold = inlineStyle.offset;
           const lengthBold = inlineStyle.length;
           const styleBold = inlineStyle.style;
-          const word = text.slice(offsetBold, offsetBold + lengthBold);
+          const word = new String(
+            text.slice(offsetBold, offsetBold + lengthBold)
+          );
           console.log(word);
-          switch (styleBold) {
-            case "BOLD":
-              let strong = document.createElement("span");
-              console.log(strong);
-              let newText = document.createTextNode(word);
-              strong.appendChild(newText);
-              console.log(strong);
-              return (text = text.replace(word, strong));
-              break;
-            case "ITALIC":
-              //function replacerItalic(word) {
-              //  return `<i className="bg-blue-500">${word}</i>`;
-              //}
-              //return (text = text.replace(word, replacerItalic(word)));
-              break;
-
-            default:
-              break;
+          if (styleBold === "BOLD") {
+            return (text = text.replace(
+              word,
+              <strong className="bg-blue-500">${word}</strong>
+            ));
+          } else if (styleBold === "ITALIC") {
+            //function replacerItalic(word) {
+            //  return `<i className="bg-blue-500">${word}</i>`;
+            //}
+            //return (text = text.replace(word, replacerItalic(word)));
+          } else {
           }
         });
 
-        return (
-          <p className="" id="new">
-            {text}
-          </p>
-        );
+        return <p className="">{text}</p>;
         break;
       case "atomic":
         if (data.type == "image") {
