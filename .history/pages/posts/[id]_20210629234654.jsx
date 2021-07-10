@@ -36,9 +36,9 @@ const Post = () => {
       getPost();
     }
   }, [id]);
-  //Return mientras trae los datos de BD
+
   if (Object.keys(post).length === 0 && !error) return "Cargando...";
-  //Desestructuring de post
+
   const {
     title,
     tags,
@@ -52,23 +52,20 @@ const Post = () => {
     voted,
   } = post;
 
-  //convertir el contenido del post en JSON
   const { blocks, entityMap } = JSON.parse(content);
-  //destructuring de los bloqueos
+
   const { data, depth, entityRanges, inlineStyleRanges, key, text, type } =
     blocks;
-  //Prueba informacion para eliminar
+
   console.log(blocks);
   console.log(entityMap);
 
   //metodo para revisar cual es el tipo de contenido. y renderizar los componentes correspondientes
   const ChangeType = (text, type, data, inlineStyleRanges) => {
     switch (type) {
-      //usuario escoge titulo en el edito
       case "header-two":
         return <h2 className="bg-red-500">{text}</h2>;
         break;
-      //Usuario no escoge estilo en el editor
       case "unstyled":
         inlineStyleRanges.map((inlineStyle) => {
           const offsetBold = inlineStyle.offset;
@@ -77,20 +74,20 @@ const Post = () => {
           const word = new String(
             text.slice(offsetBold, offsetBold + lengthBold)
           );
-          console.log(word);
           if (styleBold === "BOLD") {
-            return (text = text.replace(
-              word,
-              <strong className="bg-blue-500">${word}</strong>
-            ));
+            function replacerBold(word) {
+              return `<strong className="bg-blue-500">${word}</strong>`;
+            }
+            return (text = text.replace(word, replacerBold(word)));
           } else if (styleBold === "ITALIC") {
-            //function replacerItalic(word) {
-            //  return `<i className="bg-blue-500">${word}</i>`;
-            //}
-            //return (text = text.replace(word, replacerItalic(word)));
+            function replacerItalic(word) {
+              return `<i className="bg-blue-500">${word}</i>`;
+            }
+            return (text = text.replace(word, replacerItalic(word)));
           } else {
           }
         });
+        console.log(text);
 
         return <p className="">{text}</p>;
         break;

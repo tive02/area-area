@@ -77,7 +77,6 @@ const Post = () => {
           const word = new String(
             text.slice(offsetBold, offsetBold + lengthBold)
           );
-          console.log(word);
           if (styleBold === "BOLD") {
             return (text = text.replace(
               word,
@@ -91,6 +90,7 @@ const Post = () => {
           } else {
           }
         });
+        console.log(text);
 
         return <p className="">{text}</p>;
         break;

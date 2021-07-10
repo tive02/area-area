@@ -77,12 +77,11 @@ const Post = () => {
           const word = new String(
             text.slice(offsetBold, offsetBold + lengthBold)
           );
-          console.log(word);
           if (styleBold === "BOLD") {
-            return (text = text.replace(
-              word,
-              <strong className="bg-blue-500">${word}</strong>
-            ));
+            function replacerBold(word) {
+              return `<strong className="bg-blue-500">${word}</strong>`;
+            }
+            return (text = text.replace(word, replacerBold(word)));
           } else if (styleBold === "ITALIC") {
             //function replacerItalic(word) {
             //  return `<i className="bg-blue-500">${word}</i>`;
@@ -91,6 +90,7 @@ const Post = () => {
           } else {
           }
         });
+        console.log(text);
 
         return <p className="">{text}</p>;
         break;
