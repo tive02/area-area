@@ -92,6 +92,15 @@ const Post = () => {
             return (text = newTextItalic.slice());
           } else {
           }
+          switch (styleBold) {
+            case "BOLD":
+              break;
+            case "ITALIC":
+              break;
+              break;
+            default:
+              break;
+          }
         });
         return (
           <p className="" id="new" dangerouslySetInnerHTML={{ __html: text }} />

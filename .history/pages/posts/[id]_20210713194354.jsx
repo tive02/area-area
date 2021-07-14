@@ -76,21 +76,26 @@ const Post = () => {
           const styleBold = inlineStyle.style;
           const word = text.slice(offsetBold, offsetBold + lengthBold);
 
-          if (styleBold === "BOLD") {
-            function boldString(str, substr) {
-              let strRegExp = new RegExp(substr, "g");
-              return str.replace(strRegExp, "<b>" + substr + "</b>");
-            }
-            let newTextBold = boldString(text, word);
-            return (text = newTextBold.slice());
-          } else if (styleBold === "ITALIC") {
-            function italicString(str, substr) {
-              let strRegExp = new RegExp(substr, "g");
-              return str.replace(strRegExp, "<i>" + substr + "</i>");
-            }
-            let newTextItalic = italicString(text, word);
-            return (text = newTextItalic.slice());
-          } else {
+          switch (styleBold) {
+            case "BOLD":
+              function boldString(str, substr) {
+                let strRegExp = new RegExp(substr, "g");
+                return str.replace(strRegExp, "<b>" + substr + "</b>");
+              }
+              let newTextBold = boldString(text, word);
+              return (text = newTextBold.slice());
+              break;
+            case "ITALIC":
+              function italicString(str, substr) {
+                let strRegExp = new RegExp(substr, "g");
+                return str.replace(strRegExp, "<i>" + substr + "</i>");
+              }
+              let newTextItalic = italicString(text, word);
+              return (text = newTextItalic.slice());
+              break;
+              break;
+            default:
+              break;
           }
         });
         return (
