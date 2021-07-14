@@ -133,7 +133,7 @@ const Post = () => {
       case "ordered-list-item":
         return (
           <ol start="2" className="m-0 font-sans list-inside list-decimal">
-            <li>{text}</li>
+            {Object.values(key.map((key) => <li key={key}>{text}</li>))}
           </ol>
         );
         break;

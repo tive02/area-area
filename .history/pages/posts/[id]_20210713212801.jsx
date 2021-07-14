@@ -62,7 +62,7 @@ const Post = () => {
   console.log(entityMap);
 
   //metodo para revisar cual es el tipo de contenido. y renderizar los componentes correspondientes
-  const ChangeType = (text, type, data, inlineStyleRanges, key) => {
+  const ChangeType = (text, type, data, inlineStyleRanges) => {
     switch (type) {
       //usuario escoge titulo en el edito
       case "header-two":
@@ -131,11 +131,12 @@ const Post = () => {
         );
         break;
       case "ordered-list-item":
-        return (
+        text.map((e) => {
           <ol start="2" className="m-0 font-sans list-inside list-decimal">
-            <li>{text}</li>
-          </ol>
-        );
+            return <li key={`text_${e}`}>{e}</li>
+          </ol>;
+        });
+
         break;
       default:
         break;
@@ -170,8 +171,7 @@ const Post = () => {
                         block.text,
                         block.type,
                         block.data,
-                        block.inlineStyleRanges,
-                        block.key
+                        block.inlineStyleRanges
                       )}
                     </div>
                   ))}

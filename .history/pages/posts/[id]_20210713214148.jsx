@@ -131,6 +131,9 @@ const Post = () => {
         );
         break;
       case "ordered-list-item":
+        key.forEach((element) => {
+          console.log(element);
+        });
         return (
           <ol start="2" className="m-0 font-sans list-inside list-decimal">
             <li>{text}</li>
