@@ -75,23 +75,21 @@ const Post = () => {
           const lengthBold = inlineStyle.length;
           const styleBold = inlineStyle.style;
           const word = text.slice(offsetBold, offsetBold + lengthBold);
-
           switch (styleBold) {
             case "BOLD":
-              function boldString(str, substr) {
-                let strRegExp = new RegExp(substr, "g");
-                return str.replace(strRegExp, "<b>" + substr + "</b>");
-              }
-              let newTextBold = boldString(text, word);
-              return (text = newTextBold.slice());
+              let newTextBold = text.replace(
+                word,
+                `BOLD ${word}  BOLD`
+                //`<strong className=" font-black">${word}</strong>`
+              );
+              return (text = newTextBold.slice()), console.log(newTextBold);
               break;
             case "ITALIC":
-              function italicString(str, substr) {
-                let strRegExp = new RegExp(substr, "g");
-                return str.replace(strRegExp, "<i>" + substr + "</i>");
-              }
-              let newTextItalic = italicString(text, word);
-              return (text = newTextItalic.slice());
+              let newTextItalic = text.replace(
+                word,
+                `italica ${word} italica `
+              );
+              return (text = newTextItalic.slice()), console.log(newTextItalic);
               break;
               break;
             default:

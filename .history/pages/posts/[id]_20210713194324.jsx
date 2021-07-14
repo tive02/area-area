@@ -83,7 +83,7 @@ const Post = () => {
                 return str.replace(strRegExp, "<b>" + substr + "</b>");
               }
               let newTextBold = boldString(text, word);
-              return (text = newTextBold.slice());
+              return (text = newTextBold.slice()), console.log(newTextBold);
               break;
             case "ITALIC":
               function italicString(str, substr) {
@@ -91,7 +91,7 @@ const Post = () => {
                 return str.replace(strRegExp, "<i>" + substr + "</i>");
               }
               let newTextItalic = italicString(text, word);
-              return (text = newTextItalic.slice());
+              return (text = newTextItalic.slice()), console.log(newTextItalic);
               break;
               break;
             default:
