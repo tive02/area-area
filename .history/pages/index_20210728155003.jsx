@@ -15,6 +15,11 @@ export default function Home() {
   //Return mientras trae los datos de BD
   if (Object.keys(posts).length === 0) return "Cargando...";
 
+  console.log(posts[0]);
+  console.log(Object.entries(posts[0]));
+  console.log(posts[1]);
+  console.log(Object.entries(posts[1]));
+
   return (
     <Layout>
       <main>

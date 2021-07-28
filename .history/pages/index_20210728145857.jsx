@@ -15,12 +15,14 @@ export default function Home() {
   //Return mientras trae los datos de BD
   if (Object.keys(posts).length === 0) return "Cargando...";
 
+  console.log(posts[0]);
+
   return (
     <Layout>
       <main>
         <div className="block md:flex md:space-x-2 px-2 lg:p-0">
-          <CardMain post={Object.entries(posts[0])} />
-          <CardSecundary post={Object.entries(posts[1])} />
+          <CardMain post={posts[0]} />
+          <CardSecundary post={posts[1]} />
         </div>
         <div className="block lg:flex lg:space-x-2 px-2 lg:p-0 mt-10 mb-10">
           {/*<!-- post cards -->*/}
@@ -37,7 +39,7 @@ export default function Home() {
           {/*<!-- right sidebar -->*/}
           <div className="w-full lg:w-1/3 px-3">
             {/*<!-- topics -->*/}
-            {/* {<PopularTopics />} */}
+            <PopularTopics />
             {/*<!-- subscribe -->*/}
             <Subscribe />
           </div>

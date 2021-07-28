@@ -15,12 +15,14 @@ export default function Home() {
   //Return mientras trae los datos de BD
   if (Object.keys(posts).length === 0) return "Cargando...";
 
+  console.log(Json.stringify(posts[0]));
+
   return (
     <Layout>
       <main>
         <div className="block md:flex md:space-x-2 px-2 lg:p-0">
-          <CardMain post={Object.entries(posts[0])} />
-          <CardSecundary post={Object.entries(posts[1])} />
+          <CardMain post={Json.stringify(posts[0])} />
+          <CardSecundary post={Json.stringify(posts[1])} />
         </div>
         <div className="block lg:flex lg:space-x-2 px-2 lg:p-0 mt-10 mb-10">
           {/*<!-- post cards -->*/}
