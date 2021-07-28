@@ -92,7 +92,7 @@ const CardsPost = ({ post }) => {
                     />
                   </svg>
                   <span className="text-xs ml-1 antialiased">
-                    Publicado hace{" "}
+                    Publicado hace
                     {formatDistanceToNow(new Date(created), { locale: es })}
                   </span>
                 </div>

@@ -32,10 +32,8 @@ const CardMain = ({ post }) => {
               <p className="font-semibold text-gray-200 text-sm">
                 {creator.name}
               </p>
-              <p className="font-semibold text-gray-100 text-xs">
-                Publicado hace{" "}
-                {formatDistanceToNow(new Date(created), { locale: es })}
-              </p>
+              <p className="font-semibold text-gray-400 text-xs"> Publicado hace
+            {formatDistanceToNow(new Date(created), { locale: es })} </p>
             </div>
           </div>
         </div>

@@ -1,6 +1,4 @@
 import React from "react";
-import formatDistanceToNow from "date-fns/formatDistanceToNow";
-import { es } from "date-fns/locale";
 import Link from "next/link";
 
 const CardsPost = ({ post }) => {
@@ -92,7 +90,7 @@ const CardsPost = ({ post }) => {
                     />
                   </svg>
                   <span className="text-xs ml-1 antialiased">
-                    Publicado hace{" "}
+                    Publicado hace
                     {formatDistanceToNow(new Date(created), { locale: es })}
                   </span>
                 </div>

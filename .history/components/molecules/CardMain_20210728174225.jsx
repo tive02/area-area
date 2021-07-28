@@ -34,7 +34,7 @@ const CardMain = ({ post }) => {
               </p>
               <p className="font-semibold text-gray-100 text-xs">
                 Publicado hace{" "}
-                {formatDistanceToNow(new Date(created), { locale: es })}
+                {formatDistanceToNow(new Date(created), { locale: es })}{" "}
               </p>
             </div>
           </div>
