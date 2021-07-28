@@ -125,11 +125,18 @@ const Post = () => {
         );
         break;
       case "ordered-list-item":
-        return (
-          <ol className="m-0 font-sans ">
-            <li className="leading-none font-light">{`- ${text}`}</li>
-          </ol>
-        );
+        const keys = key.split(" ");
+        function logArrayElements(element, array, index) {
+          <li key={element}>{index + "." + array}</li>;
+        }
+
+        keys.forEach(logArrayElements);
+
+        <li key={key} className=" list-inside">
+          {index + "." + text}
+        </li>;
+
+        return <ol className="m-0 font-sans ">{listItems}</ol>;
         break;
       default:
         break;

@@ -125,9 +125,13 @@ const Post = () => {
         );
         break;
       case "ordered-list-item":
+        const keys = key.split(" ");
+        const listItems = keys.map((key) => {
+          return (text = text), (key = key);
+        });
         return (
           <ol className="m-0 font-sans ">
-            <li className="leading-none font-light">{`- ${text}`}</li>
+            <li key={listItems.key}>{listItems.text}</li>
           </ol>
         );
         break;

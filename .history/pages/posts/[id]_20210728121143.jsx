@@ -125,11 +125,7 @@ const Post = () => {
         );
         break;
       case "ordered-list-item":
-        return (
-          <ol className="m-0 font-sans ">
-            <li className="leading-none font-light">{`- ${text}`}</li>
-          </ol>
-        );
+        return <ol className="m-0 font-sans ">- {text}</ol>;
         break;
       default:
         break;

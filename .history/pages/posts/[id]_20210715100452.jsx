@@ -126,8 +126,8 @@ const Post = () => {
         break;
       case "ordered-list-item":
         return (
-          <ol className="m-0 font-sans ">
-            <li className="leading-none font-light">{`- ${text}`}</li>
+          <ol start="2" className="m-0 font-sans list-inside list-decimal">
+            return <li>{text}</li>;
           </ol>
         );
         break;

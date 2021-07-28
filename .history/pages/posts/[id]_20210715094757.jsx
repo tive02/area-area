@@ -125,9 +125,12 @@ const Post = () => {
         );
         break;
       case "ordered-list-item":
+        key.map((key) => {});
         return (
-          <ol className="m-0 font-sans ">
-            <li className="leading-none font-light">{`- ${text}`}</li>
+          <ol start="2" className="m-0 font-sans list-inside list-decimal">
+            {key.map((key) => {
+              <li key={key}>{text}</li>;
+            })}
           </ol>
         );
         break;

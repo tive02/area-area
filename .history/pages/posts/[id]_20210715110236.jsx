@@ -125,11 +125,19 @@ const Post = () => {
         );
         break;
       case "ordered-list-item":
-        return (
-          <ol className="m-0 font-sans ">
-            <li className="leading-none font-light">{`- ${text}`}</li>
-          </ol>
-        );
+        const keys = key.split(" ");
+        return keys.map((key) => {
+          return (
+            <ol
+              style="list-style: decimal-leading-zero;"
+              className="m-0 font-sans  "
+            >
+              <li key={key} className="list-decimal list-inside">
+                {text}
+              </li>
+            </ol>
+          );
+        });
         break;
       default:
         break;

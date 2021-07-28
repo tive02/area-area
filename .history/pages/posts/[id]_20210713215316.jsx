@@ -1,7 +1,9 @@
 import React, { Fragment, useContext, useEffect, useState } from "react";
 import { useRouter } from "next/router";
+
 //Importa componentes
 import Layout from "../../components/Layout/Layout";
+
 import { FirebaseContext } from "../../firebase";
 import Error404 from "../../components/Layout/404";
 
@@ -95,7 +97,11 @@ const Post = () => {
           }
         });
         return (
-          <p className="font-sans" dangerouslySetInnerHTML={{ __html: text }} />
+          <p
+            className="font-sans"
+            id="new"
+            dangerouslySetInnerHTML={{ __html: text }}
+          />
         );
         break;
       case "atomic":
@@ -126,8 +132,8 @@ const Post = () => {
         break;
       case "ordered-list-item":
         return (
-          <ol className="m-0 font-sans ">
-            <li className="leading-none font-light">{`- ${text}`}</li>
+          <ol start="2" className="m-0 font-sans list-inside list-decimal">
+            <li>{text}</li>
           </ol>
         );
         break;
