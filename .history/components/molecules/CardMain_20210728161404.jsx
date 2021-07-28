@@ -1,5 +1,4 @@
 import React from "react";
-import Link from "next/link";
 const CardMain = ({ post }) => {
   const lastPost = Object.fromEntries(post);
   const { id, title, urlImg, votes, comments, created, creator, tags } =
