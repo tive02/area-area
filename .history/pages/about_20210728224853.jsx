@@ -5,7 +5,6 @@ import Layout from "../components/Layout/Layout";
 import SubBanner from "../components/organisms/SubBanner";
 import CardsUser from "../components/molecules/CardsUser";
 import InfoProject from "../components/molecules/InfoProject";
-import FormContact from "../components/organisms/FormContact";
 
 const About = () => {
   return (

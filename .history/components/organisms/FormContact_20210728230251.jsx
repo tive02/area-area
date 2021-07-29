@@ -36,9 +36,9 @@ const FormContact = () => {
           <div className="flex flex-wrap mt-12 justify-center"></div>
         </div>
       </section>
-      <section className="relative block lg:pt-0 bg-gray-900 p-10">
+      <section className="relative block lg:pt-0 bg-gray-900">
         <div className="container mx-auto px-4">
-          <div className="flex flex-wrap justify-center lg:-mt-80 -mt-48">
+          <div className="flex flex-wrap justify-center lg:-mt-72 -mt-48">
             <div className="w-full lg:w-6/12 px-4">
               <div className="relative flex flex-col min-w-0 break-words w-full shadow-lg rounded-lg bg-gray-300">
                 <div className="flex-auto lg:p-10">
