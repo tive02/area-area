@@ -6,7 +6,7 @@ export default function Modal() {
   return (
     <>
       <button
-        className="bg-green-400 active:bg-green-100 font-bold uppercase text-sm px-6 py-3 rounded shadow hover:bg-green-200 focus:bg-green-200 outline-none mr-1 mb-1 ease-linear transition-all duration-150"
+        className="bg-pink-500 text-white active:bg-pink-600 font-bold uppercase text-sm px-6 py-3 rounded shadow hover:shadow-lg outline-none focus:outline-none mr-1 mb-1 ease-linear transition-all duration-150"
         type="button"
         onClick={() => setShowModal(true)}
       >
@@ -24,8 +24,8 @@ export default function Modal() {
                 {/*body*/}
                 <div className="relative min-h-full flex flex-col sm:justify-center items-center bg-gray-100 ">
                   <div className="relative sm:max-w-sm w-full">
-                    <div className="card bg-green-400 shadow-lg  w-full h-full rounded-3xl absolute  transform -rotate-6"></div>
-                    <div className="card bg-purple-700 shadow-lg  w-full h-full rounded-3xl absolute  transform rotate-6"></div>
+                    <div className="card bg-blue-400 shadow-lg  w-full h-full rounded-3xl absolute  transform -rotate-6"></div>
+                    <div className="card bg-red-400 shadow-lg  w-full h-full rounded-3xl absolute  transform rotate-6"></div>
                     <div className="relative w-full rounded-3xl  px-6 py-4 bg-gray-100 shadow-md">
                       <label
                         htmlFor=""
@@ -38,7 +38,7 @@ export default function Modal() {
                           <input
                             type="email"
                             placeholder="Correo electronico"
-                            className=" block w-full border-none bg-gray-100 h-11 rounded-xl shadow-lg hover:bg-green-100 focus:bg-green-100 focus:ring-0"
+                            className=" block w-full border-none bg-gray-100 h-11 rounded-xl shadow-lg hover:bg-blue-100 focus:bg-blue-100 focus:ring-0"
                           />
                         </div>
 
@@ -46,12 +46,12 @@ export default function Modal() {
                           <input
                             type="password"
                             placeholder="Contraseña"
-                            className="mt-1 block w-full border-none bg-gray-100 h-11 rounded-xl shadow-lg hover:bg-green-100 focus:bg-green-100 focus:ring-0"
+                            className="mt-1 block w-full border-none bg-gray-100 h-11 rounded-xl shadow-lg hover:bg-blue-100 focus:bg-blue-100 focus:ring-0"
                           />
                         </div>
 
                         <div className="mt-4 flex">
-                          {/* <label
+                          <label
                             htmlFor="remember_me"
                             className="inline-flex items-center w-full cursor-pointer"
                           >
@@ -64,7 +64,7 @@ export default function Modal() {
                             <span className="ml-1 text-sm text-gray-600">
                               Recuerdame
                             </span>
-                          </label> */}
+                          </label>
 
                           <div className="w-full text-right">
                             <a
@@ -76,8 +76,8 @@ export default function Modal() {
                           </div>
                         </div>
 
-                        <div className="mt-3 ">
-                          <button className="bg-green-400 w-full py-3 rounded-xl text-white shadow-xl hover:shadow-inner focus:outline-none transition duration-500 ease-in-out  transform hover:-translate-x hover:scale-105">
+                        <div className="mt-3">
+                          <button className="bg-blue-500 w-full py-3 rounded-xl text-white shadow-xl hover:shadow-inner focus:outline-none transition duration-500 ease-in-out  transform hover:-translate-x hover:scale-105">
                             Login
                           </button>
                         </div>
@@ -90,7 +90,7 @@ export default function Modal() {
                           <hr className="border-gray-300 border-1 w-full rounded-md" />
                         </div>
 
-                        <div className="w-full rounded-xl shadow-xl hover:shadow-inner focus:outline-none transition duration-500 ease-in-out  transform hover:-translate-x hover:scale-105 ">
+                        <div className="flex mt-2 justify-center w-full">
                           <SignInScreen />
                         </div>
 

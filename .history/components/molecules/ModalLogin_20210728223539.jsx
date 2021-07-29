@@ -6,7 +6,7 @@ export default function Modal() {
   return (
     <>
       <button
-        className="bg-green-400 active:bg-green-100 font-bold uppercase text-sm px-6 py-3 rounded shadow hover:bg-green-200 focus:bg-green-200 outline-none mr-1 mb-1 ease-linear transition-all duration-150"
+        className="bg-green-400 active:bg-green-100 font-bold uppercase text-sm px-6 py-3 rounded shadow hover:bg-green-100 focus:bg-green-100 outline-none mr-1 mb-1 ease-linear transition-all duration-150"
         type="button"
         onClick={() => setShowModal(true)}
       >

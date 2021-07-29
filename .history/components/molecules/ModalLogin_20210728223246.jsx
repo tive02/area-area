@@ -6,7 +6,7 @@ export default function Modal() {
   return (
     <>
       <button
-        className="bg-green-400 active:bg-green-100 font-bold uppercase text-sm px-6 py-3 rounded shadow hover:bg-green-200 focus:bg-green-200 outline-none mr-1 mb-1 ease-linear transition-all duration-150"
+        className="bg-green-400 text-white active:bg-pink-600 font-bold uppercase text-sm px-6 py-3 rounded shadow hover:shadow-lg outline-none focus:outline-none mr-1 mb-1 ease-linear transition-all duration-150"
         type="button"
         onClick={() => setShowModal(true)}
       >
@@ -38,7 +38,7 @@ export default function Modal() {
                           <input
                             type="email"
                             placeholder="Correo electronico"
-                            className=" block w-full border-none bg-gray-100 h-11 rounded-xl shadow-lg hover:bg-green-100 focus:bg-green-100 focus:ring-0"
+                            className=" block w-full border-none bg-gray-100 h-11 rounded-xl shadow-lg hover:bg-green-100 focus:bg-blue-100 focus:ring-0"
                           />
                         </div>
 
@@ -46,7 +46,7 @@ export default function Modal() {
                           <input
                             type="password"
                             placeholder="Contraseña"
-                            className="mt-1 block w-full border-none bg-gray-100 h-11 rounded-xl shadow-lg hover:bg-green-100 focus:bg-green-100 focus:ring-0"
+                            className="mt-1 block w-full border-none bg-gray-100 h-11 rounded-xl shadow-lg hover:bg-blue-100 focus:bg-blue-100 focus:ring-0"
                           />
                         </div>
 
